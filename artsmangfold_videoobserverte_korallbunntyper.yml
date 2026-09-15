@@ -1,0 +1,10 @@
+metadataId: 851bfa1c-c48a-42a2-83c6-11a4662b6d1d
+output_directory: produktspesifikasjon
+product_slug: artsmangfold_videoobserverte_korallbunntyper
+updated: '2026-09-15'
+outputs: geopackage
+scopes:
+- name: UML-modell
+  url: ''
+  generator: xmi
+  description: ''
