@@ -5,6 +5,6 @@ updated: '2026-09-15'
 outputs: geopackage
 scopes:
 - name: UML-modell
-  url: ''
+  url: https://sosi.geonorge.no/svn/SOSI/SOSI%20Del%203/Havforskningsinstituttet/BiomangfoldKorallbunntyper-20210301%20.xml
   generator: xmi
   description: ''
