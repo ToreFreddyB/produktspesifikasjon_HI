@@ -1,0 +1,364 @@
+{
+  "overview": "Denne produktspesifikasjonen er autogenerert fra metadata i Geonorge og datamodell fra SOSI modellregister og/eller OGC API Features. Noe ekstra informasjon kan ha blitt lagt til gjennom manuell prosess. Produktspesifikasjonen er i henhold til standarden: 'Geografisk informasjon - Dataproduktspesifikasjoner' (ISO19131:2022)",
+  "title": "Artsmangfold - Videoobserverte korallbunntyper",
+  "format": "text/html",
+  "date": {
+    "creation": "2021-02-04",
+    "revision": "2025-02-11"
+  },
+  "language": "nor",
+  "contact": {
+    "individualName": "Pål Mortensen",
+    "organizationName": "Havforskningsinstituttet",
+    "logo": "https://register.geonorge.no/data/organizations/971349077_hi_liten.png",
+    "electronicMailAddress": "paal.mortensen@hi.no",
+    "role": "owner"
+  },
+  "identificationSection": {
+    "title": "Artsmangfold - Videoobserverte korallbunntyper",
+    "abstract": "Datasettet viser observasjoner av ulike korallbunntyper (Levende Lophelia, Korallrester og Død Lophelia) som er loggført i felt under videoundersøkelse av havbunnen. Korallrester er små skjellett-fragmenter (< 20 cm) av døde Lophelia koraller, mens Død Lophelia er større (>20 cm) fragmenter av døde korallskjelletter. Levende Lophelia er kolonier av levende Lophelia, med ulik størrelse. Sammen med havbunnstopografien gir disse observasjonene en indikasjon på utstrekningen av korallrevene lokalt.\nDatasettet viser også videotransekt der det ikke er observert noen av disse koralbunntypene.",
+    "purpose": {
+      "summary": "Datasettet gir en indikasjon (sammen med havbunnstopografi) på utstrekning av korallrev lokalt.",
+      "useCase": {
+        "name": "Bruksområde",
+        "summary": "Datasettet kan brukes som et verktøy for marin areal- og miljøplanlegging, sårbarhetsanalyser, habitatskartlegging og i forbindelse med installasjoner på havbunnen og aktiviteter som kan ha påvirkning på havbunnen. Videre kan datasettet brukes som beslutningsgrunnlag ved vurdering av nye oppdrettskonsesjoner, utslipp i sjø, deponering, utbygging av petroleumsrelaterte installasjoner, og regulering av fiskeriaktivitet."
+      }
+    },
+    "topicCategory": [
+      "Biologisk mangfold"
+    ],
+    "spatialRepresentationType": "Vektor",
+    "spatialResolution": {
+      "equivalentScale": "500000"
+    },
+    "uniqueId": "https://data.geonorge.no/sosi/artsmangfold/artsmangfold_video-observerte_korallbunntyper",
+    "keyword": [
+      "videotransekt",
+      "observasjonsdata",
+      "koraller",
+      "Mareano",
+      "Norge digitalt",
+      "fellesDatakatalog",
+      "Kyst og fiskeri",
+      "Natur",
+      "Korallbunntyper",
+      "toktNummer",
+      "referanseStasjon",
+      "prøveNummer",
+      "korallrevNummer",
+      "korallrevBunntype",
+      "dato",
+      "bunnDybde"
+    ],
+    "restriction": {
+      "resourceConstraints": {
+        "useLimitations": "Ingen begrensninger på bruk er oppgitt."
+      },
+      "legalConstraints": {
+        "accessConstraints": "Åpne data",
+        "useConstraints": "Lisens",
+        "license": "Norsk lisens for offentlige data (NLOD)",
+        "licenseUrl": "http://data.norge.no/nlod/no/1.0"
+      },
+      "securityConstraints": {
+        "classification": "Ugradert"
+      }
+    },
+    "contact": [
+      {
+        "individualName": "Pål Mortensen",
+        "organizationName": "Havforskningsinstituttet",
+        "electronicMailAddress": "paal.mortensen@hi.no",
+        "role": "owner"
+      },
+      {
+        "individualName": "Kjell Bakkeplass",
+        "organizationName": "Havforskningsinstituttet",
+        "electronicMailAddress": "kjell.bakkeplass@hi.no",
+        "role": "pointOfContact"
+      },
+      {
+        "individualName": "Kjell Bakkeplass",
+        "organizationName": "Havforskningsinstituttet",
+        "electronicMailAddress": "kjell.bakkeplass@hi.no",
+        "role": "publisher"
+      }
+    ],
+    "maintenance": "Årlig",
+    "extent": {
+      "geographicElement": {
+        "westBoundLongitude": "3.0",
+        "eastBoundLongitude": "37.0",
+        "southBoundLatitude": "62.0",
+        "northBoundLatitude": "81.0"
+      },
+      "temporalElement": {
+        "timePeriod": {
+          "beginPosition": "2021-02-04",
+          "endPosition": "2025-02-11"
+        }
+      }
+    },
+    "date": {
+      "creation": "2021-02-04",
+      "publication": "2021-02-04",
+      "revision": "2025-02-11"
+    },
+    "language": "nor"
+  },
+  "scopeSection": [
+    {
+      "specificationScope": {
+        "scopeIdentification": "Hele datasettet",
+        "level": "dataset",
+        "levelDescription": "Gjelder hele datasettet. Hvis omfang ikke er oppgitt under en overskrift, gjelder teksten for hele datasettet og alle leveranser"
+      }
+    },
+    {
+      "specificationScope": {
+        "scopeIdentification": "UML-modell",
+        "level": "dataset"
+      }
+    }
+  ],
+  "referenceSystemSection": {
+    "spatialReferenceSystem": [
+      {
+        "code": "EPSG:25833",
+        "name": "EUREF89 UTM sone 33, 2d"
+      },
+      {
+        "code": "EPSG:3035",
+        "name": "EUREF89 / ETRS89-LAEA Europe"
+      },
+      {
+        "code": "EPSG:4258",
+        "name": "EUREF 89 Geografisk (ETRS 89) 2d"
+      },
+      {
+        "code": "EPSG:25833",
+        "name": "EUREF89 UTM sone 33, 2d"
+      }
+    ]
+  },
+  "dataQualitySection": {
+    "scope": {
+      "level": "dataset"
+    },
+    "report": [
+      {
+        "nameOfMeasure": "SOSI produktspesifikasjon: Artsmangfold video-observerte Korallbunntyper",
+        "descriptiveResult": "Dataene er i henhold til produktspesifikasjonen"
+      },
+      {
+        "nameOfMeasure": "Sosi applikasjonsskjema",
+        "descriptiveResult": "SOSI-filer er i henhold til applikasjonsskjema"
+      },
+      {
+        "nameOfMeasure": "Sosi applikasjonsskjema",
+        "descriptiveResult": "GML-filer er i henhold til applikasjonsskjema"
+      },
+      {
+        "nameOfMeasure": "Prosentvis oppfyllelse av FAIR-prinsipper",
+        "measureDescription": "Angir fullstendighet i forhold til krav fra FAIR-prinsippene (The FAIR Guiding Principles for scientific data management and stewardship)",
+        "result": "98"
+      }
+    ]
+  },
+  "maintenanceSection": {
+    "maintenanceAndUpdateFrequency": "Årlig",
+    "maintenanceAndUpdateStatement": "Fullført"
+  },
+  "dataCaptureAndProductionSection": {
+    "DataAcquisitionAndProcessing": {
+      "processStep": [
+        {
+          "description": "Datasettet dekker de områder som MAREANO har kartlagt. Datasettet er ikke heldekkende. Dekningsgrad avhenger av hvilken kartleggingsinnsats som er lagt ned innenfor de forskjellige områdene. (Utstrekningsbeskrivelse: Norske havområder nord for 62. breddegrad.). Observasjoner av ulike korallbunntyper (Levende Lophelia, Korallrester og Død Lophelia) er loggført i felt under videoundersøkelse av havbunnen. Datasettet egner seg til bruk i målestokk 500 000 - 10 000 000."
+        }
+      ]
+    }
+  },
+  "portrayal": {
+    "name": "Tegneregler",
+    "linkage": "https://register.geonorge.no/register/versjoner/tegneregler/havforskningsinstituttet/artsmangfold-videoobserverte-korallbunntyper"
+  },
+  "deliverySection": [
+    {
+      "delivery": {
+        "deliveryMedium": {
+          "unitsOfDelivery": "landsfiler",
+          "deliveryMediumName": "Geonorge nedlastning",
+          "deliveryService": {
+            "serviceEndpoint": "https://nedlasting.geonorge.no/api/capabilities/",
+            "serviceProperty": {
+              "type": "Geonorge nedlastning",
+              "value": "GEONORGE:DOWNLOAD"
+            }
+          }
+        },
+        "deliveryFormat": [
+          {
+            "formatName": "FGDB"
+          },
+          {
+            "formatName": "GML"
+          },
+          {
+            "formatName": "PostGIS"
+          },
+          {
+            "formatName": "SOSI"
+          }
+        ]
+      }
+    },
+    {
+      "delivery": {
+        "deliveryMedium": {
+          "unitsOfDelivery": "landsfiler",
+          "deliveryMediumName": "Atom Feed",
+          "deliveryService": {
+            "serviceEndpoint": "http://nedlasting.geonorge.no/geonorge/ATOM-feeds/VideoObsKorallbunntyper_AtomFeedFGDB.xml",
+            "serviceProperty": {
+              "type": "Atom Feed",
+              "value": "W3C:AtomFeed"
+            }
+          }
+        },
+        "deliveryFormat": [
+          {
+            "formatName": "FGDB"
+          }
+        ]
+      }
+    },
+    {
+      "delivery": {
+        "deliveryMedium": {
+          "unitsOfDelivery": "landsfiler",
+          "deliveryMediumName": "Atom Feed",
+          "deliveryService": {
+            "serviceEndpoint": "http://nedlasting.geonorge.no/geonorge/ATOM-feeds/VideoObsKorallbunntyper_AtomFeedGML.xml",
+            "serviceProperty": {
+              "type": "Atom Feed",
+              "value": "W3C:AtomFeed"
+            }
+          }
+        },
+        "deliveryFormat": [
+          {
+            "formatName": "GML"
+          }
+        ]
+      }
+    },
+    {
+      "delivery": {
+        "deliveryMedium": {
+          "unitsOfDelivery": "landsfiler",
+          "deliveryMediumName": "Atom Feed",
+          "deliveryService": {
+            "serviceEndpoint": "http://nedlasting.geonorge.no/geonorge/ATOM-feeds/VideoObsKorallbunntyper_AtomFeedPOSTGIS.xml",
+            "serviceProperty": {
+              "type": "Atom Feed",
+              "value": "W3C:AtomFeed"
+            }
+          }
+        },
+        "deliveryFormat": [
+          {
+            "formatName": "PostGIS"
+          }
+        ]
+      }
+    },
+    {
+      "delivery": {
+        "deliveryMedium": {
+          "unitsOfDelivery": "landsfiler",
+          "deliveryMediumName": "Atom Feed",
+          "deliveryService": {
+            "serviceEndpoint": "http://nedlasting.geonorge.no/geonorge/ATOM-feeds/VideoObsKorallbunntyper_AtomFeedSOSI.xml",
+            "serviceProperty": {
+              "type": "Atom Feed",
+              "value": "W3C:AtomFeed"
+            }
+          }
+        },
+        "deliveryFormat": [
+          {
+            "formatName": "SOSI"
+          }
+        ]
+      }
+    },
+    {
+      "delivery": {
+        "deliveryMedium": {
+          "deliveryMediumName": "Artsmangfold - Videoobserverte korallbunntyper WMS",
+          "deliveryService": {
+            "serviceEndpoint": "https://kart.hi.no/mareano/mareano_biologi/korallobservasjoner_video/wms?service=WMS&request=GetCapabilities",
+            "serviceProperty": {
+              "type": "Artsmangfold - Videoobserverte korallbunntyper WMS",
+              "value": "WMS-tjeneste"
+            }
+          }
+        },
+        "deliveryFormat": [
+          {
+            "formatName": "PNG"
+          }
+        ],
+        "deliveryScope": "Tjeneste"
+      }
+    },
+    {
+      "delivery": {
+        "deliveryMedium": {
+          "deliveryMediumName": "GeoPackage: uml-modell",
+          "deliveryService": {
+            "serviceEndpoint": "https://raw.githubusercontent.com/ToreFreddyB/produktspesifikasjon_HI/main/produktspesifikasjon/artsmangfold-videoobserverte-korallbunntyper/uml-modell/uml-modell.gpkg",
+            "serviceProperty": {
+              "type": "Fil",
+              "value": "Nedlasting"
+            }
+          }
+        },
+        "deliveryFormat": [
+          {
+            "formatName": "GPKG"
+          }
+        ]
+      }
+    }
+  ],
+  "metadataSection": {
+    "metadataStandard": "ISO19115",
+    "metadataStandardVersion": "2003",
+    "metadataDate": "2026-09-15",
+    "language": "nor",
+    "contact": {
+      "organizationName": "Havforskningsinstituttet",
+      "individualName": "Kjell Bakkeplass",
+      "logo": "https://register.geonorge.no/data/organizations/971349077_hi_liten.png",
+      "electronicMailAddress": "kjell.bakkeplass@hi.no",
+      "role": "pointOfContact"
+    },
+    "metadataIdentifier": {
+      "authority": "Geonorge",
+      "code": "851bfa1c-c48a-42a2-83c6-11a4662b6d1d",
+      "codeSpace": "https://kartkatalog.geonorge.no/metadata/",
+      "metadataLinkage": "https://kartkatalog.geonorge.no/metadata/851bfa1c-c48a-42a2-83c6-11a4662b6d1d"
+    }
+  },
+  "additionalReferences": [
+    {
+      "title": "Produktark",
+      "href": "https://register.geonorge.no/register/versjoner/produktark/havforskningsinstituttet/artsmangfold-videoobserverte-korallbunntyper"
+    },
+    {
+      "title": "Produktside",
+      "href": "https://www.mareano.no"
+    }
+  ]
+}
