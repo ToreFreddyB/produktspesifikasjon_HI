@@ -1,0 +1,10 @@
+metadataId: 0d1bf03d-f3fa-4ba5-bbff-52543f3d066d
+output_directory: produktspesifikasjon
+product_slug: artsmangfold_svampobservasjoner_per_videotransekt
+updated: '2026-09-27'
+outputs: geopackage
+scopes:
+- name: UML-modell
+  url: https://sosi.geonorge.no/svn/SOSI/SOSI%20Del%203/Havforskningsinstituttet/ArtsmangfoldSvampobsVideoTransekt-20210615.xml
+  generator: xmi
+  description: ''
