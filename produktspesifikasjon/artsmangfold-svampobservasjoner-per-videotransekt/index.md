@@ -9,7 +9,7 @@ logo: "https://register.geonorge.no/data/organizations/971349077_hi_liten.png"
 
 *Datasettet viser antall svampobservasjoner per video-transekt og er basert på observasjoner av videomateriale av overflaten av havbunnen, samlet inn ved hjelp av videorigg. Opptak av havbunnens overflate ble gjort langs 200 m og 700 m lange transekt. Hvert punktsymbol er plottet på koordinatene for transektets midtpunkt, hvor symbolets størrelse korresponderer med antall observasjoner.*
 
-**Nøkkelord:** videotransekt, svamper, mareano, Norske havområder., Norge digitalt, fellesDatakatalog, Natur, Kyst og fiskeri, SvampobservasjonerVideo, toktNummer, referanseStasjon, prøveNummer, antallObservasjoner, dato, lengdegrad, breddegrad, bunndyp
+**Nøkkelord:** videotransekt, svamper, mareano, Norge digitalt, fellesDatakatalog, Natur, Kyst og fiskeri, SvampobservasjonerVideo, toktNummer, referanseStasjon, prøveNummer, antallObservasjoner, dato, lengdegrad, breddegrad, bunndyp
 
 **Emnekategorier:** Biologisk mangfold
 
@@ -19,6 +19,9 @@ logo: "https://register.geonorge.no/data/organizations/971349077_hi_liten.png"
 - **Øst**: 96.96
 - **Sør**: 62.27
 - **Nord**: 80.654113
+
+**Geografisk område**:
+Norske havområder.
 
 **Tidsmessig utstrekning**:
 
@@ -125,10 +128,7 @@ Datasettet viser artsmangfoldet ved havbunnen. Det bør tas hensyn til dette art
 
 ## Datafangst og produksjon
 
-**Datainnsamling og prosessering**:
-
-- **Prosesstrinn**:
-  - **Beskrivelse**: Datasettet viser observasjoner fra videorigg i de områder som MAREANO har kartlagt. Datasettet er ikke heldekkende. Dekningsgrad avhenger av hvilken kartleggingsinnsats som er lagt ned innenfor de forskjellige områdene. Datasettet egner seg til bruk i målestokk 500 000 - 10 000 000.
+Datasettet viser observasjoner fra videorigg i de områder som MAREANO har kartlagt. Datasettet er ikke heldekkende. Dekningsgrad avhenger av hvilken kartleggingsinnsats som er lagt ned innenfor de forskjellige områdene. Datasettet egner seg til bruk i målestokk 500 000 - 10 000 000.
 
 ## Vedlikehold
 
@@ -147,7 +147,7 @@ Datasettet viser artsmangfoldet ved havbunnen. Det bør tas hensyn til dette art
 
 | Tjeneste | Endepunkt | Type | Format | Leveranseenheter |
 | --- | --- | --- | --- | --- |
-| Geonorge nedlastning | [Lenke](https://nedlasting.geonorge.no/api/capabilities/) | GEONORGE:DOWNLOAD | FGDB, GML, PostGIS, SOSI | landsfiler |
+| Geonorge nedlastning | [Lenke](https://nedlasting.geonorge.no/api/capabilities/0d1bf03d-f3fa-4ba5-bbff-52543f3d066d) | GEONORGE:DOWNLOAD | FGDB, GML, PostGIS, SOSI | landsfiler |
 | Atom Feed | [Lenke](http://nedlasting.geonorge.no/geonorge/ATOM-feeds/ArtsmangfoldSvampObsVideo_AtomFeedFGDB.xml) | W3C:AtomFeed | FGDB | landsfiler |
 | Atom Feed | [Lenke](http://nedlasting.geonorge.no/geonorge/ATOM-feeds/ArtsmangfoldSvampObsVideo_AtomFeedGML.xml) | W3C:AtomFeed | GML | landsfiler |
 | Atom Feed | [Lenke](http://nedlasting.geonorge.no/geonorge/ATOM-feeds/ArtsmangfoldSvampObsVideo_AtomFeedPOSTGIS.xml) | W3C:AtomFeed | PostGIS | landsfiler |
@@ -161,7 +161,7 @@ Datasettet viser artsmangfoldet ved havbunnen. Det bør tas hensyn til dette art
 
 **Metadatastandardversjon**: 2003
 
-**Metadatadato**: 2026-09-27
+**Metadatadato**: 2026-10-07
 
 **språk**: nor
 

@@ -31,21 +31,21 @@ skinparam stereotypeCFontColor #2D201A
 package "Objekttyper" {
 
   class SvampobservasjonerVideo <<featureType>> {
+    + posisjon [1] : Punkt
+    + toktNummer [1] : Integer
+    + referanseStasjon [1] : Integer
+    + prøveNummer [1] : Integer
     + antallObservasjoner [1] : Integer
-    + breddegrad [1] : Real
-    + bunndyp [1] : Integer
     + dato [1] : Date
     + lengdegrad [1] : Real
-    + posisjon [1] : Punkt
-    + prøveNummer [1] : Integer
-    + referanseStasjon [1] : Integer
-    + toktNummer [1] : Integer
+    + breddegrad [1] : Real
+    + bunndyp [1] : Integer
   }
 
   abstract class GenerelleEgenskaperStasjoner <<featureType>> {
-    + datauttaksdato [0..1] : Date
     + identifikasjon [1] : Identifikasjon
     + kvalitet [0..1] : Posisjonskvalitet
+    + datauttaksdato [0..1] : Date
     + opphav [1] : CharacterString
   }
 
