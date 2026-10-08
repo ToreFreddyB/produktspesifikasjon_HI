@@ -32,7 +32,6 @@
       "videotransekt",
       "svamper",
       "mareano",
-      "Norske havområder.",
       "Norge digitalt",
       "fellesDatakatalog",
       "Natur",
@@ -89,6 +88,9 @@
         "southBoundLatitude": "62.27",
         "northBoundLatitude": "80.654113"
       },
+      "geographicDescription": [
+        "Norske havområder."
+      ],
       "temporalElement": {
         "timePeriod": {
           "beginPosition": "2021-06-04",
@@ -168,11 +170,7 @@
   },
   "dataCaptureAndProductionSection": {
     "DataAcquisitionAndProcessing": {
-      "processStep": [
-        {
-          "description": "Datasettet viser observasjoner fra videorigg i de områder som MAREANO har kartlagt. Datasettet er ikke heldekkende. Dekningsgrad avhenger av hvilken kartleggingsinnsats som er lagt ned innenfor de forskjellige områdene. Datasettet egner seg til bruk i målestokk 500 000 - 10 000 000."
-        }
-      ]
+      "dataCaptureStatement": "Datasettet viser observasjoner fra videorigg i de områder som MAREANO har kartlagt. Datasettet er ikke heldekkende. Dekningsgrad avhenger av hvilken kartleggingsinnsats som er lagt ned innenfor de forskjellige områdene. Datasettet egner seg til bruk i målestokk 500 000 - 10 000 000."
     }
   },
   "portrayal": {
@@ -186,7 +184,7 @@
           "unitsOfDelivery": "landsfiler",
           "deliveryMediumName": "Geonorge nedlastning",
           "deliveryService": {
-            "serviceEndpoint": "https://nedlasting.geonorge.no/api/capabilities/",
+            "serviceEndpoint": "https://nedlasting.geonorge.no/api/capabilities/0d1bf03d-f3fa-4ba5-bbff-52543f3d066d",
             "serviceProperty": {
               "type": "Geonorge nedlastning",
               "value": "GEONORGE:DOWNLOAD"
@@ -332,7 +330,7 @@
   "metadataSection": {
     "metadataStandard": "ISO19115",
     "metadataStandardVersion": "2003",
-    "metadataDate": "2026-09-27",
+    "metadataDate": "2026-10-07",
     "language": "nor",
     "contact": {
       "organizationName": "Havforskningsinstituttet",

@@ -18,7 +18,36 @@ Egenskaper
   <tbody>
     <tr>
       <th scope="row">Navn:</th>
-      <td><strong>antallObservasjoner</strong></td>
+      <td><strong>posisjon</strong></td>
+    </tr>
+    <tr>
+      <th scope="row">Definisjon:</th>
+      <td>sted som objektet eksisterer på.<br />Location where the object exists</td>
+    </tr>
+    <tr>
+      <th scope="row">Multiplisitet:</th>
+      <td>1</td>
+    </tr>
+    <tr>
+      <th scope="row">Type:</th>
+      <td>Punkt</td>
+    </tr>
+  </tbody>
+</table>
+
+<table class="feature-attribute-table">
+  <colgroup>
+    <col style="width: 35%;" />
+    <col style="width: 65%;" />
+  </colgroup>
+  <tbody>
+    <tr>
+      <th scope="row">Navn:</th>
+      <td><strong>toktNummer</strong></td>
+    </tr>
+    <tr>
+      <th scope="row">Definisjon:</th>
+      <td>toktnummer ved Havforskningsinstituttet.<br />-- Definition --<br />Cruise number at IMR.</td>
     </tr>
     <tr>
       <th scope="row">Multiplisitet:</th>
@@ -39,11 +68,11 @@ Egenskaper
   <tbody>
     <tr>
       <th scope="row">Navn:</th>
-      <td><strong>breddegrad</strong></td>
+      <td><strong>referanseStasjon</strong></td>
     </tr>
     <tr>
       <th scope="row">Definisjon:</th>
-      <td>breddegrad som prøven ble tatt på.<br />-- Definition --<br />Latitude where the sample was taken.</td>
+      <td>referansestasjon, unik innen MAREANO.<br />-- Definition --<br />Reference number during MAREANO prosject (superstation).</td>
     </tr>
     <tr>
       <th scope="row">Multiplisitet:</th>
@@ -51,7 +80,7 @@ Egenskaper
     </tr>
     <tr>
       <th scope="row">Type:</th>
-      <td>Real</td>
+      <td>Integer</td>
     </tr>
   </tbody>
 </table>
@@ -64,11 +93,28 @@ Egenskaper
   <tbody>
     <tr>
       <th scope="row">Navn:</th>
-      <td><strong>bunndyp</strong></td>
+      <td><strong>prøveNummer</strong></td>
     </tr>
     <tr>
-      <th scope="row">Definisjon:</th>
-      <td>bunndyp der prøven er tatt.<br />-- Definition --<br />Bottomdepth where the sample is taken.</td>
+      <th scope="row">Multiplisitet:</th>
+      <td>1</td>
+    </tr>
+    <tr>
+      <th scope="row">Type:</th>
+      <td>Integer</td>
+    </tr>
+  </tbody>
+</table>
+
+<table class="feature-attribute-table">
+  <colgroup>
+    <col style="width: 35%;" />
+    <col style="width: 65%;" />
+  </colgroup>
+  <tbody>
+    <tr>
+      <th scope="row">Navn:</th>
+      <td><strong>antallObservasjoner</strong></td>
     </tr>
     <tr>
       <th scope="row">Multiplisitet:</th>
@@ -139,11 +185,11 @@ Egenskaper
   <tbody>
     <tr>
       <th scope="row">Navn:</th>
-      <td><strong>posisjon</strong></td>
+      <td><strong>breddegrad</strong></td>
     </tr>
     <tr>
       <th scope="row">Definisjon:</th>
-      <td>sted som objektet eksisterer på.<br />Location where the object exists</td>
+      <td>breddegrad som prøven ble tatt på.<br />-- Definition --<br />Latitude where the sample was taken.</td>
     </tr>
     <tr>
       <th scope="row">Multiplisitet:</th>
@@ -151,7 +197,7 @@ Egenskaper
     </tr>
     <tr>
       <th scope="row">Type:</th>
-      <td>Punkt</td>
+      <td>Real</td>
     </tr>
   </tbody>
 </table>
@@ -164,57 +210,11 @@ Egenskaper
   <tbody>
     <tr>
       <th scope="row">Navn:</th>
-      <td><strong>prøveNummer</strong></td>
-    </tr>
-    <tr>
-      <th scope="row">Multiplisitet:</th>
-      <td>1</td>
-    </tr>
-    <tr>
-      <th scope="row">Type:</th>
-      <td>Integer</td>
-    </tr>
-  </tbody>
-</table>
-
-<table class="feature-attribute-table">
-  <colgroup>
-    <col style="width: 35%;" />
-    <col style="width: 65%;" />
-  </colgroup>
-  <tbody>
-    <tr>
-      <th scope="row">Navn:</th>
-      <td><strong>referanseStasjon</strong></td>
+      <td><strong>bunndyp</strong></td>
     </tr>
     <tr>
       <th scope="row">Definisjon:</th>
-      <td>referansestasjon, unik innen MAREANO.<br />-- Definition --<br />Reference number during MAREANO prosject (superstation).</td>
-    </tr>
-    <tr>
-      <th scope="row">Multiplisitet:</th>
-      <td>1</td>
-    </tr>
-    <tr>
-      <th scope="row">Type:</th>
-      <td>Integer</td>
-    </tr>
-  </tbody>
-</table>
-
-<table class="feature-attribute-table">
-  <colgroup>
-    <col style="width: 35%;" />
-    <col style="width: 65%;" />
-  </colgroup>
-  <tbody>
-    <tr>
-      <th scope="row">Navn:</th>
-      <td><strong>toktNummer</strong></td>
-    </tr>
-    <tr>
-      <th scope="row">Definisjon:</th>
-      <td>toktnummer ved Havforskningsinstituttet.<br />-- Definition --<br />Cruise number at IMR.</td>
+      <td>bunndyp der prøven er tatt.<br />-- Definition --<br />Bottomdepth where the sample is taken.</td>
     </tr>
     <tr>
       <th scope="row">Multiplisitet:</th>
@@ -237,31 +237,6 @@ GenerelleEgenskaperStasjoner
 abstrakt objekt som bærer en rekke egenskaper som er fagområde-uavhengige og kan benyttes for alle objekttyper<br />Merknad: Spesielt i produktspesifikasjonsarbeid vil en velge egenskaper og av grensningslinjer fra denne klassen.
 
 Egenskaper
-
-<table class="feature-attribute-table">
-  <colgroup>
-    <col style="width: 35%;" />
-    <col style="width: 65%;" />
-  </colgroup>
-  <tbody>
-    <tr>
-      <th scope="row">Navn:</th>
-      <td><strong>datauttaksdato</strong></td>
-    </tr>
-    <tr>
-      <th scope="row">Definisjon:</th>
-      <td>dato for uttak fra en database<br />Merknad:<br />Skiller seg fra Kopidato ved at en ikke skiller på om det er uttak fra en originaldatabase eller en kopidatabase.</td>
-    </tr>
-    <tr>
-      <th scope="row">Multiplisitet:</th>
-      <td>0..1</td>
-    </tr>
-    <tr>
-      <th scope="row">Type:</th>
-      <td>DateTime</td>
-    </tr>
-  </tbody>
-</table>
 
 <table class="feature-attribute-table">
   <colgroup>
@@ -412,7 +387,32 @@ Egenskaper
     </tr>
     <tr>
       <th scope="row">Tillatte verdier:</th>
-      <td>- Kodeliste: <a href="https://register.geonorge.no/sosi-kodelister/malemetode.xml">https://register.geonorge.no/sosi-kodelister/malemetode.xml</a></td>
+      <td>- Kodeliste: <a href="https://register.geonorge.no/sosi-kodelister/malemetode">https://register.geonorge.no/sosi-kodelister/malemetode</a></td>
+    </tr>
+  </tbody>
+</table>
+
+<table class="feature-attribute-table">
+  <colgroup>
+    <col style="width: 35%;" />
+    <col style="width: 65%;" />
+  </colgroup>
+  <tbody>
+    <tr>
+      <th scope="row">Navn:</th>
+      <td><strong>datauttaksdato</strong></td>
+    </tr>
+    <tr>
+      <th scope="row">Definisjon:</th>
+      <td>dato for uttak fra en database<br />Merknad:<br />Skiller seg fra Kopidato ved at en ikke skiller på om det er uttak fra en originaldatabase eller en kopidatabase.</td>
+    </tr>
+    <tr>
+      <th scope="row">Multiplisitet:</th>
+      <td>0..1</td>
+    </tr>
+    <tr>
+      <th scope="row">Type:</th>
+      <td>DateTime</td>
     </tr>
   </tbody>
 </table>
@@ -466,7 +466,7 @@ Profilparametre i tagged values
     </tr>
     <tr>
       <th scope="row">codeList</th>
-      <td><a href="https://register.geonorge.no/sosi-kodelister/malemetode.xml">https://register.geonorge.no/sosi-kodelister/malemetode.xml</a></td>
+      <td><a href="https://register.geonorge.no/sosi-kodelister/malemetode">https://register.geonorge.no/sosi-kodelister/malemetode</a></td>
     </tr>
   </tbody>
 </table>

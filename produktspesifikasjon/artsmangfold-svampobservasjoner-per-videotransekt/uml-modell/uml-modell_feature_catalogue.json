@@ -4,29 +4,46 @@
     "description": "antall observerte ulike arter pr. video-transekt",
     "attributes": [
       {
+        "name": "posisjon",
+        "type": "Punkt",
+        "description": "sted som objektet eksisterer på.\nLocation where the object exists",
+        "cardinality": "1",
+        "taggedValues": {
+          "SOSI_navn": "NØ"
+        }
+      },
+      {
+        "name": "toktNummer",
+        "type": "Integer",
+        "description": "toktnummer ved Havforskningsinstituttet.\n-- Definition --\nCruise number at IMR.",
+        "cardinality": "1",
+        "taggedValues": {
+          "SOSI_navn": "TOKTNUMMER"
+        }
+      },
+      {
+        "name": "referanseStasjon",
+        "type": "Integer",
+        "description": "referansestasjon, unik innen MAREANO.\n-- Definition --\nReference number during MAREANO prosject (superstation).",
+        "cardinality": "1",
+        "taggedValues": {
+          "SOSI_navn": "REFERANSESTASJON"
+        }
+      },
+      {
+        "name": "prøveNummer",
+        "type": "Integer",
+        "cardinality": "1",
+        "taggedValues": {
+          "SOSI_navn": "PRØVENUMMER"
+        }
+      },
+      {
         "name": "antallObservasjoner",
         "type": "Integer",
         "cardinality": "1",
         "taggedValues": {
           "SOSI_navn": "ANTALLARTER"
-        }
-      },
-      {
-        "name": "breddegrad",
-        "type": "Real",
-        "description": "breddegrad som prøven ble tatt på.\n-- Definition --\nLatitude where the sample was taken.",
-        "cardinality": "1",
-        "taggedValues": {
-          "SOSI_navn": "BREDDEGRAD"
-        }
-      },
-      {
-        "name": "bunndyp",
-        "type": "Integer",
-        "description": "bunndyp der prøven er tatt.\n-- Definition --\nBottomdepth where the sample is taken.",
-        "cardinality": "1",
-        "taggedValues": {
-          "SOSI_navn": "BUNNDYP"
         }
       },
       {
@@ -48,38 +65,21 @@
         }
       },
       {
-        "name": "posisjon",
-        "type": "Punkt",
-        "description": "sted som objektet eksisterer på.\nLocation where the object exists",
+        "name": "breddegrad",
+        "type": "Real",
+        "description": "breddegrad som prøven ble tatt på.\n-- Definition --\nLatitude where the sample was taken.",
         "cardinality": "1",
         "taggedValues": {
-          "SOSI_navn": "NØ"
+          "SOSI_navn": "BREDDEGRAD"
         }
       },
       {
-        "name": "prøveNummer",
+        "name": "bunndyp",
         "type": "Integer",
+        "description": "bunndyp der prøven er tatt.\n-- Definition --\nBottomdepth where the sample is taken.",
         "cardinality": "1",
         "taggedValues": {
-          "SOSI_navn": "PRØVENUMMER"
-        }
-      },
-      {
-        "name": "referanseStasjon",
-        "type": "Integer",
-        "description": "referansestasjon, unik innen MAREANO.\n-- Definition --\nReference number during MAREANO prosject (superstation).",
-        "cardinality": "1",
-        "taggedValues": {
-          "SOSI_navn": "REFERANSESTASJON"
-        }
-      },
-      {
-        "name": "toktNummer",
-        "type": "Integer",
-        "description": "toktnummer ved Havforskningsinstituttet.\n-- Definition --\nCruise number at IMR.",
-        "cardinality": "1",
-        "taggedValues": {
-          "SOSI_navn": "TOKTNUMMER"
+          "SOSI_navn": "BUNNDYP"
         }
       }
     ],
@@ -96,15 +96,6 @@
     "name": "GenerelleEgenskaperStasjoner",
     "description": "abstrakt objekt som bærer en rekke egenskaper som er fagområde-uavhengige og kan benyttes for alle objekttyper\nMerknad: Spesielt i produktspesifikasjonsarbeid vil en velge egenskaper og av grensningslinjer fra denne klassen.",
     "attributes": [
-      {
-        "name": "datauttaksdato",
-        "type": "DateTime",
-        "description": "dato for uttak fra en database\nMerknad:\nSkiller seg fra Kopidato ved at en ikke skiller på om det er uttak fra en originaldatabase eller en kopidatabase.",
-        "cardinality": "0..1",
-        "taggedValues": {
-          "SOSI_navn": "DATAUTTAKSDATO"
-        }
-      },
       {
         "name": "identifikasjon",
         "type": "Identifikasjon",
@@ -155,10 +146,19 @@
               "kind": "codelist",
               "definition": "metode som ligger til grunn for registrering av posisjon\n\n\n-- Definition - -\nmethod on which registration of position is based",
               "asDictionary": "true",
-              "codeList": "https://register.geonorge.no/sosi-kodelister/malemetode.xml"
+              "codeList": "https://register.geonorge.no/sosi-kodelister/malemetode"
             }
           }
         ]
+      },
+      {
+        "name": "datauttaksdato",
+        "type": "DateTime",
+        "description": "dato for uttak fra en database\nMerknad:\nSkiller seg fra Kopidato ved at en ikke skiller på om det er uttak fra en originaldatabase eller en kopidatabase.",
+        "cardinality": "0..1",
+        "taggedValues": {
+          "SOSI_navn": "DATAUTTAKSDATO"
+        }
       },
       {
         "name": "opphav",
