@@ -1,0 +1,10 @@
+metadataId: fa06de24-a6b9-464c-9c46-fbb33ebb1482
+output_directory: produktspesifikasjon
+product_slug: hornkoraller
+updated: '2026-10-09'
+outputs: geopackage
+scopes:
+- name: UML-modell
+  url: https://sosi.geonorge.no/svn/SOSI/SOSI%20Del%203/Havforskningsinstituttet/Hornkoraller-20201015.xml
+  generator: xmi
+  description: ''
