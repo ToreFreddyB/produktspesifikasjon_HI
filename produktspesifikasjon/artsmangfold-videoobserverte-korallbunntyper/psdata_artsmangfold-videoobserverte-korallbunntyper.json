@@ -4,7 +4,7 @@
   "format": "text/html",
   "date": {
     "creation": "2021-02-04",
-    "revision": "2025-02-11"
+    "revision": "2026-09-24"
   },
   "language": "nor",
   "contact": {
@@ -95,14 +95,14 @@
       "temporalElement": {
         "timePeriod": {
           "beginPosition": "2021-02-04",
-          "endPosition": "2025-02-11"
+          "endPosition": "2026-09-24"
         }
       }
     },
     "date": {
       "creation": "2021-02-04",
       "publication": "2021-02-04",
-      "revision": "2025-02-11"
+      "revision": "2026-09-24"
     },
     "language": "nor"
   },
@@ -171,11 +171,7 @@
   },
   "dataCaptureAndProductionSection": {
     "DataAcquisitionAndProcessing": {
-      "processStep": [
-        {
-          "description": "Datasettet dekker de områder som MAREANO har kartlagt. Datasettet er ikke heldekkende. Dekningsgrad avhenger av hvilken kartleggingsinnsats som er lagt ned innenfor de forskjellige områdene. (Utstrekningsbeskrivelse: Norske havområder nord for 62. breddegrad.). Observasjoner av ulike korallbunntyper (Levende Lophelia, Korallrester og Død Lophelia) er loggført i felt under videoundersøkelse av havbunnen. Datasettet egner seg til bruk i målestokk 500 000 - 10 000 000."
-        }
-      ]
+      "dataCaptureStatement": "Datasettet dekker de områder som MAREANO har kartlagt. Datasettet er ikke heldekkende. Dekningsgrad avhenger av hvilken kartleggingsinnsats som er lagt ned innenfor de forskjellige områdene. (Utstrekningsbeskrivelse: Norske havområder nord for 62. breddegrad.). Observasjoner av ulike korallbunntyper (Levende Lophelia, Korallrester og Død Lophelia) er loggført i felt under videoundersøkelse av havbunnen. Datasettet egner seg til bruk i målestokk 500 000 - 10 000 000."
     }
   },
   "portrayal": {
@@ -189,7 +185,7 @@
           "unitsOfDelivery": "landsfiler",
           "deliveryMediumName": "Geonorge nedlastning",
           "deliveryService": {
-            "serviceEndpoint": "https://nedlasting.geonorge.no/api/capabilities/",
+            "serviceEndpoint": "https://nedlasting.geonorge.no/api/capabilities/851bfa1c-c48a-42a2-83c6-11a4662b6d1d",
             "serviceProperty": {
               "type": "Geonorge nedlastning",
               "value": "GEONORGE:DOWNLOAD"
@@ -204,10 +200,7 @@
             "formatName": "GML"
           },
           {
-            "formatName": "PostGIS"
-          },
-          {
-            "formatName": "SOSI"
+            "formatName": "GPKG"
           }
         ]
       }
@@ -258,7 +251,7 @@
           "unitsOfDelivery": "landsfiler",
           "deliveryMediumName": "Atom Feed",
           "deliveryService": {
-            "serviceEndpoint": "http://nedlasting.geonorge.no/geonorge/ATOM-feeds/VideoObsKorallbunntyper_AtomFeedPOSTGIS.xml",
+            "serviceEndpoint": "http://nedlasting.geonorge.no/geonorge/ATOM-feeds/VideoObsKorallbunntyper_AtomFeedGPKG.xml",
             "serviceProperty": {
               "type": "Atom Feed",
               "value": "W3C:AtomFeed"
@@ -267,27 +260,7 @@
         },
         "deliveryFormat": [
           {
-            "formatName": "PostGIS"
-          }
-        ]
-      }
-    },
-    {
-      "delivery": {
-        "deliveryMedium": {
-          "unitsOfDelivery": "landsfiler",
-          "deliveryMediumName": "Atom Feed",
-          "deliveryService": {
-            "serviceEndpoint": "http://nedlasting.geonorge.no/geonorge/ATOM-feeds/VideoObsKorallbunntyper_AtomFeedSOSI.xml",
-            "serviceProperty": {
-              "type": "Atom Feed",
-              "value": "W3C:AtomFeed"
-            }
-          }
-        },
-        "deliveryFormat": [
-          {
-            "formatName": "SOSI"
+            "formatName": "GPKG"
           }
         ]
       }
@@ -335,7 +308,7 @@
   "metadataSection": {
     "metadataStandard": "ISO19115",
     "metadataStandardVersion": "2003",
-    "metadataDate": "2026-09-15",
+    "metadataDate": "2026-10-08",
     "language": "nor",
     "contact": {
       "organizationName": "Havforskningsinstituttet",
@@ -360,5 +333,22 @@
       "title": "Produktside",
       "href": "https://www.mareano.no"
     }
-  ]
+  ],
+  "chapterAutofill": {
+    "om_spesifikasjonen": 9,
+    "om_produktet": 140,
+    "formaal": 12,
+    "bruksomraade": 51,
+    "omfang": 24,
+    "datainnhold_og_struktur": 0,
+    "referansesystem": 24,
+    "datakvalitet": 51,
+    "datafangst_og_produksjon": 63,
+    "vedlikehold": 2,
+    "presentasjon": 2,
+    "leveranse": 54,
+    "metadata": 14,
+    "tilleggsinformasjon": 4,
+    "datamodell": 610
+  }
 }
