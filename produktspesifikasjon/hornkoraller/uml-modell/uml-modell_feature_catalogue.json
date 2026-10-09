@@ -1,0 +1,228 @@
+[
+  {
+    "name": "GenerelleEgenskaperHornkoraller",
+    "description": "abstrakt objekt som bærer en rekke egenskaper som er fagområde-uavhengige og kan benyttes for alle objekttyper\n\nMerknad:\nSpesielt i produktspesifikasjonsarbeid vil en velge egenskaper og av grensningslinjer fra denne klassen.",
+    "attributes": [
+      {
+        "name": "datauttaksdato",
+        "type": "DateTime",
+        "description": "dato for uttak fra en database\n\nMerknad:\nSkiller seg fra Kopidato ved at en ikke skiller på om det er uttak fra en originaldatabase eller en kopidatabase.",
+        "cardinality": "0..1",
+        "taggedValues": {
+          "SOSI_navn": "DATAUTTAKSDATO"
+        }
+      },
+      {
+        "name": "identifikasjon",
+        "type": "Identifikasjon",
+        "description": "unik identifikasjon av et objekt",
+        "cardinality": "1",
+        "attributes": [
+          {
+            "name": "lokalId",
+            "type": "CharacterString",
+            "description": "lokal identifikator, tildelt av dataleverendør/dataforvalter. Den lokale identifikatoren er unik innenfor navnerommet, ingen andre objekter har samme identifikator.\n\nNOTE: Det er data leverendørens ansvar å sørge for at denne lokale identifikatoren er unik innenfor navnerommet.",
+            "cardinality": "1",
+            "taggedValues": {
+              "SOSI_navn": "LOKALID"
+            }
+          },
+          {
+            "name": "navnerom",
+            "type": "CharacterString",
+            "description": "navnerom som unikt identifiserer datakilden til objektet, starter med to bokstavs kode jfr ISO 3166. Benytter understreking  (\"_\") dersom data produsenten ikke er assosiert med bare et land.\n\nNOTE 1 : Verdien for nanverom vil eies av den dataprodusent som har ansvar for de unike identifikatorene og vil registreres i \"INSPIRE external  Object Identifier Namespaces Register\"\n\nEksempel: NO for Norge.",
+            "cardinality": "1",
+            "taggedValues": {
+              "SOSI_navn": "NAVNEROM"
+            }
+          },
+          {
+            "name": "versjonId",
+            "type": "CharacterString",
+            "description": "identifikasjon av en spesiell versjon av et geografisk objekt (instans), maksimum lengde på 25 karakterers. Dersom spesifikasjonen av et geografisk objekt med en identifikasjon inkludererer livsløpssyklusinformasjon, benyttes denne versjonId for å skille mellom ulike versjoner av samme objekt. versjonId er en unik  identifikasjon av versjonen.\n\nNOTE Maksimum lengde er valgt for å tillate tidsregistrering i henhold til  ISO 8601, slik som  \"2007-02-12T12:12:12+05:30\" som versjonId.",
+            "cardinality": "1",
+            "taggedValues": {
+              "SOSI_navn": "VERSJONID"
+            }
+          }
+        ]
+      },
+      {
+        "name": "kvalitet",
+        "type": "Posisjonskvalitet",
+        "description": "beskrivelse av kvaliteten på stedfestingen\n\nMerknad: Denne er identisk med ..KVALITET i tidligere versjoner av SOSI.",
+        "cardinality": "0..1",
+        "attributes": [
+          {
+            "name": "målemetode",
+            "type": "Målemetode",
+            "description": "metode for måling i grunnriss (x,y), og høyde (z) når metoden er den samme som ved måling i grunnriss",
+            "cardinality": "1",
+            "valueDomain": {
+              "kind": "codelist",
+              "definition": "metode som ligger til grunn for registrering av posisjon\n\n\n-- Definition - -\nmethod on which registration of position is based",
+              "asDictionary": "true",
+              "codeList": "https://register.geonorge.no/sosi-kodelister/malemetode.xml"
+            }
+          }
+        ]
+      },
+      {
+        "name": "opphav",
+        "type": "CharacterString",
+        "description": "referanse til opphavsmaterialet, kildematerialet, organisasjons/publiseringskilde\n\nMerknad:\nKan også beskrive navn på person og årsak til oppdatering",
+        "cardinality": "1",
+        "taggedValues": {
+          "SOSI_navn": "OPPHAV"
+        }
+      }
+    ],
+    "abstract": true,
+    "relationships": {
+      "inheritance": [],
+      "associations": []
+    },
+    "package": "Hornkoraller-20201201"
+  },
+  {
+    "name": "Hornkoraller",
+    "description": "video-observasjoner av Hornkoraller",
+    "attributes": [
+      {
+        "name": "art",
+        "type": "HornkorallArter",
+        "description": "art av Hornkoraller (Gorgonacea) som ble observert.\n-- Definition --\nSpecies of gorgonians (Gorgonacea) that was observed.",
+        "cardinality": "1",
+        "valueDomain": {
+          "kind": "codelist",
+          "listedValues": [
+            {
+              "value": "Isidella lofotensis",
+              "label": "Bambuskorall."
+            },
+            {
+              "value": "Paragorgia arborea",
+              "label": "Beskrivelse i WoRMS http://www.marinespecies.org/aphia.php?p=taxdetails&id=125418"
+            },
+            {
+              "value": "Paramuricea placomus",
+              "label": "Paramuricea placomus"
+            },
+            {
+              "value": "Primnoa resedaeformis",
+              "label": "Beskrivelse i MAREANO https://www.mareano.no/tema/kaldtvannskoraller/korallskog-2"
+            },
+            {
+              "value": "Radicipes",
+              "label": "Grisehalekorall."
+            }
+          ],
+          "definition": "art av Hornkoraller som er observert.",
+          "asDictionary": "false",
+          "codeList": "http://skjema.geonorge.no/legg_inn_riktig_url"
+        },
+        "taggedValues": {
+          "SOSI_navn": "ART"
+        }
+      },
+      {
+        "name": "breddegrad",
+        "type": "Real",
+        "description": "breddegrad som observasjonen ble gjort på.\n-- Definition --\nLatitude where the observation was made.",
+        "cardinality": "1",
+        "taggedValues": {
+          "SOSI_navn": "BREDDEGRAD"
+        }
+      },
+      {
+        "name": "bunnDybde",
+        "type": "Real",
+        "description": "bunndyp der observasjonen ble gjort.\n-- Definition --\nBottomdepth where the observation was made.",
+        "cardinality": "1",
+        "taggedValues": {
+          "SOSI_navn": "BUNNDYBDE"
+        }
+      },
+      {
+        "name": "bunnForhold",
+        "type": "CharacterString",
+        "description": "bunnforhold der observasjonen ble gjort.\n-- Definition --\nSeabed conditions where the observation was made.",
+        "cardinality": "1",
+        "taggedValues": {
+          "SOSI_navn": "BUNNFORHOLD"
+        }
+      },
+      {
+        "name": "dato",
+        "type": "Date",
+        "description": "observasjonsdato.\n-- Definition --\nDate of observation.",
+        "cardinality": "1",
+        "taggedValues": {
+          "SOSI_navn": "DATO"
+        }
+      },
+      {
+        "name": "lengdegrad",
+        "type": "Real",
+        "description": "lengdegrad som observasjonen ble gjort på.\n-- Definition --\nLongitude where the observation was made.",
+        "cardinality": "1",
+        "taggedValues": {
+          "SOSI_navn": "LENGDEGRAD"
+        }
+      },
+      {
+        "name": "posisjon",
+        "type": "Punkt",
+        "description": "sted som objektet eksisterer på.\n-- Definition --\nLocation where the object exists",
+        "cardinality": "1",
+        "taggedValues": {
+          "SOSI_navn": "NØ"
+        }
+      },
+      {
+        "name": "prøveNummer",
+        "type": "Integer",
+        "description": "prøvenummer for redskapet, unikt innen toktNummer.\n-- Definition --\nSample number for the equipment, unique on cruisenumber.",
+        "cardinality": "1",
+        "taggedValues": {
+          "SOSI_navn": "PRØVENUMMER"
+        }
+      },
+      {
+        "name": "referanseStasjon",
+        "type": "Integer",
+        "description": "referansestasjon, unik innen MAREANO.\n-- Definition --\nReference number during MAREANO prosject (superstation).",
+        "cardinality": "1",
+        "taggedValues": {
+          "SOSI_navn": "REFERANSESTASJON"
+        }
+      },
+      {
+        "name": "toktNummer",
+        "type": "Integer",
+        "description": "toktnummer ved Havforskningsinstituttet.\n-- Definition --\nCruise number at IMR.",
+        "cardinality": "1",
+        "taggedValues": {
+          "SOSI_navn": "TOKTNUMMER"
+        }
+      },
+      {
+        "name": "videoSekvens",
+        "type": "Integer",
+        "description": "sekvensnummer, unikt innen prøveNummer.\n-- Definition --\nSequence number, unique on sample number.",
+        "cardinality": "1",
+        "taggedValues": {
+          "SOSI_navn": "VIDEOSEKVENS"
+        }
+      }
+    ],
+    "abstract": false,
+    "relationships": {
+      "inheritance": [
+        "GenerelleEgenskaperHornkoraller"
+      ],
+      "associations": []
+    },
+    "package": "Hornkoraller-20201201"
+  }
+]
