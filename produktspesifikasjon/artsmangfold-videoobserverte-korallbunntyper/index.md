@@ -25,14 +25,14 @@ Datasettet viser også videotransekt der det ikke er observert noen av disse kor
 
 - **Tidsperiode**:
   - **Fra**: 2021-02-04
-  - **Til**: 2025-02-11
+  - **Til**: 2026-09-24
 
 ## Om spesifikasjonen
 
 
 > **Denne versjonen av produktspesifikasjonen:** <br>
 > **Opprettet dato:** 2021-02-04<br>
-> **Endret dato:** 2025-02-11<br>
+> **Endret dato:** 2026-09-24<br>
 > **Språk:** nor<br>
 > **Kontaktinformasjon:** Havforskningsinstituttet, [paal.mortensen@hi.no](mailto:paal.mortensen@hi.no)
 
@@ -130,10 +130,7 @@ Datasettet kan brukes som et verktøy for marin areal- og miljøplanlegging, så
 
 ## Datafangst og produksjon
 
-**Datainnsamling og prosessering**:
-
-- **Prosesstrinn**:
-  - **Beskrivelse**: Datasettet dekker de områder som MAREANO har kartlagt. Datasettet er ikke heldekkende. Dekningsgrad avhenger av hvilken kartleggingsinnsats som er lagt ned innenfor de forskjellige områdene. (Utstrekningsbeskrivelse: Norske havområder nord for 62. breddegrad.). Observasjoner av ulike korallbunntyper (Levende Lophelia, Korallrester og Død Lophelia) er loggført i felt under videoundersøkelse av havbunnen. Datasettet egner seg til bruk i målestokk 500 000 - 10 000 000.
+Datasettet dekker de områder som MAREANO har kartlagt. Datasettet er ikke heldekkende. Dekningsgrad avhenger av hvilken kartleggingsinnsats som er lagt ned innenfor de forskjellige områdene. (Utstrekningsbeskrivelse: Norske havområder nord for 62. breddegrad.). Observasjoner av ulike korallbunntyper (Levende Lophelia, Korallrester og Død Lophelia) er loggført i felt under videoundersøkelse av havbunnen. Datasettet egner seg til bruk i målestokk 500 000 - 10 000 000.
 
 ## Vedlikehold
 
@@ -152,11 +149,10 @@ Datasettet kan brukes som et verktøy for marin areal- og miljøplanlegging, så
 
 | Tjeneste | Endepunkt | Type | Format | Leveranseenheter |
 | --- | --- | --- | --- | --- |
-| Geonorge nedlastning | [Lenke](https://nedlasting.geonorge.no/api/capabilities/) | GEONORGE:DOWNLOAD | FGDB, GML, PostGIS, SOSI | landsfiler |
+| Geonorge nedlastning | [Lenke](https://nedlasting.geonorge.no/api/capabilities/851bfa1c-c48a-42a2-83c6-11a4662b6d1d) | GEONORGE:DOWNLOAD | FGDB, GML, GPKG | landsfiler |
 | Atom Feed | [Lenke](http://nedlasting.geonorge.no/geonorge/ATOM-feeds/VideoObsKorallbunntyper_AtomFeedFGDB.xml) | W3C:AtomFeed | FGDB | landsfiler |
 | Atom Feed | [Lenke](http://nedlasting.geonorge.no/geonorge/ATOM-feeds/VideoObsKorallbunntyper_AtomFeedGML.xml) | W3C:AtomFeed | GML | landsfiler |
-| Atom Feed | [Lenke](http://nedlasting.geonorge.no/geonorge/ATOM-feeds/VideoObsKorallbunntyper_AtomFeedPOSTGIS.xml) | W3C:AtomFeed | PostGIS | landsfiler |
-| Atom Feed | [Lenke](http://nedlasting.geonorge.no/geonorge/ATOM-feeds/VideoObsKorallbunntyper_AtomFeedSOSI.xml) | W3C:AtomFeed | SOSI | landsfiler |
+| Atom Feed | [Lenke](http://nedlasting.geonorge.no/geonorge/ATOM-feeds/VideoObsKorallbunntyper_AtomFeedGPKG.xml) | W3C:AtomFeed | GPKG | landsfiler |
 | Artsmangfold - Videoobserverte korallbunntyper WMS | [Lenke](https://kart.hi.no/mareano/mareano_biologi/korallobservasjoner_video/wms?service=WMS&request=GetCapabilities) | WMS-tjeneste | PNG |  |
 | GeoPackage: uml-modell | [Lenke](https://raw.githubusercontent.com/ToreFreddyB/produktspesifikasjon_HI/main/produktspesifikasjon/artsmangfold-videoobserverte-korallbunntyper/uml-modell/uml-modell.gpkg) | Nedlasting | GPKG |  |
 
@@ -166,7 +162,7 @@ Datasettet kan brukes som et verktøy for marin areal- og miljøplanlegging, så
 
 **Metadatastandardversjon**: 2003
 
-**Metadatadato**: 2026-09-15
+**Metadatadato**: 2026-10-08
 
 **språk**: nor
 
