@@ -4,15 +4,6 @@
     "description": "abstrakt objekt som bærer en rekke egenskaper som er fagområde-uavhengige og kan benyttes for alle objekttyper\n\nMerknad:\nSpesielt i produktspesifikasjonsarbeid vil en velge egenskaper og av grensningslinjer fra denne klassen.",
     "attributes": [
       {
-        "name": "datauttaksdato",
-        "type": "DateTime",
-        "description": "dato for uttak fra en database\n\nMerknad:\nSkiller seg fra Kopidato ved at en ikke skiller på om det er uttak fra en originaldatabase eller en kopidatabase.",
-        "cardinality": "0..1",
-        "taggedValues": {
-          "SOSI_navn": "DATAUTTAKSDATO"
-        }
-      },
-      {
         "name": "identifikasjon",
         "type": "Identifikasjon",
         "description": "unik identifikasjon av et objekt",
@@ -62,10 +53,19 @@
               "kind": "codelist",
               "definition": "metode som ligger til grunn for registrering av posisjon\n\n\n-- Definition - -\nmethod on which registration of position is based",
               "asDictionary": "true",
-              "codeList": "https://register.geonorge.no/sosi-kodelister/malemetode.xml"
+              "codeList": "https://register.geonorge.no/sosi-kodelister/generelle-konsepter/5.1/m%C3%A5lemetode"
             }
           }
         ]
+      },
+      {
+        "name": "datauttaksdato",
+        "type": "DateTime",
+        "description": "dato for uttak fra en database\n\nMerknad:\nSkiller seg fra Kopidato ved at en ikke skiller på om det er uttak fra en originaldatabase eller en kopidatabase.",
+        "cardinality": "0..1",
+        "taggedValues": {
+          "SOSI_navn": "DATAUTTAKSDATO"
+        }
       },
       {
         "name": "opphav",
@@ -88,6 +88,15 @@
     "name": "Hornkoraller",
     "description": "video-observasjoner av Hornkoraller",
     "attributes": [
+      {
+        "name": "posisjon",
+        "type": "Punkt",
+        "description": "sted som objektet eksisterer på.\n-- Definition --\nLocation where the object exists",
+        "cardinality": "1",
+        "taggedValues": {
+          "SOSI_navn": "NØ"
+        }
+      },
       {
         "name": "art",
         "type": "HornkorallArter",
@@ -126,12 +135,39 @@
         }
       },
       {
-        "name": "breddegrad",
-        "type": "Real",
-        "description": "breddegrad som observasjonen ble gjort på.\n-- Definition --\nLatitude where the observation was made.",
+        "name": "prøveNummer",
+        "type": "Integer",
+        "description": "prøvenummer for redskapet, unikt innen toktNummer.\n-- Definition --\nSample number for the equipment, unique on cruisenumber.",
         "cardinality": "1",
         "taggedValues": {
-          "SOSI_navn": "BREDDEGRAD"
+          "SOSI_navn": "PRØVENUMMER"
+        }
+      },
+      {
+        "name": "toktNummer",
+        "type": "Integer",
+        "description": "toktnummer ved Havforskningsinstituttet.\n-- Definition --\nCruise number at IMR.",
+        "cardinality": "1",
+        "taggedValues": {
+          "SOSI_navn": "TOKTNUMMER"
+        }
+      },
+      {
+        "name": "referanseStasjon",
+        "type": "Integer",
+        "description": "referansestasjon, unik innen MAREANO.\n-- Definition --\nReference number during MAREANO prosject (superstation).",
+        "cardinality": "1",
+        "taggedValues": {
+          "SOSI_navn": "REFERANSESTASJON"
+        }
+      },
+      {
+        "name": "dato",
+        "type": "Date",
+        "description": "observasjonsdato.\n-- Definition --\nDate of observation.",
+        "cardinality": "1",
+        "taggedValues": {
+          "SOSI_navn": "DATO"
         }
       },
       {
@@ -153,12 +189,21 @@
         }
       },
       {
-        "name": "dato",
-        "type": "Date",
-        "description": "observasjonsdato.\n-- Definition --\nDate of observation.",
+        "name": "videoSekvens",
+        "type": "Integer",
+        "description": "sekvensnummer, unikt innen prøveNummer.\n-- Definition --\nSequence number, unique on sample number.",
         "cardinality": "1",
         "taggedValues": {
-          "SOSI_navn": "DATO"
+          "SOSI_navn": "VIDEOSEKVENS"
+        }
+      },
+      {
+        "name": "breddegrad",
+        "type": "Real",
+        "description": "breddegrad som observasjonen ble gjort på.\n-- Definition --\nLatitude where the observation was made.",
+        "cardinality": "1",
+        "taggedValues": {
+          "SOSI_navn": "BREDDEGRAD"
         }
       },
       {
@@ -168,51 +213,6 @@
         "cardinality": "1",
         "taggedValues": {
           "SOSI_navn": "LENGDEGRAD"
-        }
-      },
-      {
-        "name": "posisjon",
-        "type": "Punkt",
-        "description": "sted som objektet eksisterer på.\n-- Definition --\nLocation where the object exists",
-        "cardinality": "1",
-        "taggedValues": {
-          "SOSI_navn": "NØ"
-        }
-      },
-      {
-        "name": "prøveNummer",
-        "type": "Integer",
-        "description": "prøvenummer for redskapet, unikt innen toktNummer.\n-- Definition --\nSample number for the equipment, unique on cruisenumber.",
-        "cardinality": "1",
-        "taggedValues": {
-          "SOSI_navn": "PRØVENUMMER"
-        }
-      },
-      {
-        "name": "referanseStasjon",
-        "type": "Integer",
-        "description": "referansestasjon, unik innen MAREANO.\n-- Definition --\nReference number during MAREANO prosject (superstation).",
-        "cardinality": "1",
-        "taggedValues": {
-          "SOSI_navn": "REFERANSESTASJON"
-        }
-      },
-      {
-        "name": "toktNummer",
-        "type": "Integer",
-        "description": "toktnummer ved Havforskningsinstituttet.\n-- Definition --\nCruise number at IMR.",
-        "cardinality": "1",
-        "taggedValues": {
-          "SOSI_navn": "TOKTNUMMER"
-        }
-      },
-      {
-        "name": "videoSekvens",
-        "type": "Integer",
-        "description": "sekvensnummer, unikt innen prøveNummer.\n-- Definition --\nSequence number, unique on sample number.",
-        "cardinality": "1",
-        "taggedValues": {
-          "SOSI_navn": "VIDEOSEKVENS"
         }
       }
     ],

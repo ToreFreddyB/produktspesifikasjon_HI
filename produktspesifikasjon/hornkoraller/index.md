@@ -157,7 +157,7 @@ Datasettet oppdateres fortløpende og minst en gang i året. Datasettet er vist 
 
 **Metadatastandardversjon**: 2003
 
-**Metadatadato**: 2026-10-09
+**Metadatadato**: 2026-10-13
 
 **språk**: nor
 
