@@ -5,6 +5,6 @@ updated: '2026-10-09'
 outputs: geopackage
 scopes:
 - name: UML-modell
-  url: https://sosi.geonorge.no/svn/SOSI/SOSI%20Del%203/Havforskningsinstituttet/Hornkoraller-20201015.xml
+  url: inputs/hornkoraller/model.xmi
   generator: xmi
   description: ''
