@@ -31,24 +31,24 @@ skinparam stereotypeCFontColor #2D201A
 package "Objekttyper" {
 
   abstract class GenerelleEgenskaperHornkoraller <<featureType>> {
-    + datauttaksdato [0..1] : Date
     + identifikasjon [1] : Identifikasjon
     + kvalitet [0..1] : Posisjonskvalitet
+    + datauttaksdato [0..1] : Date
     + opphav [1] : CharacterString
   }
 
   class Hornkoraller <<featureType>> {
+    + posisjon [1] : Punkt
     + art [1] : HornkorallArter
-    + breddegrad [1] : Real
+    + prøveNummer [1] : Integer
+    + toktNummer [1] : Integer
+    + referanseStasjon [1] : Integer
+    + dato [1] : Date
     + bunnDybde [1] : Real
     + bunnForhold [1] : CharacterString
-    + dato [1] : Date
-    + lengdegrad [1] : Real
-    + posisjon [1] : Punkt
-    + prøveNummer [1] : Integer
-    + referanseStasjon [1] : Integer
-    + toktNummer [1] : Integer
     + videoSekvens [1] : Integer
+    + breddegrad [1] : Real
+    + lengdegrad [1] : Real
   }
 
   class Identifikasjon <<dataType>> {

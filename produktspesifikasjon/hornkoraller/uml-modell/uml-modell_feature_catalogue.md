@@ -12,31 +12,6 @@ Egenskaper
   <tbody>
     <tr>
       <th scope="row">Navn:</th>
-      <td><strong>datauttaksdato</strong></td>
-    </tr>
-    <tr>
-      <th scope="row">Definisjon:</th>
-      <td>dato for uttak fra en database<br /><br />Merknad:<br />Skiller seg fra Kopidato ved at en ikke skiller på om det er uttak fra en originaldatabase eller en kopidatabase.</td>
-    </tr>
-    <tr>
-      <th scope="row">Multiplisitet:</th>
-      <td>0..1</td>
-    </tr>
-    <tr>
-      <th scope="row">Type:</th>
-      <td>DateTime</td>
-    </tr>
-  </tbody>
-</table>
-
-<table class="feature-attribute-table">
-  <colgroup>
-    <col style="width: 35%;" />
-    <col style="width: 65%;" />
-  </colgroup>
-  <tbody>
-    <tr>
-      <th scope="row">Navn:</th>
       <td><strong>identifikasjon</strong></td>
     </tr>
     <tr>
@@ -178,7 +153,32 @@ Egenskaper
     </tr>
     <tr>
       <th scope="row">Tillatte verdier:</th>
-      <td>- Kodeliste: <a href="https://register.geonorge.no/sosi-kodelister/malemetode.xml">https://register.geonorge.no/sosi-kodelister/malemetode.xml</a></td>
+      <td>- Kodeliste: <a href="https://register.geonorge.no/sosi-kodelister/generelle-konsepter/5.1/m%C3%A5lemetode">https://register.geonorge.no/sosi-kodelister/generelle-konsepter/5.1/m%C3%A5lemetode</a></td>
+    </tr>
+  </tbody>
+</table>
+
+<table class="feature-attribute-table">
+  <colgroup>
+    <col style="width: 35%;" />
+    <col style="width: 65%;" />
+  </colgroup>
+  <tbody>
+    <tr>
+      <th scope="row">Navn:</th>
+      <td><strong>datauttaksdato</strong></td>
+    </tr>
+    <tr>
+      <th scope="row">Definisjon:</th>
+      <td>dato for uttak fra en database<br /><br />Merknad:<br />Skiller seg fra Kopidato ved at en ikke skiller på om det er uttak fra en originaldatabase eller en kopidatabase.</td>
+    </tr>
+    <tr>
+      <th scope="row">Multiplisitet:</th>
+      <td>0..1</td>
+    </tr>
+    <tr>
+      <th scope="row">Type:</th>
+      <td>DateTime</td>
     </tr>
   </tbody>
 </table>
@@ -222,6 +222,31 @@ Egenskaper
   <tbody>
     <tr>
       <th scope="row">Navn:</th>
+      <td><strong>posisjon</strong></td>
+    </tr>
+    <tr>
+      <th scope="row">Definisjon:</th>
+      <td>sted som objektet eksisterer på.<br />-- Definition --<br />Location where the object exists</td>
+    </tr>
+    <tr>
+      <th scope="row">Multiplisitet:</th>
+      <td>1</td>
+    </tr>
+    <tr>
+      <th scope="row">Type:</th>
+      <td>Punkt</td>
+    </tr>
+  </tbody>
+</table>
+
+<table class="feature-attribute-table">
+  <colgroup>
+    <col style="width: 35%;" />
+    <col style="width: 65%;" />
+  </colgroup>
+  <tbody>
+    <tr>
+      <th scope="row">Navn:</th>
       <td><strong>art</strong></td>
     </tr>
     <tr>
@@ -251,11 +276,11 @@ Egenskaper
   <tbody>
     <tr>
       <th scope="row">Navn:</th>
-      <td><strong>breddegrad</strong></td>
+      <td><strong>prøveNummer</strong></td>
     </tr>
     <tr>
       <th scope="row">Definisjon:</th>
-      <td>breddegrad som observasjonen ble gjort på.<br />-- Definition --<br />Latitude where the observation was made.</td>
+      <td>prøvenummer for redskapet, unikt innen toktNummer.<br />-- Definition --<br />Sample number for the equipment, unique on cruisenumber.</td>
     </tr>
     <tr>
       <th scope="row">Multiplisitet:</th>
@@ -263,7 +288,82 @@ Egenskaper
     </tr>
     <tr>
       <th scope="row">Type:</th>
-      <td>Real</td>
+      <td>Integer</td>
+    </tr>
+  </tbody>
+</table>
+
+<table class="feature-attribute-table">
+  <colgroup>
+    <col style="width: 35%;" />
+    <col style="width: 65%;" />
+  </colgroup>
+  <tbody>
+    <tr>
+      <th scope="row">Navn:</th>
+      <td><strong>toktNummer</strong></td>
+    </tr>
+    <tr>
+      <th scope="row">Definisjon:</th>
+      <td>toktnummer ved Havforskningsinstituttet.<br />-- Definition --<br />Cruise number at IMR.</td>
+    </tr>
+    <tr>
+      <th scope="row">Multiplisitet:</th>
+      <td>1</td>
+    </tr>
+    <tr>
+      <th scope="row">Type:</th>
+      <td>Integer</td>
+    </tr>
+  </tbody>
+</table>
+
+<table class="feature-attribute-table">
+  <colgroup>
+    <col style="width: 35%;" />
+    <col style="width: 65%;" />
+  </colgroup>
+  <tbody>
+    <tr>
+      <th scope="row">Navn:</th>
+      <td><strong>referanseStasjon</strong></td>
+    </tr>
+    <tr>
+      <th scope="row">Definisjon:</th>
+      <td>referansestasjon, unik innen MAREANO.<br />-- Definition --<br />Reference number during MAREANO prosject (superstation).</td>
+    </tr>
+    <tr>
+      <th scope="row">Multiplisitet:</th>
+      <td>1</td>
+    </tr>
+    <tr>
+      <th scope="row">Type:</th>
+      <td>Integer</td>
+    </tr>
+  </tbody>
+</table>
+
+<table class="feature-attribute-table">
+  <colgroup>
+    <col style="width: 35%;" />
+    <col style="width: 65%;" />
+  </colgroup>
+  <tbody>
+    <tr>
+      <th scope="row">Navn:</th>
+      <td><strong>dato</strong></td>
+    </tr>
+    <tr>
+      <th scope="row">Definisjon:</th>
+      <td>observasjonsdato.<br />-- Definition --<br />Date of observation.</td>
+    </tr>
+    <tr>
+      <th scope="row">Multiplisitet:</th>
+      <td>1</td>
+    </tr>
+    <tr>
+      <th scope="row">Type:</th>
+      <td>Date</td>
     </tr>
   </tbody>
 </table>
@@ -326,11 +426,11 @@ Egenskaper
   <tbody>
     <tr>
       <th scope="row">Navn:</th>
-      <td><strong>dato</strong></td>
+      <td><strong>videoSekvens</strong></td>
     </tr>
     <tr>
       <th scope="row">Definisjon:</th>
-      <td>observasjonsdato.<br />-- Definition --<br />Date of observation.</td>
+      <td>sekvensnummer, unikt innen prøveNummer.<br />-- Definition --<br />Sequence number, unique on sample number.</td>
     </tr>
     <tr>
       <th scope="row">Multiplisitet:</th>
@@ -338,7 +438,32 @@ Egenskaper
     </tr>
     <tr>
       <th scope="row">Type:</th>
-      <td>Date</td>
+      <td>Integer</td>
+    </tr>
+  </tbody>
+</table>
+
+<table class="feature-attribute-table">
+  <colgroup>
+    <col style="width: 35%;" />
+    <col style="width: 65%;" />
+  </colgroup>
+  <tbody>
+    <tr>
+      <th scope="row">Navn:</th>
+      <td><strong>breddegrad</strong></td>
+    </tr>
+    <tr>
+      <th scope="row">Definisjon:</th>
+      <td>breddegrad som observasjonen ble gjort på.<br />-- Definition --<br />Latitude where the observation was made.</td>
+    </tr>
+    <tr>
+      <th scope="row">Multiplisitet:</th>
+      <td>1</td>
+    </tr>
+    <tr>
+      <th scope="row">Type:</th>
+      <td>Real</td>
     </tr>
   </tbody>
 </table>
@@ -364,131 +489,6 @@ Egenskaper
     <tr>
       <th scope="row">Type:</th>
       <td>Real</td>
-    </tr>
-  </tbody>
-</table>
-
-<table class="feature-attribute-table">
-  <colgroup>
-    <col style="width: 35%;" />
-    <col style="width: 65%;" />
-  </colgroup>
-  <tbody>
-    <tr>
-      <th scope="row">Navn:</th>
-      <td><strong>posisjon</strong></td>
-    </tr>
-    <tr>
-      <th scope="row">Definisjon:</th>
-      <td>sted som objektet eksisterer på.<br />-- Definition --<br />Location where the object exists</td>
-    </tr>
-    <tr>
-      <th scope="row">Multiplisitet:</th>
-      <td>1</td>
-    </tr>
-    <tr>
-      <th scope="row">Type:</th>
-      <td>Punkt</td>
-    </tr>
-  </tbody>
-</table>
-
-<table class="feature-attribute-table">
-  <colgroup>
-    <col style="width: 35%;" />
-    <col style="width: 65%;" />
-  </colgroup>
-  <tbody>
-    <tr>
-      <th scope="row">Navn:</th>
-      <td><strong>prøveNummer</strong></td>
-    </tr>
-    <tr>
-      <th scope="row">Definisjon:</th>
-      <td>prøvenummer for redskapet, unikt innen toktNummer.<br />-- Definition --<br />Sample number for the equipment, unique on cruisenumber.</td>
-    </tr>
-    <tr>
-      <th scope="row">Multiplisitet:</th>
-      <td>1</td>
-    </tr>
-    <tr>
-      <th scope="row">Type:</th>
-      <td>Integer</td>
-    </tr>
-  </tbody>
-</table>
-
-<table class="feature-attribute-table">
-  <colgroup>
-    <col style="width: 35%;" />
-    <col style="width: 65%;" />
-  </colgroup>
-  <tbody>
-    <tr>
-      <th scope="row">Navn:</th>
-      <td><strong>referanseStasjon</strong></td>
-    </tr>
-    <tr>
-      <th scope="row">Definisjon:</th>
-      <td>referansestasjon, unik innen MAREANO.<br />-- Definition --<br />Reference number during MAREANO prosject (superstation).</td>
-    </tr>
-    <tr>
-      <th scope="row">Multiplisitet:</th>
-      <td>1</td>
-    </tr>
-    <tr>
-      <th scope="row">Type:</th>
-      <td>Integer</td>
-    </tr>
-  </tbody>
-</table>
-
-<table class="feature-attribute-table">
-  <colgroup>
-    <col style="width: 35%;" />
-    <col style="width: 65%;" />
-  </colgroup>
-  <tbody>
-    <tr>
-      <th scope="row">Navn:</th>
-      <td><strong>toktNummer</strong></td>
-    </tr>
-    <tr>
-      <th scope="row">Definisjon:</th>
-      <td>toktnummer ved Havforskningsinstituttet.<br />-- Definition --<br />Cruise number at IMR.</td>
-    </tr>
-    <tr>
-      <th scope="row">Multiplisitet:</th>
-      <td>1</td>
-    </tr>
-    <tr>
-      <th scope="row">Type:</th>
-      <td>Integer</td>
-    </tr>
-  </tbody>
-</table>
-
-<table class="feature-attribute-table">
-  <colgroup>
-    <col style="width: 35%;" />
-    <col style="width: 65%;" />
-  </colgroup>
-  <tbody>
-    <tr>
-      <th scope="row">Navn:</th>
-      <td><strong>videoSekvens</strong></td>
-    </tr>
-    <tr>
-      <th scope="row">Definisjon:</th>
-      <td>sekvensnummer, unikt innen prøveNummer.<br />-- Definition --<br />Sequence number, unique on sample number.</td>
-    </tr>
-    <tr>
-      <th scope="row">Multiplisitet:</th>
-      <td>1</td>
-    </tr>
-    <tr>
-      <th scope="row">Type:</th>
-      <td>Integer</td>
     </tr>
   </tbody>
 </table>
@@ -522,7 +522,7 @@ Profilparametre i tagged values
     </tr>
     <tr>
       <th scope="row">codeList</th>
-      <td><a href="https://register.geonorge.no/sosi-kodelister/malemetode.xml">https://register.geonorge.no/sosi-kodelister/malemetode.xml</a></td>
+      <td><a href="https://register.geonorge.no/sosi-kodelister/generelle-konsepter/5.1/m%C3%A5lemetode">https://register.geonorge.no/sosi-kodelister/generelle-konsepter/5.1/m%C3%A5lemetode</a></td>
     </tr>
   </tbody>
 </table>
