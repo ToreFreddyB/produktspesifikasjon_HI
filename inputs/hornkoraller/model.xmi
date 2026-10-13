@@ -1,0 +1,1386 @@
+<?xml version="1.0" encoding="utf-8"?>
+<XMI xmi.version="1.1" xmlns:UML="omg.org/UML1.3">
+	<XMI.header>
+		<XMI.documentation>
+			<XMI.exporter>Enterprise Architect</XMI.exporter>
+			<XMI.exporterVersion>2.5</XMI.exporterVersion>
+			<XMI.exporterID>1554</XMI.exporterID>
+		</XMI.documentation>
+	</XMI.header>
+	<XMI.content>
+		<UML:Model name="EA Model" xmi.id="MX_EAID_9D1544EB_4D52_4069_8D8E_5DA000498300">
+			<UML:Namespace.ownedElement>
+				<UML:Class name="EARootClass" xmi.id="EAID_11111111_5487_4080_A7F4_41526CB0AA00" isRoot="true" isLeaf="false" isAbstract="false"/>
+				<UML:Package name="Hornkoraller-20201201" xmi.id="EAPK_9D1544EB_4D52_4069_8D8E_5DA000498300" isRoot="false" isLeaf="false" isAbstract="false" visibility="public">
+					<UML:ModelElement.stereotype>
+						<UML:Stereotype xmi.idref="EAID_F2BECADE_3767_4d90_B6D6_A4BE42E180D2"/>
+					</UML:ModelElement.stereotype>
+					<UML:ModelElement.taggedValue>
+						<UML:TaggedValue tag="documentation" value="Video-observasjoner av Hornkoraller (bl&amp;#248;tbunnskorallskog og hardbunnskorallskog) fra Mareano-toktene."/>
+						<UML:TaggedValue tag="parent" value="EAPK_C8EDE570_6D9B_4e3d_99E5_B10F2EEB843C"/>
+						<UML:TaggedValue tag="created" value="2020-08-28 10:33:51"/>
+						<UML:TaggedValue tag="modified" value="2026-10-13 15:15:58"/>
+						<UML:TaggedValue tag="iscontrolled" value="TRUE"/>
+						<UML:TaggedValue tag="xmlpath" value="SOSI Del 3\Havforskningsinstituttet\Hornkoraller-20201015.xml"/>
+						<UML:TaggedValue tag="lastloaddate" value="2026-10-13 15:15:59"/>
+						<UML:TaggedValue tag="lastsavedate" value="2020-12-03 08:54:46"/>
+						<UML:TaggedValue tag="version" value="1.0"/>
+						<UML:TaggedValue tag="isprotected" value="FALSE"/>
+						<UML:TaggedValue tag="usedtd" value="FALSE"/>
+						<UML:TaggedValue tag="xmiver" value="Enterprise Architect XMI/UML 1.3"/>
+						<UML:TaggedValue tag="logxml" value="FALSE"/>
+						<UML:TaggedValue tag="packageFlags" value="Recurse=0;VCCFG=SOSI;CRC=0;"/>
+						<UML:TaggedValue tag="batchsave" value="0"/>
+						<UML:TaggedValue tag="batchload" value="0"/>
+						<UML:TaggedValue tag="phase" value="1.0"/>
+						<UML:TaggedValue tag="status" value="Proposed"/>
+						<UML:TaggedValue tag="author" value="baetor"/>
+						<UML:TaggedValue tag="complexity" value="1"/>
+						<UML:TaggedValue tag="stereotype" value="ApplicationSchema"/>
+						<UML:TaggedValue tag="ea_stype" value="Public"/>
+						<UML:TaggedValue tag="tpos" value="0"/>
+						<UML:TaggedValue tag="gentype" value="Java"/>
+						<UML:TaggedValue tag="$ea_xref_property" value="$XREFPROP=$XID={5CE813CA-29B8-4989-B861-6AB88C6372C1}$XID;$NAM=Stereotypes$NAM;$TYP=element property$TYP;$VIS=Public$VIS;$PAR=0$PAR;$DES=@STEREO;Name=ApplicationSchema;FQName=GML::ApplicationSchema;@ENDSTEREO;$DES;$CLT={9D1544EB-4D52-4069-8D8E-5DA000498300}$CLT;$SUP=&lt;none&gt;$SUP;$ENDXREF;"/>
+					</UML:ModelElement.taggedValue>
+					<UML:Namespace.ownedElement>
+						<UML:Class name="Posisjonskvalitet" xmi.id="EAID_444C9D84_D968_4222_B1BD_270AC833E949" visibility="public" namespace="EAPK_9D1544EB_4D52_4069_8D8E_5DA000498300" isRoot="false" isLeaf="false" isAbstract="false" isActive="false">
+							<UML:ModelElement.stereotype>
+								<UML:Stereotype name="dataType"/>
+							</UML:ModelElement.stereotype>
+							<UML:ModelElement.taggedValue>
+								<UML:TaggedValue tag="documentation" value="beskrivelse av kvaliteten på stedfestingen"/>
+								<UML:TaggedValue tag="isSpecification" value="false"/>
+								<UML:TaggedValue tag="ea_stype" value="Class"/>
+								<UML:TaggedValue tag="ea_ntype" value="0"/>
+								<UML:TaggedValue tag="package" value="EAPK_9D1544EB_4D52_4069_8D8E_5DA000498300"/>
+								<UML:TaggedValue tag="date_created" value="2020-08-28 10:35:53"/>
+								<UML:TaggedValue tag="date_modified" value="2020-08-28 10:35:53"/>
+								<UML:TaggedValue tag="tagged" value="0"/>
+								<UML:TaggedValue tag="package_name" value="Hornkoraller-20201201"/>
+								<UML:TaggedValue tag="author" value="karmag"/>
+								<UML:TaggedValue tag="complexity" value="1"/>
+								<UML:TaggedValue tag="product_name" value="1"/>
+								<UML:TaggedValue tag="status" value="Proposed"/>
+								<UML:TaggedValue tag="stereotype" value="dataType"/>
+								<UML:TaggedValue tag="persistence" value="Transient"/>
+								<UML:TaggedValue tag="tpos" value="4"/>
+								<UML:TaggedValue tag="ea_localid" value="16971"/>
+								<UML:TaggedValue tag="ea_eleType" value="element"/>
+								<UML:TaggedValue tag="$ea_attsclassified" value="{7F437A04-735A-4d14-8F7F-4346B3F254F9}"/>
+								<UML:TaggedValue tag="style" value="BackColor=-1;BorderColor=-1;BorderWidth=-1;FontColor=-1;VSwimLanes=1;HSwimLanes=1;BorderStyle=0;"/>
+								<UML:TaggedValue tag="$ea_xref_property" value="$XREFPROP=$XID={DE09078E-6AB3-41f6-9FEE-F830E0EADA4B}$XID;$NAM=Stereotypes$NAM;$TYP=element property$TYP;$VIS=Public$VIS;$PAR=0$PAR;$DES=@STEREO;Name=dataType;GUID={CD6A9266-6921-409c-8DD5-275757EE3C8D};FQName=SOSI::dataType;@ENDSTEREO;$DES;$CLT={444C9D84-D968-4222-B1BD-270AC833E949}$CLT;$ENDXREF;$XREFPROP=$XID={6AF19120-B3A4-429e-92D9-2AE100FDB8CA}$XID;$NAM=CustomProperties$NAM;$TYP=element property$TYP;$VIS=Public$VIS;$PAR=0$PAR;$DES=@PROP=@NAME=isActive@ENDNAME;@TYPE=Boolean@ENDTYPE;@VALU=@ENDVALU;@PRMT=@ENDPRMT;@ENDPROP;$DES;$CLT={444C9D84-D968-4222-B1BD-270AC833E949}$CLT;$ENDXREF;"/>
+							</UML:ModelElement.taggedValue>
+							<UML:Classifier.feature>
+								<UML:Attribute name="målemetode" changeable="none" visibility="public" ownerScope="instance" targetScope="instance">
+									<UML:Attribute.initialValue>
+										<UML:Expression/>
+									</UML:Attribute.initialValue>
+									<UML:StructuralFeature.type>
+										<UML:Classifier xmi.idref="EAID_59B22938_5CBC_472e_A703_8FB58D52643A"/>
+									</UML:StructuralFeature.type>
+									<UML:ModelElement.taggedValue>
+										<UML:TaggedValue tag="description" value="metode for måling i grunnriss (x,y), og høyde (z) når metoden er den samme som ved måling i grunnriss"/>
+										<UML:TaggedValue tag="type" value="Målemetode"/>
+										<UML:TaggedValue tag="derived" value="0"/>
+										<UML:TaggedValue tag="containment" value="Not Specified"/>
+										<UML:TaggedValue tag="length" value="0"/>
+										<UML:TaggedValue tag="ordered" value="0"/>
+										<UML:TaggedValue tag="precision" value="0"/>
+										<UML:TaggedValue tag="scale" value="0"/>
+										<UML:TaggedValue tag="static" value="0"/>
+										<UML:TaggedValue tag="collection" value="false"/>
+										<UML:TaggedValue tag="position" value="0"/>
+										<UML:TaggedValue tag="lowerBound" value="1"/>
+										<UML:TaggedValue tag="upperBound" value="1"/>
+										<UML:TaggedValue tag="duplicates" value="0"/>
+										<UML:TaggedValue tag="ea_guid" value="{1FCE5A47-0D6A-4d9b-850D-FBB7E79F3614}"/>
+										<UML:TaggedValue tag="ea_localid" value="75519"/>
+										<UML:TaggedValue tag="styleex" value="IsLiteral=0;volatile=0;"/>
+										<UML:TaggedValue tag="defaultCodeSpace" value="https://register.geonorge.no/sosi-kodelister/generelle-konsepter/5.1/m%C3%A5lemetode" xmi.id="EAID_3161F96D_0E67_400d_A0E2_331B97713044"/>
+									</UML:ModelElement.taggedValue>
+								</UML:Attribute>
+							</UML:Classifier.feature>
+						</UML:Class>
+						<UML:Dependency client="EAID_444C9D84_D968_4222_B1BD_270AC833E949" supplier="EAID_CA9DAA7A_1B3C_4c8c_B60F_2C1C0D22C923" xmi.id="EAID_EBE24025_F161_4b1b_8E82_490DD4041C0A" visibility="public">
+							<UML:ModelElement.taggedValue>
+								<UML:TaggedValue tag="style" value="3"/>
+								<UML:TaggedValue tag="ea_type" value="Realisation"/>
+								<UML:TaggedValue tag="direction" value="Source -&gt; Destination"/>
+								<UML:TaggedValue tag="linemode" value="3"/>
+								<UML:TaggedValue tag="linecolor" value="-1"/>
+								<UML:TaggedValue tag="linewidth" value="0"/>
+								<UML:TaggedValue tag="seqno" value="0"/>
+								<UML:TaggedValue tag="headStyle" value="0"/>
+								<UML:TaggedValue tag="lineStyle" value="0"/>
+								<UML:TaggedValue tag="ea_localid" value="7100"/>
+								<UML:TaggedValue tag="ea_sourceName" value="Posisjonskvalitet"/>
+								<UML:TaggedValue tag="ea_targetName" value="Posisjonskvalitet"/>
+								<UML:TaggedValue tag="ea_sourceType" value="Class"/>
+								<UML:TaggedValue tag="ea_targetType" value="Class"/>
+								<UML:TaggedValue tag="ea_sourceID" value="16971"/>
+								<UML:TaggedValue tag="ea_targetID" value="4714"/>
+								<UML:TaggedValue tag="src_visibility" value="Public"/>
+								<UML:TaggedValue tag="src_aggregation" value="0"/>
+								<UML:TaggedValue tag="src_isOrdered" value="false"/>
+								<UML:TaggedValue tag="src_targetScope" value="instance"/>
+								<UML:TaggedValue tag="src_changeable" value="none"/>
+								<UML:TaggedValue tag="src_isNavigable" value="false"/>
+								<UML:TaggedValue tag="src_containment" value="Unspecified"/>
+								<UML:TaggedValue tag="src_style" value="Union=0;Derived=0;AllowDuplicates=0;Owned=0;Navigable=Non-Navigable;"/>
+								<UML:TaggedValue tag="dst_visibility" value="Public"/>
+								<UML:TaggedValue tag="dst_aggregation" value="0"/>
+								<UML:TaggedValue tag="dst_isOrdered" value="false"/>
+								<UML:TaggedValue tag="dst_targetScope" value="instance"/>
+								<UML:TaggedValue tag="dst_changeable" value="none"/>
+								<UML:TaggedValue tag="dst_isNavigable" value="true"/>
+								<UML:TaggedValue tag="dst_containment" value="Unspecified"/>
+								<UML:TaggedValue tag="dst_style" value="Union=0;Derived=0;AllowDuplicates=0;Owned=0;Navigable=Navigable;"/>
+								<UML:TaggedValue tag="virtualInheritance" value="0"/>
+							</UML:ModelElement.taggedValue>
+						</UML:Dependency>
+						<UML:Class name="Målemetode" xmi.id="EAID_59B22938_5CBC_472e_A703_8FB58D52643A" visibility="public" namespace="EAPK_9D1544EB_4D52_4069_8D8E_5DA000498300" isRoot="false" isLeaf="false" isAbstract="false" isActive="false">
+							<UML:ModelElement.stereotype>
+								<UML:Stereotype name="codeList"/>
+							</UML:ModelElement.stereotype>
+							<UML:ModelElement.taggedValue>
+								<UML:TaggedValue tag="documentation" value="metode som ligger til grunn for registrering av posisjon&#xA;&#xA;&#xA;-- Definition - - &#xA;method on which registration of position is based"/>
+								<UML:TaggedValue tag="isSpecification" value="false"/>
+								<UML:TaggedValue tag="ea_stype" value="Class"/>
+								<UML:TaggedValue tag="ea_ntype" value="0"/>
+								<UML:TaggedValue tag="package" value="EAPK_9D1544EB_4D52_4069_8D8E_5DA000498300"/>
+								<UML:TaggedValue tag="date_created" value="2020-12-01 15:45:10"/>
+								<UML:TaggedValue tag="date_modified" value="2020-12-01 15:45:10"/>
+								<UML:TaggedValue tag="tagged" value="0"/>
+								<UML:TaggedValue tag="package_name" value="Hornkoraller-20201201"/>
+								<UML:TaggedValue tag="alias" value="MeasuringMethod"/>
+								<UML:TaggedValue tag="author" value="karmag"/>
+								<UML:TaggedValue tag="complexity" value="1"/>
+								<UML:TaggedValue tag="status" value="Proposed"/>
+								<UML:TaggedValue tag="stereotype" value="codeList"/>
+								<UML:TaggedValue tag="persistence" value="Transient"/>
+								<UML:TaggedValue tag="tpos" value="50"/>
+								<UML:TaggedValue tag="ea_localid" value="16972"/>
+								<UML:TaggedValue tag="ea_eleType" value="element"/>
+								<UML:TaggedValue tag="$ea_attsclassified" value="{1FCE5A47-0D6A-4d9b-850D-FBB7E79F3614}"/>
+								<UML:TaggedValue tag="style" value="BackColor=-1;BorderColor=-1;BorderWidth=-1;FontColor=-1;VSwimLanes=1;HSwimLanes=1;BorderStyle=0;"/>
+								<UML:TaggedValue tag="$ea_xref_property" value="$XREFPROP=$XID={382259E2-1F29-4673-B106-0DD6BFEA4B1E}$XID;$NAM=Stereotypes$NAM;$TYP=element property$TYP;$VIS=Public$VIS;$DES=@STEREO;Name=codeList;GUID={9CE5C65C-6B73-48e8-9499-3D4FBB5E6BBE};FQName=SOSI::codeList;@ENDSTEREO;$DES;$CLT={59B22938-5CBC-472e-A703-8FB58D52643A}$CLT;$ENDXREF;$XREFPROP=$XID={704B7576-4E23-4f9f-BF0A-0EA45613C096}$XID;$NAM=CustomProperties$NAM;$TYP=element property$TYP;$VIS=Public$VIS;$PAR=0$PAR;$DES=@PROP=@NAME=isActive@ENDNAME;@TYPE=Boolean@ENDTYPE;@VALU=@ENDVALU;@PRMT=@ENDPRMT;@ENDPROP;$DES;$CLT={59B22938-5CBC-472e-A703-8FB58D52643A}$CLT;$ENDXREF;"/>
+							</UML:ModelElement.taggedValue>
+						</UML:Class>
+						<UML:Comment xmi.id="EAID_6E918CEE_7D5B_4815_98FD_847C5EE49CAB" visibility="public" namespace="EAPK_9D1544EB_4D52_4069_8D8E_5DA000498300">
+							<UML:ModelElement.taggedValue>
+								<UML:TaggedValue tag="documentation" value="Ny kodeliste i denne produktspesifikasjonen"/>
+								<UML:TaggedValue tag="isSpecification" value="false"/>
+								<UML:TaggedValue tag="ea_stype" value="Note"/>
+								<UML:TaggedValue tag="ea_ntype" value="0"/>
+								<UML:TaggedValue tag="version" value="1.0"/>
+								<UML:TaggedValue tag="isActive" value="false"/>
+								<UML:TaggedValue tag="package" value="EAPK_9D1544EB_4D52_4069_8D8E_5DA000498300"/>
+								<UML:TaggedValue tag="date_created" value="2021-01-18 10:46:23"/>
+								<UML:TaggedValue tag="date_modified" value="2021-01-18 10:46:40"/>
+								<UML:TaggedValue tag="gentype" value="&lt;none&gt;"/>
+								<UML:TaggedValue tag="tagged" value="0"/>
+								<UML:TaggedValue tag="package_name" value="Hornkoraller-20201201"/>
+								<UML:TaggedValue tag="phase" value="1.0"/>
+								<UML:TaggedValue tag="author" value="baetor"/>
+								<UML:TaggedValue tag="complexity" value="1"/>
+								<UML:TaggedValue tag="status" value="Proposed"/>
+								<UML:TaggedValue tag="tpos" value="0"/>
+								<UML:TaggedValue tag="ea_localid" value="16973"/>
+								<UML:TaggedValue tag="ea_eleType" value="element"/>
+								<UML:TaggedValue tag="style" value="BackColor=-1;BorderColor=-1;BorderWidth=-1;FontColor=-1;VSwimLanes=1;HSwimLanes=1;BorderStyle=0;"/>
+							</UML:ModelElement.taggedValue>
+						</UML:Comment>
+						<UML:Class name="GenerelleEgenskaperHornkoraller" xmi.id="EAID_88B23634_B49F_494b_8C4F_C8D7D6B023B9" visibility="public" namespace="EAPK_9D1544EB_4D52_4069_8D8E_5DA000498300" isRoot="false" isLeaf="false" isAbstract="true" isActive="false">
+							<UML:ModelElement.stereotype>
+								<UML:Stereotype name="featureType"/>
+							</UML:ModelElement.stereotype>
+							<UML:ModelElement.taggedValue>
+								<UML:TaggedValue tag="documentation" value="abstrakt objekt som b&amp;#230;rer en rekke egenskaper som er fagomr&amp;#229;de-uavhengige og kan benyttes for alle objekttyper&#xA;&#xA;Merknad:&#xA;Spesielt i produktspesifikasjonsarbeid vil en velge egenskaper og av grensningslinjer fra denne klassen."/>
+								<UML:TaggedValue tag="isSpecification" value="false"/>
+								<UML:TaggedValue tag="ea_stype" value="Class"/>
+								<UML:TaggedValue tag="ea_ntype" value="0"/>
+								<UML:TaggedValue tag="package" value="EAPK_9D1544EB_4D52_4069_8D8E_5DA000498300"/>
+								<UML:TaggedValue tag="date_created" value="2020-08-28 10:35:39"/>
+								<UML:TaggedValue tag="date_modified" value="2020-12-01 15:42:55"/>
+								<UML:TaggedValue tag="tagged" value="0"/>
+								<UML:TaggedValue tag="package_name" value="Hornkoraller-20201201"/>
+								<UML:TaggedValue tag="author" value="baetor"/>
+								<UML:TaggedValue tag="complexity" value="1"/>
+								<UML:TaggedValue tag="product_name" value="1"/>
+								<UML:TaggedValue tag="status" value="Proposed"/>
+								<UML:TaggedValue tag="stereotype" value="featureType"/>
+								<UML:TaggedValue tag="persistence" value="Transient"/>
+								<UML:TaggedValue tag="tpos" value="2"/>
+								<UML:TaggedValue tag="ea_localid" value="16974"/>
+								<UML:TaggedValue tag="ea_eleType" value="element"/>
+								<UML:TaggedValue tag="style" value="BackColor=-1;BorderColor=-1;BorderWidth=-1;FontColor=-1;VSwimLanes=1;HSwimLanes=1;BorderStyle=0;"/>
+								<UML:TaggedValue tag="$ea_xref_property" value="$XREFPROP=$XID={055B8ECE-14AF-47ae-B964-B0A92B469C10}$XID;$NAM=Stereotypes$NAM;$TYP=element property$TYP;$VIS=Public$VIS;$PAR=0$PAR;$DES=@STEREO;Name=featureType;GUID={4B928B33-D268-47a0-B3FD-BC7B57005551};FQName=SOSI::featureType;@ENDSTEREO;$DES;$CLT={88B23634-B49F-494b-8C4F-C8D7D6B023B9}$CLT;$ENDXREF;$XREFPROP=$XID={DC077733-49D4-47aa-AD98-01E45A4261D2}$XID;$NAM=CustomProperties$NAM;$TYP=element property$TYP;$VIS=Public$VIS;$PAR=0$PAR;$DES=@PROP=@NAME=isActive@ENDNAME;@TYPE=Boolean@ENDTYPE;@VALU=@ENDVALU;@PRMT=@ENDPRMT;@ENDPROP;$DES;$CLT={88B23634-B49F-494b-8C4F-C8D7D6B023B9}$CLT;$ENDXREF;"/>
+							</UML:ModelElement.taggedValue>
+							<UML:Classifier.feature>
+								<UML:Attribute name="identifikasjon" changeable="none" visibility="public" ownerScope="instance" targetScope="instance">
+									<UML:Attribute.initialValue>
+										<UML:Expression/>
+									</UML:Attribute.initialValue>
+									<UML:StructuralFeature.type>
+										<UML:Classifier xmi.idref="EAID_CD604C2F_2067_4a84_8EC4_91222D0EC34F"/>
+									</UML:StructuralFeature.type>
+									<UML:ModelElement.taggedValue>
+										<UML:TaggedValue tag="description" value="unik identifikasjon av et objekt "/>
+										<UML:TaggedValue tag="type" value="Identifikasjon"/>
+										<UML:TaggedValue tag="derived" value="0"/>
+										<UML:TaggedValue tag="containment" value="Not Specified"/>
+										<UML:TaggedValue tag="length" value="0"/>
+										<UML:TaggedValue tag="ordered" value="0"/>
+										<UML:TaggedValue tag="precision" value="0"/>
+										<UML:TaggedValue tag="scale" value="0"/>
+										<UML:TaggedValue tag="static" value="0"/>
+										<UML:TaggedValue tag="collection" value="false"/>
+										<UML:TaggedValue tag="position" value="0"/>
+										<UML:TaggedValue tag="lowerBound" value="1"/>
+										<UML:TaggedValue tag="upperBound" value="1"/>
+										<UML:TaggedValue tag="duplicates" value="0"/>
+										<UML:TaggedValue tag="ea_guid" value="{257288D3-1E9B-4e14-9C29-28713288087F}"/>
+										<UML:TaggedValue tag="ea_localid" value="75521"/>
+										<UML:TaggedValue tag="styleex" value="IsLiteral=0;volatile=0;"/>
+									</UML:ModelElement.taggedValue>
+								</UML:Attribute>
+								<UML:Attribute name="kvalitet" changeable="none" visibility="public" ownerScope="instance" targetScope="instance">
+									<UML:Attribute.initialValue>
+										<UML:Expression/>
+									</UML:Attribute.initialValue>
+									<UML:StructuralFeature.type>
+										<UML:Classifier xmi.idref="EAID_444C9D84_D968_4222_B1BD_270AC833E949"/>
+									</UML:StructuralFeature.type>
+									<UML:ModelElement.taggedValue>
+										<UML:TaggedValue tag="description" value="beskrivelse av kvaliteten på stedfestingen&#xA;&#xA;Merknad: Denne er identisk med ..KVALITET i tidligere versjoner av SOSI."/>
+										<UML:TaggedValue tag="type" value="Posisjonskvalitet"/>
+										<UML:TaggedValue tag="derived" value="0"/>
+										<UML:TaggedValue tag="containment" value="Not Specified"/>
+										<UML:TaggedValue tag="length" value="0"/>
+										<UML:TaggedValue tag="ordered" value="0"/>
+										<UML:TaggedValue tag="precision" value="0"/>
+										<UML:TaggedValue tag="scale" value="0"/>
+										<UML:TaggedValue tag="static" value="0"/>
+										<UML:TaggedValue tag="collection" value="false"/>
+										<UML:TaggedValue tag="position" value="1"/>
+										<UML:TaggedValue tag="lowerBound" value="0"/>
+										<UML:TaggedValue tag="upperBound" value="1"/>
+										<UML:TaggedValue tag="duplicates" value="0"/>
+										<UML:TaggedValue tag="ea_guid" value="{7F437A04-735A-4d14-8F7F-4346B3F254F9}"/>
+										<UML:TaggedValue tag="ea_localid" value="75522"/>
+										<UML:TaggedValue tag="styleex" value="IsLiteral=0;volatile=0;"/>
+									</UML:ModelElement.taggedValue>
+								</UML:Attribute>
+								<UML:Attribute name="datauttaksdato" changeable="none" visibility="public" ownerScope="instance" targetScope="instance">
+									<UML:Attribute.initialValue>
+										<UML:Expression/>
+									</UML:Attribute.initialValue>
+									<UML:StructuralFeature.type>
+										<UML:Classifier xmi.idref="eaxmiid0"/>
+									</UML:StructuralFeature.type>
+									<UML:ModelElement.taggedValue>
+										<UML:TaggedValue tag="description" value="dato for uttak fra en database&#xA;&#xA;Merknad:&#xA;Skiller seg fra Kopidato ved at en ikke skiller på om det er uttak fra en originaldatabase eller en kopidatabase."/>
+										<UML:TaggedValue tag="type" value="DateTime"/>
+										<UML:TaggedValue tag="derived" value="0"/>
+										<UML:TaggedValue tag="length" value="0"/>
+										<UML:TaggedValue tag="ordered" value="0"/>
+										<UML:TaggedValue tag="precision" value="0"/>
+										<UML:TaggedValue tag="scale" value="0"/>
+										<UML:TaggedValue tag="static" value="0"/>
+										<UML:TaggedValue tag="collection" value="false"/>
+										<UML:TaggedValue tag="position" value="3"/>
+										<UML:TaggedValue tag="lowerBound" value="0"/>
+										<UML:TaggedValue tag="upperBound" value="1"/>
+										<UML:TaggedValue tag="ea_guid" value="{914C42D6-0322-429f-8722-BE52D5ACFE5B}"/>
+										<UML:TaggedValue tag="ea_localid" value="75520"/>
+										<UML:TaggedValue tag="styleex" value="volatile=0;union=0;"/>
+										<UML:TaggedValue tag="SOSI_navn" value="DATAUTTAKSDATO" xmi.id="EAID_023152CA_7458_46c9_BE48_ACCF8297DFE2"/>
+										<UML:TaggedValue tag="SOSI_dataype" value="DATOTID" xmi.id="EAID_945A33D3_472E_422f_B9D6_54338D4141DD"/>
+									</UML:ModelElement.taggedValue>
+								</UML:Attribute>
+								<UML:Attribute name="opphav" changeable="none" visibility="public" ownerScope="instance" targetScope="instance">
+									<UML:Attribute.initialValue>
+										<UML:Expression body="Havforskningsinstituttet"/>
+									</UML:Attribute.initialValue>
+									<UML:StructuralFeature.type>
+										<UML:Classifier xmi.idref="EAID_453EB6B1_D543_4f3d_BC53_E79283F6736C"/>
+									</UML:StructuralFeature.type>
+									<UML:ModelElement.taggedValue>
+										<UML:TaggedValue tag="description" value="referanse til opphavsmaterialet, kildematerialet, organisasjons/publiseringskilde&#xA;&#xA;Merknad: &#xA;Kan også beskrive navn på person og årsak til oppdatering"/>
+										<UML:TaggedValue tag="type" value="CharacterString"/>
+										<UML:TaggedValue tag="derived" value="0"/>
+										<UML:TaggedValue tag="length" value="0"/>
+										<UML:TaggedValue tag="ordered" value="0"/>
+										<UML:TaggedValue tag="precision" value="0"/>
+										<UML:TaggedValue tag="scale" value="0"/>
+										<UML:TaggedValue tag="static" value="0"/>
+										<UML:TaggedValue tag="collection" value="false"/>
+										<UML:TaggedValue tag="position" value="4"/>
+										<UML:TaggedValue tag="lowerBound" value="1"/>
+										<UML:TaggedValue tag="upperBound" value="1"/>
+										<UML:TaggedValue tag="ea_guid" value="{3D30DD82-4158-4c78-8327-CA3E3D8DF8E9}"/>
+										<UML:TaggedValue tag="ea_localid" value="75523"/>
+										<UML:TaggedValue tag="styleex" value="volatile=0;union=0;"/>
+										<UML:TaggedValue tag="SOSI_navn" value="OPPHAV" xmi.id="EAID_EE013EEC_427B_4fc3_AFCA_0AD9424D0A40"/>
+										<UML:TaggedValue tag="SOSI_lengde" value="255" xmi.id="EAID_F10C0559_9E06_4a0a_87F2_8EB7BB53AB4F"/>
+										<UML:TaggedValue tag="SOSI_datatype" value="T" xmi.id="EAID_A5570F4A_B1D3_4891_8A6C_74C004357894"/>
+									</UML:ModelElement.taggedValue>
+								</UML:Attribute>
+							</UML:Classifier.feature>
+						</UML:Class>
+						<UML:Dependency client="EAID_88B23634_B49F_494b_8C4F_C8D7D6B023B9" supplier="EAID_8D211872_8B18_4abf_8420_F10423269429" xmi.id="EAID_80513433_46CD_4e3c_A155_7EB4D415F83F" visibility="public">
+							<UML:ModelElement.taggedValue>
+								<UML:TaggedValue tag="style" value="3"/>
+								<UML:TaggedValue tag="ea_type" value="Realisation"/>
+								<UML:TaggedValue tag="direction" value="Source -&gt; Destination"/>
+								<UML:TaggedValue tag="linemode" value="3"/>
+								<UML:TaggedValue tag="linecolor" value="-1"/>
+								<UML:TaggedValue tag="linewidth" value="0"/>
+								<UML:TaggedValue tag="seqno" value="0"/>
+								<UML:TaggedValue tag="headStyle" value="0"/>
+								<UML:TaggedValue tag="lineStyle" value="0"/>
+								<UML:TaggedValue tag="ea_localid" value="7099"/>
+								<UML:TaggedValue tag="ea_sourceName" value="GenerelleEgenskaperHornkoraller"/>
+								<UML:TaggedValue tag="ea_targetName" value="SOSI_Objekt"/>
+								<UML:TaggedValue tag="ea_sourceType" value="Class"/>
+								<UML:TaggedValue tag="ea_targetType" value="Class"/>
+								<UML:TaggedValue tag="ea_sourceID" value="16974"/>
+								<UML:TaggedValue tag="ea_targetID" value="5238"/>
+								<UML:TaggedValue tag="src_visibility" value="Public"/>
+								<UML:TaggedValue tag="src_aggregation" value="0"/>
+								<UML:TaggedValue tag="src_isOrdered" value="false"/>
+								<UML:TaggedValue tag="src_targetScope" value="instance"/>
+								<UML:TaggedValue tag="src_changeable" value="none"/>
+								<UML:TaggedValue tag="src_isNavigable" value="false"/>
+								<UML:TaggedValue tag="src_containment" value="Unspecified"/>
+								<UML:TaggedValue tag="src_style" value="Union=0;Derived=0;AllowDuplicates=0;Owned=0;Navigable=Non-Navigable;"/>
+								<UML:TaggedValue tag="dst_visibility" value="Public"/>
+								<UML:TaggedValue tag="dst_aggregation" value="0"/>
+								<UML:TaggedValue tag="dst_isOrdered" value="false"/>
+								<UML:TaggedValue tag="dst_targetScope" value="instance"/>
+								<UML:TaggedValue tag="dst_changeable" value="none"/>
+								<UML:TaggedValue tag="dst_isNavigable" value="true"/>
+								<UML:TaggedValue tag="dst_containment" value="Unspecified"/>
+								<UML:TaggedValue tag="dst_style" value="Union=0;Derived=0;AllowDuplicates=0;Owned=0;Navigable=Navigable;"/>
+								<UML:TaggedValue tag="virtualInheritance" value="0"/>
+							</UML:ModelElement.taggedValue>
+						</UML:Dependency>
+						<UML:Generalization subtype="EAID_C0F617BC_1D2B_4aa6_85FD_F2BD615EB44C" supertype="EAID_88B23634_B49F_494b_8C4F_C8D7D6B023B9" xmi.id="EAID_C15CCD81_9490_4a64_8F7F_8C9699EA8AC8" visibility="public">
+							<UML:ModelElement.taggedValue>
+								<UML:TaggedValue tag="style" value="3"/>
+								<UML:TaggedValue tag="ea_type" value="Generalization"/>
+								<UML:TaggedValue tag="direction" value="Source -&gt; Destination"/>
+								<UML:TaggedValue tag="linemode" value="3"/>
+								<UML:TaggedValue tag="linecolor" value="-1"/>
+								<UML:TaggedValue tag="linewidth" value="0"/>
+								<UML:TaggedValue tag="seqno" value="0"/>
+								<UML:TaggedValue tag="headStyle" value="0"/>
+								<UML:TaggedValue tag="lineStyle" value="0"/>
+								<UML:TaggedValue tag="ea_localid" value="7098"/>
+								<UML:TaggedValue tag="ea_sourceName" value="Hornkoraller"/>
+								<UML:TaggedValue tag="ea_targetName" value="GenerelleEgenskaperHornkoraller"/>
+								<UML:TaggedValue tag="ea_sourceType" value="Class"/>
+								<UML:TaggedValue tag="ea_targetType" value="Class"/>
+								<UML:TaggedValue tag="ea_sourceID" value="16977"/>
+								<UML:TaggedValue tag="ea_targetID" value="16974"/>
+								<UML:TaggedValue tag="src_visibility" value="Public"/>
+								<UML:TaggedValue tag="src_aggregation" value="0"/>
+								<UML:TaggedValue tag="src_isOrdered" value="false"/>
+								<UML:TaggedValue tag="src_targetScope" value="instance"/>
+								<UML:TaggedValue tag="src_changeable" value="none"/>
+								<UML:TaggedValue tag="src_isNavigable" value="false"/>
+								<UML:TaggedValue tag="src_containment" value="Unspecified"/>
+								<UML:TaggedValue tag="src_style" value="Union=0;Derived=0;AllowDuplicates=0;"/>
+								<UML:TaggedValue tag="dst_visibility" value="Public"/>
+								<UML:TaggedValue tag="dst_aggregation" value="0"/>
+								<UML:TaggedValue tag="dst_isOrdered" value="false"/>
+								<UML:TaggedValue tag="dst_targetScope" value="instance"/>
+								<UML:TaggedValue tag="dst_changeable" value="none"/>
+								<UML:TaggedValue tag="dst_isNavigable" value="true"/>
+								<UML:TaggedValue tag="dst_containment" value="Unspecified"/>
+								<UML:TaggedValue tag="dst_style" value="Union=0;Derived=0;AllowDuplicates=0;"/>
+								<UML:TaggedValue tag="virtualInheritance" value="0"/>
+							</UML:ModelElement.taggedValue>
+						</UML:Generalization>
+						<UML:Class name="HornkorallArter" xmi.id="EAID_9463391E_7CB5_4d05_BBAA_CB3EC93E5916" visibility="public" namespace="EAPK_9D1544EB_4D52_4069_8D8E_5DA000498300" isRoot="false" isLeaf="false" isAbstract="false" isActive="false">
+							<UML:ModelElement.stereotype>
+								<UML:Stereotype name="codeList"/>
+							</UML:ModelElement.stereotype>
+							<UML:ModelElement.taggedValue>
+								<UML:TaggedValue tag="documentation" value="art av Hornkoraller som er observert.&#xA;"/>
+								<UML:TaggedValue tag="isSpecification" value="false"/>
+								<UML:TaggedValue tag="ea_stype" value="Class"/>
+								<UML:TaggedValue tag="ea_ntype" value="0"/>
+								<UML:TaggedValue tag="version" value="1.0"/>
+								<UML:TaggedValue tag="package" value="EAPK_9D1544EB_4D52_4069_8D8E_5DA000498300"/>
+								<UML:TaggedValue tag="date_created" value="2020-08-28 11:02:43"/>
+								<UML:TaggedValue tag="date_modified" value="2021-06-01 07:48:59"/>
+								<UML:TaggedValue tag="gentype" value="Java"/>
+								<UML:TaggedValue tag="tagged" value="0"/>
+								<UML:TaggedValue tag="package_name" value="Hornkoraller-20201201"/>
+								<UML:TaggedValue tag="phase" value="1.0"/>
+								<UML:TaggedValue tag="author" value="baetor"/>
+								<UML:TaggedValue tag="complexity" value="1"/>
+								<UML:TaggedValue tag="status" value="Proposed"/>
+								<UML:TaggedValue tag="stereotype" value="codeList"/>
+								<UML:TaggedValue tag="tpos" value="5"/>
+								<UML:TaggedValue tag="ea_localid" value="16975"/>
+								<UML:TaggedValue tag="ea_eleType" value="element"/>
+								<UML:TaggedValue tag="$ea_attsclassified" value="{07941074-8687-4a8c-A772-21763951593E}"/>
+								<UML:TaggedValue tag="style" value="BackColor=-1;BorderColor=-1;BorderWidth=-1;FontColor=-1;VSwimLanes=1;HSwimLanes=1;BorderStyle=0;"/>
+								<UML:TaggedValue tag="$ea_xref_property" value="$XREFPROP=$XID={27F0813D-EA82-4b0f-87B2-45DF9CD26981}$XID;$NAM=Stereotypes$NAM;$TYP=element property$TYP;$VIS=Public$VIS;$PAR=0$PAR;$DES=@STEREO;Name=codeList;FQName=SOSI::codeList;@ENDSTEREO;$DES;$CLT={9463391E-7CB5-4d05-BBAA-CB3EC93E5916}$CLT;$SUP=&lt;none&gt;$SUP;$ENDXREF;"/>
+							</UML:ModelElement.taggedValue>
+							<UML:Classifier.feature>
+								<UML:Attribute name="Isidella lofotensis" changeable="none" visibility="public" ownerScope="instance" targetScope="instance">
+									<UML:Attribute.initialValue>
+										<UML:Expression/>
+									</UML:Attribute.initialValue>
+									<UML:StructuralFeature.type>
+										<UML:Classifier xmi.idref="eaxmiid1"/>
+									</UML:StructuralFeature.type>
+									<UML:ModelElement.taggedValue>
+										<UML:TaggedValue tag="description" value="Bambuskorall."/>
+										<UML:TaggedValue tag="derived" value="0"/>
+										<UML:TaggedValue tag="containment" value="Not Specified"/>
+										<UML:TaggedValue tag="length" value="0"/>
+										<UML:TaggedValue tag="ordered" value="0"/>
+										<UML:TaggedValue tag="precision" value="0"/>
+										<UML:TaggedValue tag="scale" value="0"/>
+										<UML:TaggedValue tag="static" value="0"/>
+										<UML:TaggedValue tag="collection" value="false"/>
+										<UML:TaggedValue tag="position" value="0"/>
+										<UML:TaggedValue tag="lowerBound" value="1"/>
+										<UML:TaggedValue tag="upperBound" value="1"/>
+										<UML:TaggedValue tag="duplicates" value="0"/>
+										<UML:TaggedValue tag="ea_guid" value="{1B7FD5A8-65E3-48e6-922F-02D1AE12DE65}"/>
+										<UML:TaggedValue tag="ea_localid" value="75524"/>
+										<UML:TaggedValue tag="styleex" value="volatile=0;union=0;"/>
+										<UML:TaggedValue tag="$ea_xref_property" value="$XREFPROP=$XID={03243FAD-0F6D-4768-9A01-0A97E29FB96A}$XID;$NAM=CustomProperties$NAM;$TYP=attribute property$TYP;$VIS=Public$VIS;$PAR=0$PAR;$DES=@PROP=@NAME=isID@ENDNAME;@TYPE=Boolean@ENDTYPE;@VALU=0@ENDVALU;@PRMT=@ENDPRMT;@ENDPROP;$DES;$CLT={1B7FD5A8-65E3-48e6-922F-02D1AE12DE65}$CLT;$SUP=&lt;none&gt;$SUP;$ENDXREF;"/>
+										<UML:TaggedValue tag="SOSI_navn" value="ISIDELLA LOFOTENSIS" xmi.id="EAID_7D0247FA_D295_47dc_9A44_C3A5F14BB749"/>
+										<UML:TaggedValue tag="SOSI_lengde" xmi.id="EAID_F30794F7_D6D4_4a08_A651_73C3080D32DE"/>
+										<UML:TaggedValue tag="sequenceNumber" xmi.id="EAID_FDF1418F_75C0_45eb_B8EE_5BF9BA1F10A6"/>
+										<UML:TaggedValue tag="isMetadata" value="false" xmi.id="EAID_354D82F5_9891_4149_9DA9_8DB73255AE2C"/>
+										<UML:TaggedValue tag="defaultCodeSpace" xmi.id="EAID_9078D530_660E_47f1_B8E4_4F3BBD554FAD"/>
+									</UML:ModelElement.taggedValue>
+								</UML:Attribute>
+								<UML:Attribute name="Paragorgia arborea" changeable="none" visibility="public" ownerScope="instance" targetScope="instance">
+									<UML:Attribute.initialValue>
+										<UML:Expression/>
+									</UML:Attribute.initialValue>
+									<UML:StructuralFeature.type>
+										<UML:Classifier xmi.idref="eaxmiid1"/>
+									</UML:StructuralFeature.type>
+									<UML:ModelElement.taggedValue>
+										<UML:TaggedValue tag="description" value="Beskrivelse i WoRMS http://www.marinespecies.org/aphia.php?p=taxdetails&amp;amp;id=125418"/>
+										<UML:TaggedValue tag="derived" value="0"/>
+										<UML:TaggedValue tag="containment" value="Not Specified"/>
+										<UML:TaggedValue tag="length" value="0"/>
+										<UML:TaggedValue tag="ordered" value="0"/>
+										<UML:TaggedValue tag="precision" value="0"/>
+										<UML:TaggedValue tag="scale" value="0"/>
+										<UML:TaggedValue tag="static" value="0"/>
+										<UML:TaggedValue tag="collection" value="false"/>
+										<UML:TaggedValue tag="position" value="0"/>
+										<UML:TaggedValue tag="lowerBound" value="1"/>
+										<UML:TaggedValue tag="upperBound" value="1"/>
+										<UML:TaggedValue tag="duplicates" value="0"/>
+										<UML:TaggedValue tag="ea_guid" value="{40555945-5C1B-4e9b-AF38-FCBD885A7C6E}"/>
+										<UML:TaggedValue tag="ea_localid" value="75525"/>
+										<UML:TaggedValue tag="styleex" value="volatile=0;union=0;"/>
+										<UML:TaggedValue tag="$ea_xref_property" value="$XREFPROP=$XID={7F85F257-C6D1-41ad-ADAC-B793213BDF0B}$XID;$NAM=CustomProperties$NAM;$TYP=attribute property$TYP;$VIS=Public$VIS;$PAR=0$PAR;$DES=@PROP=@NAME=isID@ENDNAME;@TYPE=Boolean@ENDTYPE;@VALU=0@ENDVALU;@PRMT=@ENDPRMT;@ENDPROP;$DES;$CLT={40555945-5C1B-4e9b-AF38-FCBD885A7C6E}$CLT;$SUP=&lt;none&gt;$SUP;$ENDXREF;"/>
+										<UML:TaggedValue tag="SOSI_navn" value="PARAGORGIA ARBOREA" xmi.id="EAID_0CEC392F_73E2_430f_9EC7_D3A860141D30"/>
+										<UML:TaggedValue tag="SOSI_lengde" xmi.id="EAID_725A713F_61F9_4b0c_AF55_31BFCAFB1743"/>
+										<UML:TaggedValue tag="sequenceNumber" xmi.id="EAID_6748BA05_3117_4b17_81ED_3966BC64C2E3"/>
+										<UML:TaggedValue tag="isMetadata" value="false" xmi.id="EAID_E2FA026C_43AE_4784_A4D2_66B007A050DE"/>
+										<UML:TaggedValue tag="defaultCodeSpace" xmi.id="EAID_DE79107C_466B_4a56_B191_BA65668DC1FE"/>
+									</UML:ModelElement.taggedValue>
+								</UML:Attribute>
+								<UML:Attribute name="Paramuricea placomus" changeable="none" visibility="public" ownerScope="instance" targetScope="instance">
+									<UML:Attribute.initialValue>
+										<UML:Expression/>
+									</UML:Attribute.initialValue>
+									<UML:StructuralFeature.type>
+										<UML:Classifier xmi.idref="eaxmiid1"/>
+									</UML:StructuralFeature.type>
+									<UML:ModelElement.taggedValue>
+										<UML:TaggedValue tag="derived" value="0"/>
+										<UML:TaggedValue tag="containment" value="Not Specified"/>
+										<UML:TaggedValue tag="length" value="0"/>
+										<UML:TaggedValue tag="ordered" value="0"/>
+										<UML:TaggedValue tag="precision" value="0"/>
+										<UML:TaggedValue tag="scale" value="0"/>
+										<UML:TaggedValue tag="static" value="0"/>
+										<UML:TaggedValue tag="collection" value="false"/>
+										<UML:TaggedValue tag="position" value="0"/>
+										<UML:TaggedValue tag="lowerBound" value="1"/>
+										<UML:TaggedValue tag="upperBound" value="1"/>
+										<UML:TaggedValue tag="duplicates" value="0"/>
+										<UML:TaggedValue tag="ea_guid" value="{374F4BA0-B95A-4576-A3C9-FE8B0241B399}"/>
+										<UML:TaggedValue tag="ea_localid" value="75526"/>
+										<UML:TaggedValue tag="styleex" value="volatile=0;union=0;"/>
+										<UML:TaggedValue tag="$ea_xref_property" value="$XREFPROP=$XID={D6D2C58B-97EC-4189-89A0-9677B1FD01B7}$XID;$NAM=CustomProperties$NAM;$TYP=attribute property$TYP;$VIS=Public$VIS;$PAR=0$PAR;$DES=@PROP=@NAME=isID@ENDNAME;@TYPE=Boolean@ENDTYPE;@VALU=0@ENDVALU;@PRMT=@ENDPRMT;@ENDPROP;$DES;$CLT={374F4BA0-B95A-4576-A3C9-FE8B0241B399}$CLT;$SUP=&lt;none&gt;$SUP;$ENDXREF;"/>
+										<UML:TaggedValue tag="SOSI_navn" value="PARAMURICEA PLACOMUS" xmi.id="EAID_39BC13D6_153D_4c1a_A219_17C9069D764F"/>
+										<UML:TaggedValue tag="SOSI_lengde" xmi.id="EAID_BF728FF4_CBD2_4287_9AE5_2B51BCC5FF72"/>
+										<UML:TaggedValue tag="sequenceNumber" xmi.id="EAID_5447191D_FC62_48ad_A527_33BCC6C8AE60"/>
+										<UML:TaggedValue tag="isMetadata" value="false" xmi.id="EAID_4F1275EE_E4B2_4c64_AE24_CBEF887C2C4A"/>
+										<UML:TaggedValue tag="defaultCodeSpace" xmi.id="EAID_FD5029AB_F9EE_427a_9B93_CB7D9E7B66A0"/>
+									</UML:ModelElement.taggedValue>
+								</UML:Attribute>
+								<UML:Attribute name="Primnoa resedaeformis" changeable="none" visibility="public" ownerScope="instance" targetScope="instance">
+									<UML:Attribute.initialValue>
+										<UML:Expression/>
+									</UML:Attribute.initialValue>
+									<UML:StructuralFeature.type>
+										<UML:Classifier xmi.idref="eaxmiid1"/>
+									</UML:StructuralFeature.type>
+									<UML:ModelElement.taggedValue>
+										<UML:TaggedValue tag="description" value="Beskrivelse i MAREANO https://www.mareano.no/tema/kaldtvannskoraller/korallskog-2"/>
+										<UML:TaggedValue tag="derived" value="0"/>
+										<UML:TaggedValue tag="containment" value="Not Specified"/>
+										<UML:TaggedValue tag="length" value="0"/>
+										<UML:TaggedValue tag="ordered" value="0"/>
+										<UML:TaggedValue tag="precision" value="0"/>
+										<UML:TaggedValue tag="scale" value="0"/>
+										<UML:TaggedValue tag="static" value="0"/>
+										<UML:TaggedValue tag="collection" value="false"/>
+										<UML:TaggedValue tag="position" value="0"/>
+										<UML:TaggedValue tag="lowerBound" value="1"/>
+										<UML:TaggedValue tag="upperBound" value="1"/>
+										<UML:TaggedValue tag="duplicates" value="0"/>
+										<UML:TaggedValue tag="ea_guid" value="{BD541258-1A93-4a80-AA34-045FD64F1685}"/>
+										<UML:TaggedValue tag="ea_localid" value="75527"/>
+										<UML:TaggedValue tag="styleex" value="volatile=0;union=0;"/>
+										<UML:TaggedValue tag="$ea_xref_property" value="$XREFPROP=$XID={218F5933-4BB0-4a27-AC3F-23F2DF7C3A51}$XID;$NAM=CustomProperties$NAM;$TYP=attribute property$TYP;$VIS=Public$VIS;$PAR=0$PAR;$DES=@PROP=@NAME=isID@ENDNAME;@TYPE=Boolean@ENDTYPE;@VALU=0@ENDVALU;@PRMT=@ENDPRMT;@ENDPROP;$DES;$CLT={BD541258-1A93-4a80-AA34-045FD64F1685}$CLT;$SUP=&lt;none&gt;$SUP;$ENDXREF;"/>
+										<UML:TaggedValue tag="SOSI_navn" value="PRIMNOA RESEDAEFORMIS" xmi.id="EAID_5C15A7BD_FDB6_4081_8319_1A773F9DC26C"/>
+										<UML:TaggedValue tag="SOSI_lengde" xmi.id="EAID_479FB881_0A76_4273_81AC_3EBF9E79466D"/>
+										<UML:TaggedValue tag="sequenceNumber" xmi.id="EAID_60786D91_1437_4a1f_A987_07BAF3048AC6"/>
+										<UML:TaggedValue tag="isMetadata" value="false" xmi.id="EAID_B73D6974_9751_41e7_A8B5_76BA6CB0C4BA"/>
+										<UML:TaggedValue tag="defaultCodeSpace" xmi.id="EAID_E25F3F16_B46B_41b0_AD64_555CDF5837C6"/>
+									</UML:ModelElement.taggedValue>
+								</UML:Attribute>
+								<UML:Attribute name="Radicipes" changeable="none" visibility="public" ownerScope="instance" targetScope="instance">
+									<UML:Attribute.initialValue>
+										<UML:Expression/>
+									</UML:Attribute.initialValue>
+									<UML:StructuralFeature.type>
+										<UML:Classifier xmi.idref="eaxmiid1"/>
+									</UML:StructuralFeature.type>
+									<UML:ModelElement.taggedValue>
+										<UML:TaggedValue tag="description" value="Grisehalekorall."/>
+										<UML:TaggedValue tag="derived" value="0"/>
+										<UML:TaggedValue tag="containment" value="Not Specified"/>
+										<UML:TaggedValue tag="length" value="0"/>
+										<UML:TaggedValue tag="ordered" value="0"/>
+										<UML:TaggedValue tag="precision" value="0"/>
+										<UML:TaggedValue tag="scale" value="0"/>
+										<UML:TaggedValue tag="static" value="0"/>
+										<UML:TaggedValue tag="collection" value="false"/>
+										<UML:TaggedValue tag="position" value="0"/>
+										<UML:TaggedValue tag="lowerBound" value="1"/>
+										<UML:TaggedValue tag="upperBound" value="1"/>
+										<UML:TaggedValue tag="duplicates" value="0"/>
+										<UML:TaggedValue tag="ea_guid" value="{0A78A37E-C290-4fb1-AD90-3D8835C091BC}"/>
+										<UML:TaggedValue tag="ea_localid" value="75528"/>
+										<UML:TaggedValue tag="styleex" value="volatile=0;union=0;"/>
+										<UML:TaggedValue tag="$ea_xref_property" value="$XREFPROP=$XID={02D1793D-E126-4e9a-9D7B-CF4FBD818A9B}$XID;$NAM=CustomProperties$NAM;$TYP=attribute property$TYP;$VIS=Public$VIS;$PAR=0$PAR;$DES=@PROP=@NAME=isID@ENDNAME;@TYPE=Boolean@ENDTYPE;@VALU=0@ENDVALU;@PRMT=@ENDPRMT;@ENDPROP;$DES;$CLT={0A78A37E-C290-4fb1-AD90-3D8835C091BC}$CLT;$SUP=&lt;none&gt;$SUP;$ENDXREF;"/>
+										<UML:TaggedValue tag="SOSI_navn" value="RADICIPES" xmi.id="EAID_53D966C3_1DA5_44fd_A359_E0E736ED6018"/>
+										<UML:TaggedValue tag="SOSI_lengde" xmi.id="EAID_6953D59B_18FC_4599_85BA_FA9C04B87F76"/>
+										<UML:TaggedValue tag="sequenceNumber" xmi.id="EAID_B9B41BB2_6E07_4c87_A4BF_2B6F50E50BD2"/>
+										<UML:TaggedValue tag="isMetadata" value="false" xmi.id="EAID_116FB572_983E_4aaa_A088_F9515B1BD355"/>
+										<UML:TaggedValue tag="defaultCodeSpace" xmi.id="EAID_6070C11C_FC3E_4e28_BF53_94787F0B8E3B"/>
+									</UML:ModelElement.taggedValue>
+								</UML:Attribute>
+							</UML:Classifier.feature>
+						</UML:Class>
+						<UML:Comment xmi.id="EAID_9489BB12_7A02_42e1_9D57_115A46F2BCF7" visibility="public" namespace="EAPK_9D1544EB_4D52_4069_8D8E_5DA000498300">
+							<UML:ModelElement.taggedValue>
+								<UML:TaggedValue tag="documentation" value="Ekstern kodeliste:&#xA;https://register.geonorge.no/sosi-kodelister/malemetode"/>
+								<UML:TaggedValue tag="isSpecification" value="false"/>
+								<UML:TaggedValue tag="ea_stype" value="Note"/>
+								<UML:TaggedValue tag="ea_ntype" value="0"/>
+								<UML:TaggedValue tag="version" value="1.0"/>
+								<UML:TaggedValue tag="isActive" value="false"/>
+								<UML:TaggedValue tag="package" value="EAPK_9D1544EB_4D52_4069_8D8E_5DA000498300"/>
+								<UML:TaggedValue tag="date_created" value="2020-12-17 11:08:49"/>
+								<UML:TaggedValue tag="date_modified" value="2020-12-03 08:34:22"/>
+								<UML:TaggedValue tag="gentype" value="&lt;none&gt;"/>
+								<UML:TaggedValue tag="tagged" value="0"/>
+								<UML:TaggedValue tag="package_name" value="Hornkoraller-20201201"/>
+								<UML:TaggedValue tag="phase" value="1.0"/>
+								<UML:TaggedValue tag="author" value="baetor"/>
+								<UML:TaggedValue tag="complexity" value="1"/>
+								<UML:TaggedValue tag="status" value="Proposed"/>
+								<UML:TaggedValue tag="tpos" value="0"/>
+								<UML:TaggedValue tag="ea_localid" value="16976"/>
+								<UML:TaggedValue tag="ea_eleType" value="element"/>
+								<UML:TaggedValue tag="style" value="BackColor=-1;BorderColor=-1;BorderWidth=-1;FontColor=-1;VSwimLanes=1;HSwimLanes=1;BorderStyle=0;"/>
+							</UML:ModelElement.taggedValue>
+						</UML:Comment>
+						<UML:Class name="Hornkoraller" xmi.id="EAID_C0F617BC_1D2B_4aa6_85FD_F2BD615EB44C" visibility="public" namespace="EAPK_9D1544EB_4D52_4069_8D8E_5DA000498300" isRoot="false" isLeaf="false" isAbstract="false" isActive="false">
+							<UML:ModelElement.stereotype>
+								<UML:Stereotype name="featureType"/>
+							</UML:ModelElement.stereotype>
+							<UML:ModelElement.taggedValue>
+								<UML:TaggedValue tag="documentation" value="video-observasjoner av Hornkoraller"/>
+								<UML:TaggedValue tag="isSpecification" value="false"/>
+								<UML:TaggedValue tag="ea_stype" value="Class"/>
+								<UML:TaggedValue tag="ea_ntype" value="0"/>
+								<UML:TaggedValue tag="version" value="1.0"/>
+								<UML:TaggedValue tag="package" value="EAPK_9D1544EB_4D52_4069_8D8E_5DA000498300"/>
+								<UML:TaggedValue tag="date_created" value="2020-08-28 10:36:58"/>
+								<UML:TaggedValue tag="date_modified" value="2021-06-01 07:45:48"/>
+								<UML:TaggedValue tag="gentype" value="Java"/>
+								<UML:TaggedValue tag="tagged" value="0"/>
+								<UML:TaggedValue tag="package_name" value="Hornkoraller-20201201"/>
+								<UML:TaggedValue tag="phase" value="1.0"/>
+								<UML:TaggedValue tag="author" value="baetor"/>
+								<UML:TaggedValue tag="complexity" value="1"/>
+								<UML:TaggedValue tag="status" value="Proposed"/>
+								<UML:TaggedValue tag="stereotype" value="featureType"/>
+								<UML:TaggedValue tag="tpos" value="1"/>
+								<UML:TaggedValue tag="ea_localid" value="16977"/>
+								<UML:TaggedValue tag="ea_eleType" value="element"/>
+								<UML:TaggedValue tag="style" value="BackColor=-1;BorderColor=-1;BorderWidth=-1;FontColor=-1;VSwimLanes=1;HSwimLanes=1;BorderStyle=0;"/>
+								<UML:TaggedValue tag="$ea_xref_property" value="$XREFPROP=$XID={14F58FEB-CDF9-4c0d-B349-A2B7539C1ECC}$XID;$NAM=Stereotypes$NAM;$TYP=element property$TYP;$VIS=Public$VIS;$PAR=0$PAR;$DES=@STEREO;Name=featureType;FQName=SOSI::featureType;@ENDSTEREO;$DES;$CLT={C0F617BC-1D2B-4aa6-85FD-F2BD615EB44C}$CLT;$SUP=&lt;none&gt;$SUP;$ENDXREF;"/>
+							</UML:ModelElement.taggedValue>
+							<UML:Classifier.feature>
+								<UML:Attribute name="posisjon" changeable="none" visibility="public" ownerScope="instance" targetScope="instance">
+									<UML:Attribute.initialValue>
+										<UML:Expression/>
+									</UML:Attribute.initialValue>
+									<UML:StructuralFeature.type>
+										<UML:Classifier xmi.idref="EAID_BE6CCEB8_342A_4a44_BD46_8E5CBFDA9A91"/>
+									</UML:StructuralFeature.type>
+									<UML:ModelElement.taggedValue>
+										<UML:TaggedValue tag="description" value="sted som objektet eksisterer p&amp;#229;.&#xA;-- Definition --&#xA;Location where the object exists&#xA;"/>
+										<UML:TaggedValue tag="type" value="Punkt"/>
+										<UML:TaggedValue tag="derived" value="0"/>
+										<UML:TaggedValue tag="length" value="0"/>
+										<UML:TaggedValue tag="ordered" value="0"/>
+										<UML:TaggedValue tag="precision" value="0"/>
+										<UML:TaggedValue tag="scale" value="0"/>
+										<UML:TaggedValue tag="static" value="0"/>
+										<UML:TaggedValue tag="collection" value="false"/>
+										<UML:TaggedValue tag="position" value="0"/>
+										<UML:TaggedValue tag="lowerBound" value="1"/>
+										<UML:TaggedValue tag="upperBound" value="1"/>
+										<UML:TaggedValue tag="ea_guid" value="{2297D972-7600-449f-8269-6BD91F51894E}"/>
+										<UML:TaggedValue tag="ea_localid" value="75535"/>
+										<UML:TaggedValue tag="styleex" value="volatile=0;union=0;"/>
+										<UML:TaggedValue tag="style" value="position"/>
+										<UML:TaggedValue tag="SOSI_navn" value="Punkt" xmi.id="EAID_D322B07A_B4C0_4453_BEC1_04A5DBDEE35B"/>
+										<UML:TaggedValue tag="SOSI_navn" value="NØ" xmi.id="EAID_BD0283C6_D394_418e_8D41_3E836DDC66FE"/>
+										<UML:TaggedValue tag="SOSI_datatype" value="*" xmi.id="EAID_B6D15B13_A615_4996_9528_034451B27848"/>
+										<UML:TaggedValue tag="SOSI_lengde" xmi.id="EAID_F04A9F2A_EE9B_4db8_BECE_76792E299386"/>
+									</UML:ModelElement.taggedValue>
+								</UML:Attribute>
+								<UML:Attribute name="art" changeable="none" visibility="public" ownerScope="instance" targetScope="instance">
+									<UML:Attribute.initialValue>
+										<UML:Expression/>
+									</UML:Attribute.initialValue>
+									<UML:StructuralFeature.type>
+										<UML:Classifier xmi.idref="EAID_9463391E_7CB5_4d05_BBAA_CB3EC93E5916"/>
+									</UML:StructuralFeature.type>
+									<UML:ModelElement.taggedValue>
+										<UML:TaggedValue tag="description" value="art av Hornkoraller (Gorgonacea) som ble observert.&#xA;-- Definition --&#xA;Species of gorgonians (Gorgonacea) that was observed.&#xA;"/>
+										<UML:TaggedValue tag="type" value="HornkorallArter"/>
+										<UML:TaggedValue tag="derived" value="0"/>
+										<UML:TaggedValue tag="containment" value="Not Specified"/>
+										<UML:TaggedValue tag="length" value="0"/>
+										<UML:TaggedValue tag="ordered" value="0"/>
+										<UML:TaggedValue tag="precision" value="0"/>
+										<UML:TaggedValue tag="scale" value="0"/>
+										<UML:TaggedValue tag="static" value="0"/>
+										<UML:TaggedValue tag="collection" value="false"/>
+										<UML:TaggedValue tag="position" value="1"/>
+										<UML:TaggedValue tag="lowerBound" value="1"/>
+										<UML:TaggedValue tag="upperBound" value="1"/>
+										<UML:TaggedValue tag="duplicates" value="0"/>
+										<UML:TaggedValue tag="ea_guid" value="{07941074-8687-4a8c-A772-21763951593E}"/>
+										<UML:TaggedValue tag="ea_localid" value="75529"/>
+										<UML:TaggedValue tag="styleex" value="volatile=0;union=0;"/>
+										<UML:TaggedValue tag="$ea_xref_property" value="$XREFPROP=$XID={D4BAB808-BE79-4c8f-A90F-869731A40F47}$XID;$NAM=CustomProperties$NAM;$TYP=attribute property$TYP;$VIS=Public$VIS;$PAR=0$PAR;$DES=@PROP=@NAME=isID@ENDNAME;@TYPE=Boolean@ENDTYPE;@VALU=0@ENDVALU;@PRMT=@ENDPRMT;@ENDPROP;$DES;$CLT={07941074-8687-4a8c-A772-21763951593E}$CLT;$SUP=&lt;none&gt;$SUP;$ENDXREF;"/>
+										<UML:TaggedValue tag="SOSI_navn" value="ART" xmi.id="EAID_D5520FDA_A44C_49fb_B953_A6F20FEBC78C"/>
+										<UML:TaggedValue tag="SOSI_lengde" value="21" xmi.id="EAID_2068D586_34AF_4d30_B832_1B5AA3444831"/>
+										<UML:TaggedValue tag="sequenceNumber" xmi.id="EAID_7D2B3384_715D_4feb_899A_94D2E13709A1"/>
+										<UML:TaggedValue tag="isMetadata" value="false" xmi.id="EAID_8AF7D0DA_41E7_438b_9DE5_745B45799650"/>
+									</UML:ModelElement.taggedValue>
+								</UML:Attribute>
+								<UML:Attribute name="prøveNummer" changeable="none" visibility="public" ownerScope="instance" targetScope="instance">
+									<UML:Attribute.initialValue>
+										<UML:Expression/>
+									</UML:Attribute.initialValue>
+									<UML:StructuralFeature.type>
+										<UML:Classifier xmi.idref="eaxmiid2"/>
+									</UML:StructuralFeature.type>
+									<UML:ModelElement.taggedValue>
+										<UML:TaggedValue tag="description" value="pr&amp;#248;venummer for redskapet, unikt innen toktNummer.&#xA;-- Definition --&#xA;Sample number for the equipment, unique on cruisenumber."/>
+										<UML:TaggedValue tag="type" value="Integer"/>
+										<UML:TaggedValue tag="derived" value="0"/>
+										<UML:TaggedValue tag="containment" value="Not Specified"/>
+										<UML:TaggedValue tag="length" value="0"/>
+										<UML:TaggedValue tag="ordered" value="0"/>
+										<UML:TaggedValue tag="precision" value="0"/>
+										<UML:TaggedValue tag="scale" value="0"/>
+										<UML:TaggedValue tag="static" value="0"/>
+										<UML:TaggedValue tag="collection" value="false"/>
+										<UML:TaggedValue tag="position" value="2"/>
+										<UML:TaggedValue tag="lowerBound" value="1"/>
+										<UML:TaggedValue tag="upperBound" value="1"/>
+										<UML:TaggedValue tag="duplicates" value="0"/>
+										<UML:TaggedValue tag="ea_guid" value="{29E40978-914A-4c04-BAC3-FC2D966D0A3D}"/>
+										<UML:TaggedValue tag="ea_localid" value="75536"/>
+										<UML:TaggedValue tag="styleex" value="volatile=0;union=0;"/>
+										<UML:TaggedValue tag="$ea_xref_property" value="$XREFPROP=$XID={89E95754-4C3B-42c1-B838-B9CBF4B795D5}$XID;$NAM=CustomProperties$NAM;$TYP=attribute property$TYP;$VIS=Public$VIS;$PAR=0$PAR;$DES=@PROP=@NAME=isID@ENDNAME;@TYPE=Boolean@ENDTYPE;@VALU=0@ENDVALU;@PRMT=@ENDPRMT;@ENDPROP;$DES;$CLT={29E40978-914A-4c04-BAC3-FC2D966D0A3D}$CLT;$SUP=&lt;none&gt;$SUP;$ENDXREF;"/>
+										<UML:TaggedValue tag="SOSI_navn" value="PRØVENUMMER" xmi.id="EAID_0CC78E95_A787_4ed8_965A_40FF7D9FA2BC"/>
+										<UML:TaggedValue tag="SOSI_lengde" value="4" xmi.id="EAID_4D050EDB_2AED_4bd2_BFB4_D6A47DFD3F1A"/>
+										<UML:TaggedValue tag="sequenceNumber" xmi.id="EAID_D2318218_7E62_479e_B543_EC07CAC63DC7"/>
+										<UML:TaggedValue tag="isMetadata" value="false" xmi.id="EAID_ADAFE375_B40B_4bdb_AAE0_164B1E6869BD"/>
+									</UML:ModelElement.taggedValue>
+								</UML:Attribute>
+								<UML:Attribute name="toktNummer" changeable="none" visibility="public" ownerScope="instance" targetScope="instance">
+									<UML:Attribute.initialValue>
+										<UML:Expression/>
+									</UML:Attribute.initialValue>
+									<UML:StructuralFeature.type>
+										<UML:Classifier xmi.idref="eaxmiid2"/>
+									</UML:StructuralFeature.type>
+									<UML:ModelElement.taggedValue>
+										<UML:TaggedValue tag="description" value="toktnummer ved Havforskningsinstituttet.&#xA;-- Definition --&#xA;Cruise number at IMR."/>
+										<UML:TaggedValue tag="type" value="Integer"/>
+										<UML:TaggedValue tag="derived" value="0"/>
+										<UML:TaggedValue tag="containment" value="Not Specified"/>
+										<UML:TaggedValue tag="length" value="0"/>
+										<UML:TaggedValue tag="ordered" value="0"/>
+										<UML:TaggedValue tag="precision" value="0"/>
+										<UML:TaggedValue tag="scale" value="0"/>
+										<UML:TaggedValue tag="static" value="0"/>
+										<UML:TaggedValue tag="collection" value="false"/>
+										<UML:TaggedValue tag="position" value="3"/>
+										<UML:TaggedValue tag="lowerBound" value="1"/>
+										<UML:TaggedValue tag="upperBound" value="1"/>
+										<UML:TaggedValue tag="duplicates" value="0"/>
+										<UML:TaggedValue tag="ea_guid" value="{0CE0065D-74EB-4beb-BF98-7B9C75DD3403}"/>
+										<UML:TaggedValue tag="ea_localid" value="75538"/>
+										<UML:TaggedValue tag="styleex" value="volatile=0;union=0;"/>
+										<UML:TaggedValue tag="$ea_xref_property" value="$XREFPROP=$XID={29520C11-A582-4bba-AE34-8160E29EE155}$XID;$NAM=CustomProperties$NAM;$TYP=attribute property$TYP;$VIS=Public$VIS;$PAR=0$PAR;$DES=@PROP=@NAME=isID@ENDNAME;@TYPE=Boolean@ENDTYPE;@VALU=0@ENDVALU;@PRMT=@ENDPRMT;@ENDPROP;$DES;$CLT={0CE0065D-74EB-4beb-BF98-7B9C75DD3403}$CLT;$SUP=&lt;none&gt;$SUP;$ENDXREF;"/>
+										<UML:TaggedValue tag="sequenceNumber" xmi.id="EAID_6F085B0A_48B3_4fcb_A7D9_CF91D2310C58"/>
+										<UML:TaggedValue tag="isMetadata" value="false" xmi.id="EAID_81A76427_A6DA_4e3c_B4F2_272BD2422C05"/>
+										<UML:TaggedValue tag="SOSI_navn" value="TOKTNUMMER" xmi.id="EAID_8C2AC843_AE7C_4f2f_84B6_9FB258386F7F"/>
+										<UML:TaggedValue tag="SOSI_lengde" value="12" xmi.id="EAID_2960220A_B250_483b_8413_8C9C11A137C0"/>
+									</UML:ModelElement.taggedValue>
+								</UML:Attribute>
+								<UML:Attribute name="referanseStasjon" changeable="none" visibility="public" ownerScope="instance" targetScope="instance">
+									<UML:Attribute.initialValue>
+										<UML:Expression/>
+									</UML:Attribute.initialValue>
+									<UML:StructuralFeature.type>
+										<UML:Classifier xmi.idref="eaxmiid2"/>
+									</UML:StructuralFeature.type>
+									<UML:ModelElement.taggedValue>
+										<UML:TaggedValue tag="description" value="referansestasjon, unik innen MAREANO.&#xA;-- Definition --&#xA;Reference number during MAREANO prosject (superstation)."/>
+										<UML:TaggedValue tag="type" value="Integer"/>
+										<UML:TaggedValue tag="derived" value="0"/>
+										<UML:TaggedValue tag="containment" value="Not Specified"/>
+										<UML:TaggedValue tag="length" value="0"/>
+										<UML:TaggedValue tag="ordered" value="0"/>
+										<UML:TaggedValue tag="precision" value="0"/>
+										<UML:TaggedValue tag="scale" value="0"/>
+										<UML:TaggedValue tag="static" value="0"/>
+										<UML:TaggedValue tag="collection" value="false"/>
+										<UML:TaggedValue tag="position" value="4"/>
+										<UML:TaggedValue tag="lowerBound" value="1"/>
+										<UML:TaggedValue tag="upperBound" value="1"/>
+										<UML:TaggedValue tag="duplicates" value="0"/>
+										<UML:TaggedValue tag="ea_guid" value="{910F55D9-43D2-494c-A817-96EAFD0974A4}"/>
+										<UML:TaggedValue tag="ea_localid" value="75537"/>
+										<UML:TaggedValue tag="styleex" value="volatile=0;union=0;"/>
+										<UML:TaggedValue tag="$ea_xref_property" value="$XREFPROP=$XID={6A5768A8-0734-459f-87FA-F3258438583C}$XID;$NAM=CustomProperties$NAM;$TYP=attribute property$TYP;$VIS=Public$VIS;$PAR=0$PAR;$DES=@PROP=@NAME=isID@ENDNAME;@TYPE=Boolean@ENDTYPE;@VALU=0@ENDVALU;@PRMT=@ENDPRMT;@ENDPROP;$DES;$CLT={910F55D9-43D2-494c-A817-96EAFD0974A4}$CLT;$SUP=&lt;none&gt;$SUP;$ENDXREF;"/>
+										<UML:TaggedValue tag="SOSI_navn" value="REFERANSESTASJON" xmi.id="EAID_A2E5D1C7_59D7_41c2_88A5_A0B6FCF8278C"/>
+										<UML:TaggedValue tag="SOSI_lengde" value="4" xmi.id="EAID_91D8B13F_E20D_433e_9DB8_58E118CCBD03"/>
+										<UML:TaggedValue tag="sequenceNumber" xmi.id="EAID_1F5F6223_4AFB_4bc7_B3D2_FF26B8139CBE"/>
+										<UML:TaggedValue tag="isMetadata" value="false" xmi.id="EAID_4A590363_9402_4a45_B10A_D86AEA78F3A9"/>
+									</UML:ModelElement.taggedValue>
+								</UML:Attribute>
+								<UML:Attribute name="dato" changeable="none" visibility="public" ownerScope="instance" targetScope="instance">
+									<UML:Attribute.initialValue>
+										<UML:Expression/>
+									</UML:Attribute.initialValue>
+									<UML:StructuralFeature.type>
+										<UML:Classifier xmi.idref="eaxmiid3"/>
+									</UML:StructuralFeature.type>
+									<UML:ModelElement.taggedValue>
+										<UML:TaggedValue tag="description" value="observasjonsdato.&#xA;-- Definition --&#xA;Date of observation."/>
+										<UML:TaggedValue tag="type" value="Date"/>
+										<UML:TaggedValue tag="derived" value="0"/>
+										<UML:TaggedValue tag="containment" value="Not Specified"/>
+										<UML:TaggedValue tag="length" value="0"/>
+										<UML:TaggedValue tag="ordered" value="0"/>
+										<UML:TaggedValue tag="precision" value="0"/>
+										<UML:TaggedValue tag="scale" value="0"/>
+										<UML:TaggedValue tag="static" value="0"/>
+										<UML:TaggedValue tag="collection" value="false"/>
+										<UML:TaggedValue tag="position" value="5"/>
+										<UML:TaggedValue tag="lowerBound" value="1"/>
+										<UML:TaggedValue tag="upperBound" value="1"/>
+										<UML:TaggedValue tag="duplicates" value="0"/>
+										<UML:TaggedValue tag="ea_guid" value="{4279F055-D9E1-463f-BD31-AFC5CA420948}"/>
+										<UML:TaggedValue tag="ea_localid" value="75533"/>
+										<UML:TaggedValue tag="styleex" value="volatile=0;union=0;"/>
+										<UML:TaggedValue tag="$ea_xref_property" value="$XREFPROP=$XID={BC91EDD5-F060-4ccd-A8B1-4F51E87E2E83}$XID;$NAM=CustomProperties$NAM;$TYP=attribute property$TYP;$VIS=Public$VIS;$PAR=0$PAR;$DES=@PROP=@NAME=isID@ENDNAME;@TYPE=Boolean@ENDTYPE;@VALU=0@ENDVALU;@PRMT=@ENDPRMT;@ENDPROP;$DES;$CLT={4279F055-D9E1-463f-BD31-AFC5CA420948}$CLT;$SUP=&lt;none&gt;$SUP;$ENDXREF;"/>
+										<UML:TaggedValue tag="SOSI_navn" value="DATO" xmi.id="EAID_40C3251D_DDF9_4d56_9223_2ECC7570D723"/>
+										<UML:TaggedValue tag="SOSI_lengde" xmi.id="EAID_00752B7E_87A0_4560_A5D5_97D8067227F6"/>
+										<UML:TaggedValue tag="sequenceNumber" xmi.id="EAID_C2E8D9CA_37C5_422b_B405_F47CD78E6221"/>
+										<UML:TaggedValue tag="isMetadata" value="false" xmi.id="EAID_36ECAD2B_462D_4f6c_9DF6_2E211A03C8C9"/>
+									</UML:ModelElement.taggedValue>
+								</UML:Attribute>
+								<UML:Attribute name="bunnDybde" changeable="none" visibility="public" ownerScope="instance" targetScope="instance">
+									<UML:Attribute.initialValue>
+										<UML:Expression/>
+									</UML:Attribute.initialValue>
+									<UML:StructuralFeature.type>
+										<UML:Classifier xmi.idref="eaxmiid4"/>
+									</UML:StructuralFeature.type>
+									<UML:ModelElement.taggedValue>
+										<UML:TaggedValue tag="description" value="bunndyp der observasjonen ble gjort.&#xA;-- Definition --&#xA;Bottomdepth where the observation was made."/>
+										<UML:TaggedValue tag="type" value="Real"/>
+										<UML:TaggedValue tag="derived" value="0"/>
+										<UML:TaggedValue tag="containment" value="Not Specified"/>
+										<UML:TaggedValue tag="length" value="0"/>
+										<UML:TaggedValue tag="ordered" value="0"/>
+										<UML:TaggedValue tag="precision" value="0"/>
+										<UML:TaggedValue tag="scale" value="0"/>
+										<UML:TaggedValue tag="static" value="0"/>
+										<UML:TaggedValue tag="collection" value="false"/>
+										<UML:TaggedValue tag="position" value="6"/>
+										<UML:TaggedValue tag="lowerBound" value="1"/>
+										<UML:TaggedValue tag="upperBound" value="1"/>
+										<UML:TaggedValue tag="duplicates" value="0"/>
+										<UML:TaggedValue tag="ea_guid" value="{07372906-D576-4bfa-ACC0-C1B7FC264336}"/>
+										<UML:TaggedValue tag="ea_localid" value="75531"/>
+										<UML:TaggedValue tag="styleex" value="volatile=0;union=0;"/>
+										<UML:TaggedValue tag="$ea_xref_property" value="$XREFPROP=$XID={D2EA1811-8586-4770-A5EB-4F1453063270}$XID;$NAM=CustomProperties$NAM;$TYP=attribute property$TYP;$VIS=Public$VIS;$PAR=0$PAR;$DES=@PROP=@NAME=isID@ENDNAME;@TYPE=Boolean@ENDTYPE;@VALU=0@ENDVALU;@PRMT=@ENDPRMT;@ENDPROP;$DES;$CLT={07372906-D576-4bfa-ACC0-C1B7FC264336}$CLT;$SUP=&lt;none&gt;$SUP;$ENDXREF;"/>
+										<UML:TaggedValue tag="SOSI_navn" value="BUNNDYBDE" xmi.id="EAID_CFB25966_494C_4774_83F6_DEC9BF3B4A17"/>
+										<UML:TaggedValue tag="SOSI_lengde" value="7.2" xmi.id="EAID_808FD740_C21B_4922_A428_07AB29E3DC94"/>
+										<UML:TaggedValue tag="sequenceNumber" xmi.id="EAID_2D560151_AB41_4b8b_993B_43908E8F7F0E"/>
+										<UML:TaggedValue tag="isMetadata" value="false" xmi.id="EAID_6EB92ABA_2598_4120_9B46_FBA49F94B04C"/>
+									</UML:ModelElement.taggedValue>
+								</UML:Attribute>
+								<UML:Attribute name="bunnForhold" changeable="none" visibility="public" ownerScope="instance" targetScope="instance">
+									<UML:Attribute.initialValue>
+										<UML:Expression/>
+									</UML:Attribute.initialValue>
+									<UML:StructuralFeature.type>
+										<UML:Classifier xmi.idref="eaxmiid5"/>
+									</UML:StructuralFeature.type>
+									<UML:ModelElement.taggedValue>
+										<UML:TaggedValue tag="description" value="bunnforhold der observasjonen ble gjort.&#xA;-- Definition --&#xA;Seabed conditions where the observation was made."/>
+										<UML:TaggedValue tag="type" value="CharacterString"/>
+										<UML:TaggedValue tag="derived" value="0"/>
+										<UML:TaggedValue tag="containment" value="Not Specified"/>
+										<UML:TaggedValue tag="length" value="0"/>
+										<UML:TaggedValue tag="ordered" value="0"/>
+										<UML:TaggedValue tag="precision" value="0"/>
+										<UML:TaggedValue tag="scale" value="0"/>
+										<UML:TaggedValue tag="static" value="0"/>
+										<UML:TaggedValue tag="collection" value="false"/>
+										<UML:TaggedValue tag="position" value="7"/>
+										<UML:TaggedValue tag="lowerBound" value="1"/>
+										<UML:TaggedValue tag="upperBound" value="1"/>
+										<UML:TaggedValue tag="duplicates" value="0"/>
+										<UML:TaggedValue tag="ea_guid" value="{ED964CA0-1FFF-450e-B55A-0721D8E1A957}"/>
+										<UML:TaggedValue tag="ea_localid" value="75532"/>
+										<UML:TaggedValue tag="styleex" value="volatile=0;union=0;"/>
+										<UML:TaggedValue tag="$ea_xref_property" value="$XREFPROP=$XID={F98770CC-6E86-4c23-9A90-C19FB07A329C}$XID;$NAM=CustomProperties$NAM;$TYP=attribute property$TYP;$VIS=Public$VIS;$PAR=0$PAR;$DES=@PROP=@NAME=isID@ENDNAME;@TYPE=Boolean@ENDTYPE;@VALU=0@ENDVALU;@PRMT=@ENDPRMT;@ENDPROP;$DES;$CLT={ED964CA0-1FFF-450e-B55A-0721D8E1A957}$CLT;$SUP=&lt;none&gt;$SUP;$ENDXREF;"/>
+										<UML:TaggedValue tag="SOSI_navn" value="BUNNFORHOLD" xmi.id="EAID_4A42E237_5867_4815_ABC7_7EBB6F7F8921"/>
+										<UML:TaggedValue tag="SOSI_lengde" value="25" xmi.id="EAID_4EB001E0_BF21_429f_B097_A047643311B3"/>
+										<UML:TaggedValue tag="sequenceNumber" xmi.id="EAID_C920F10B_317F_4012_8DCC_04C3D1CBDA89"/>
+										<UML:TaggedValue tag="isMetadata" value="false" xmi.id="EAID_164C5BF8_9596_4ea4_936F_7A0512B254FE"/>
+									</UML:ModelElement.taggedValue>
+								</UML:Attribute>
+								<UML:Attribute name="videoSekvens" changeable="none" visibility="public" ownerScope="instance" targetScope="instance">
+									<UML:Attribute.initialValue>
+										<UML:Expression/>
+									</UML:Attribute.initialValue>
+									<UML:StructuralFeature.type>
+										<UML:Classifier xmi.idref="eaxmiid2"/>
+									</UML:StructuralFeature.type>
+									<UML:ModelElement.taggedValue>
+										<UML:TaggedValue tag="description" value="sekvensnummer, unikt innen pr&amp;#248;veNummer.&#xA;-- Definition --&#xA;Sequence number, unique on sample number."/>
+										<UML:TaggedValue tag="type" value="Integer"/>
+										<UML:TaggedValue tag="derived" value="0"/>
+										<UML:TaggedValue tag="containment" value="Not Specified"/>
+										<UML:TaggedValue tag="length" value="0"/>
+										<UML:TaggedValue tag="ordered" value="0"/>
+										<UML:TaggedValue tag="precision" value="0"/>
+										<UML:TaggedValue tag="scale" value="0"/>
+										<UML:TaggedValue tag="static" value="0"/>
+										<UML:TaggedValue tag="collection" value="false"/>
+										<UML:TaggedValue tag="position" value="8"/>
+										<UML:TaggedValue tag="lowerBound" value="1"/>
+										<UML:TaggedValue tag="upperBound" value="1"/>
+										<UML:TaggedValue tag="duplicates" value="0"/>
+										<UML:TaggedValue tag="ea_guid" value="{59ECBDCE-70DD-46c0-B04F-C91958C39FF9}"/>
+										<UML:TaggedValue tag="ea_localid" value="75539"/>
+										<UML:TaggedValue tag="styleex" value="volatile=0;union=0;"/>
+										<UML:TaggedValue tag="$ea_xref_property" value="$XREFPROP=$XID={84D7C807-5951-459e-9AC4-AB5637D91E01}$XID;$NAM=CustomProperties$NAM;$TYP=attribute property$TYP;$VIS=Public$VIS;$PAR=0$PAR;$DES=@PROP=@NAME=isID@ENDNAME;@TYPE=Boolean@ENDTYPE;@VALU=0@ENDVALU;@PRMT=@ENDPRMT;@ENDPROP;$DES;$CLT={59ECBDCE-70DD-46c0-B04F-C91958C39FF9}$CLT;$SUP=&lt;none&gt;$SUP;$ENDXREF;"/>
+										<UML:TaggedValue tag="SOSI_navn" value="VIDEOSEKVENS" xmi.id="EAID_157B1CDE_5A89_4514_AB39_08FE85EA471E"/>
+										<UML:TaggedValue tag="SOSI_lengde" value="4" xmi.id="EAID_19D93300_1EDE_40fa_8FDF_F343F9AFDBB7"/>
+										<UML:TaggedValue tag="sequenceNumber" xmi.id="EAID_A4BC2A41_8370_4aa7_83AF_7AFBE97CA328"/>
+										<UML:TaggedValue tag="isMetadata" value="false" xmi.id="EAID_C38C9E0A_7C7F_4628_954A_26BCCBC1F82E"/>
+									</UML:ModelElement.taggedValue>
+								</UML:Attribute>
+								<UML:Attribute name="breddegrad" changeable="none" visibility="public" ownerScope="instance" targetScope="instance">
+									<UML:Attribute.initialValue>
+										<UML:Expression/>
+									</UML:Attribute.initialValue>
+									<UML:StructuralFeature.type>
+										<UML:Classifier xmi.idref="eaxmiid4"/>
+									</UML:StructuralFeature.type>
+									<UML:ModelElement.taggedValue>
+										<UML:TaggedValue tag="description" value="breddegrad som observasjonen ble gjort p&amp;#229;.&#xA;-- Definition --&#xA;Latitude where the observation was made."/>
+										<UML:TaggedValue tag="type" value="Real"/>
+										<UML:TaggedValue tag="derived" value="0"/>
+										<UML:TaggedValue tag="containment" value="Not Specified"/>
+										<UML:TaggedValue tag="length" value="0"/>
+										<UML:TaggedValue tag="ordered" value="0"/>
+										<UML:TaggedValue tag="precision" value="0"/>
+										<UML:TaggedValue tag="scale" value="0"/>
+										<UML:TaggedValue tag="static" value="0"/>
+										<UML:TaggedValue tag="collection" value="false"/>
+										<UML:TaggedValue tag="position" value="10"/>
+										<UML:TaggedValue tag="lowerBound" value="1"/>
+										<UML:TaggedValue tag="upperBound" value="1"/>
+										<UML:TaggedValue tag="duplicates" value="0"/>
+										<UML:TaggedValue tag="ea_guid" value="{994A524C-C3DC-45bf-A3DA-2E98FB267E11}"/>
+										<UML:TaggedValue tag="ea_localid" value="75530"/>
+										<UML:TaggedValue tag="styleex" value="volatile=0;union=0;"/>
+										<UML:TaggedValue tag="$ea_xref_property" value="$XREFPROP=$XID={9C8D2954-33D4-4561-ADCD-E2BDB0F21E3B}$XID;$NAM=CustomProperties$NAM;$TYP=attribute property$TYP;$VIS=Public$VIS;$PAR=0$PAR;$DES=@PROP=@NAME=isID@ENDNAME;@TYPE=Boolean@ENDTYPE;@VALU=0@ENDVALU;@PRMT=@ENDPRMT;@ENDPROP;$DES;$CLT={994A524C-C3DC-45bf-A3DA-2E98FB267E11}$CLT;$SUP=&lt;none&gt;$SUP;$ENDXREF;"/>
+										<UML:TaggedValue tag="SOSI_navn" value="BREDDEGRAD" xmi.id="EAID_D4BB8F0A_A622_4b73_A2F7_2C6ABCF35EE2"/>
+										<UML:TaggedValue tag="SOSI_lengde" value="11.8" xmi.id="EAID_6F047DA0_5489_4b88_BB88_FD3E78F22A51"/>
+										<UML:TaggedValue tag="sequenceNumber" xmi.id="EAID_57CDD4C2_0E8A_4bf9_B220_33556C29E772"/>
+										<UML:TaggedValue tag="isMetadata" value="false" xmi.id="EAID_A856A033_2467_456c_AF87_F2E4D41CBB0C"/>
+									</UML:ModelElement.taggedValue>
+								</UML:Attribute>
+								<UML:Attribute name="lengdegrad" changeable="none" visibility="public" ownerScope="instance" targetScope="instance">
+									<UML:Attribute.initialValue>
+										<UML:Expression/>
+									</UML:Attribute.initialValue>
+									<UML:StructuralFeature.type>
+										<UML:Classifier xmi.idref="eaxmiid4"/>
+									</UML:StructuralFeature.type>
+									<UML:ModelElement.taggedValue>
+										<UML:TaggedValue tag="description" value="lengdegrad som observasjonen ble gjort p&amp;#229;.&#xA;-- Definition --&#xA;Longitude where the observation was made."/>
+										<UML:TaggedValue tag="type" value="Real"/>
+										<UML:TaggedValue tag="derived" value="0"/>
+										<UML:TaggedValue tag="containment" value="Not Specified"/>
+										<UML:TaggedValue tag="length" value="0"/>
+										<UML:TaggedValue tag="ordered" value="0"/>
+										<UML:TaggedValue tag="precision" value="0"/>
+										<UML:TaggedValue tag="scale" value="0"/>
+										<UML:TaggedValue tag="static" value="0"/>
+										<UML:TaggedValue tag="collection" value="false"/>
+										<UML:TaggedValue tag="position" value="11"/>
+										<UML:TaggedValue tag="lowerBound" value="1"/>
+										<UML:TaggedValue tag="upperBound" value="1"/>
+										<UML:TaggedValue tag="duplicates" value="0"/>
+										<UML:TaggedValue tag="ea_guid" value="{A7E4CB66-4B93-497c-81BC-793189D7A00E}"/>
+										<UML:TaggedValue tag="ea_localid" value="75534"/>
+										<UML:TaggedValue tag="styleex" value="volatile=0;union=0;"/>
+										<UML:TaggedValue tag="$ea_xref_property" value="$XREFPROP=$XID={6757BF06-A9E6-4570-96E1-65729A7AC7EE}$XID;$NAM=CustomProperties$NAM;$TYP=attribute property$TYP;$VIS=Public$VIS;$PAR=0$PAR;$DES=@PROP=@NAME=isID@ENDNAME;@TYPE=Boolean@ENDTYPE;@VALU=0@ENDVALU;@PRMT=@ENDPRMT;@ENDPROP;$DES;$CLT={A7E4CB66-4B93-497c-81BC-793189D7A00E}$CLT;$SUP=&lt;none&gt;$SUP;$ENDXREF;"/>
+										<UML:TaggedValue tag="SOSI_navn" value="LENGDEGRAD" xmi.id="EAID_ED042C38_48DF_4cd4_B732_202DE67274F5"/>
+										<UML:TaggedValue tag="SOSI_lengde" value="11.8" xmi.id="EAID_56B9C1BD_8D89_4c07_97A0_9AF7F99E223F"/>
+										<UML:TaggedValue tag="sequenceNumber" xmi.id="EAID_026FF5AD_D893_4052_B271_A2E00D757437"/>
+										<UML:TaggedValue tag="isMetadata" value="false" xmi.id="EAID_D69831AB_750E_4ea0_8A8F_6A77FA094589"/>
+									</UML:ModelElement.taggedValue>
+								</UML:Attribute>
+							</UML:Classifier.feature>
+						</UML:Class>
+						<UML:Class name="Identifikasjon" xmi.id="EAID_CD604C2F_2067_4a84_8EC4_91222D0EC34F" visibility="public" namespace="EAPK_9D1544EB_4D52_4069_8D8E_5DA000498300" isRoot="false" isLeaf="false" isAbstract="false" isActive="false">
+							<UML:ModelElement.stereotype>
+								<UML:Stereotype name="dataType"/>
+							</UML:ModelElement.stereotype>
+							<UML:ModelElement.taggedValue>
+								<UML:TaggedValue tag="documentation" value="Unik identifikasjon av et objekt, ivaretatt av den ansvarlige produsent/forvalter, som kan benyttes av eksterne applikasjoner som referanse til objektet. &#xA;&#xA;NOTE1 Denne eksterne objektidentifikasjonen må ikke forveksles med en tematisk objektidentifikasjon, slik som f.eks bygningsnummer. &#xA;&#xA;NOTE 2 Denne unike identifikatoren vil ikke endres i løpet av objektets levetid. "/>
+								<UML:TaggedValue tag="isSpecification" value="false"/>
+								<UML:TaggedValue tag="ea_stype" value="Class"/>
+								<UML:TaggedValue tag="ea_ntype" value="0"/>
+								<UML:TaggedValue tag="version" value="1.0"/>
+								<UML:TaggedValue tag="package" value="EAPK_9D1544EB_4D52_4069_8D8E_5DA000498300"/>
+								<UML:TaggedValue tag="date_created" value="2020-08-28 10:35:53"/>
+								<UML:TaggedValue tag="date_modified" value="2020-08-28 10:35:53"/>
+								<UML:TaggedValue tag="gentype" value="Java"/>
+								<UML:TaggedValue tag="tagged" value="0"/>
+								<UML:TaggedValue tag="package_name" value="Hornkoraller-20201201"/>
+								<UML:TaggedValue tag="phase" value="1.0"/>
+								<UML:TaggedValue tag="alias" value="Identification"/>
+								<UML:TaggedValue tag="author" value="bormor"/>
+								<UML:TaggedValue tag="complexity" value="1"/>
+								<UML:TaggedValue tag="status" value="Proposed"/>
+								<UML:TaggedValue tag="stereotype" value="dataType"/>
+								<UML:TaggedValue tag="persistence" value="Persistent"/>
+								<UML:TaggedValue tag="tpos" value="3"/>
+								<UML:TaggedValue tag="ea_localid" value="16978"/>
+								<UML:TaggedValue tag="ea_eleType" value="element"/>
+								<UML:TaggedValue tag="$ea_attsclassified" value="{257288D3-1E9B-4e14-9C29-28713288087F}"/>
+								<UML:TaggedValue tag="style" value="BackColor=-1;BorderColor=0;BorderWidth=1;FontColor=0;VSwimLanes=1;HSwimLanes=1;BorderStyle=0;"/>
+								<UML:TaggedValue tag="$ea_xref_property" value="$XREFPROP=$XID={EBBCC200-2B13-4312-B6A6-CB3BD4D33744}$XID;$NAM=Stereotypes$NAM;$TYP=element property$TYP;$VIS=Public$VIS;$PAR=0$PAR;$DES=@STEREO;Name=dataType;GUID={CD6A9266-6921-409c-8DD5-275757EE3C8D};FQName=SOSI::dataType;@ENDSTEREO;$DES;$CLT={CD604C2F-2067-4a84-8EC4-91222D0EC34F}$CLT;$ENDXREF;"/>
+							</UML:ModelElement.taggedValue>
+							<UML:Classifier.feature>
+								<UML:Attribute name="lokalId" changeable="none" visibility="public" ownerScope="instance" targetScope="instance">
+									<UML:Attribute.initialValue>
+										<UML:Expression/>
+									</UML:Attribute.initialValue>
+									<UML:StructuralFeature.type>
+										<UML:Classifier xmi.idref="eaxmiid5"/>
+									</UML:StructuralFeature.type>
+									<UML:ModelElement.taggedValue>
+										<UML:TaggedValue tag="description" value="lokal identifikator, tildelt av dataleverendør/dataforvalter. Den lokale identifikatoren er unik innenfor navnerommet, ingen andre objekter har samme identifikator.&#xA;&#xA;NOTE: Det er data leverendørens ansvar å sørge for at denne lokale identifikatoren er unik innenfor navnerommet."/>
+										<UML:TaggedValue tag="type" value="CharacterString"/>
+										<UML:TaggedValue tag="derived" value="0"/>
+										<UML:TaggedValue tag="containment" value="Not Specified"/>
+										<UML:TaggedValue tag="length" value="0"/>
+										<UML:TaggedValue tag="ordered" value="0"/>
+										<UML:TaggedValue tag="precision" value="0"/>
+										<UML:TaggedValue tag="scale" value="0"/>
+										<UML:TaggedValue tag="static" value="0"/>
+										<UML:TaggedValue tag="collection" value="false"/>
+										<UML:TaggedValue tag="position" value="0"/>
+										<UML:TaggedValue tag="lowerBound" value="1"/>
+										<UML:TaggedValue tag="upperBound" value="1"/>
+										<UML:TaggedValue tag="duplicates" value="0"/>
+										<UML:TaggedValue tag="ea_guid" value="{AA644C7A-9541-4bc6-A311-D7532B4A4A06}"/>
+										<UML:TaggedValue tag="ea_localid" value="75540"/>
+										<UML:TaggedValue tag="styleex" value="IsLiteral=0;volatile=0;"/>
+										<UML:TaggedValue tag="style" value="localId"/>
+										<UML:TaggedValue tag="SOSI_lengde" value="36" xmi.id="EAID_E024ADBA_2256_411d_B33D_51ECC6F2E2EB"/>
+										<UML:TaggedValue tag="SOSI_navn" value="LOKALID" xmi.id="EAID_3DFE428F_5016_4e13_8188_7AFF55E5247A"/>
+										<UML:TaggedValue tag="SOSI_datatype" value="T" xmi.id="EAID_501BAA89_E552_4e50_926C_151DC1D801CF"/>
+									</UML:ModelElement.taggedValue>
+								</UML:Attribute>
+								<UML:Attribute name="navnerom" changeable="none" visibility="public" ownerScope="instance" targetScope="instance">
+									<UML:Attribute.initialValue>
+										<UML:Expression/>
+									</UML:Attribute.initialValue>
+									<UML:StructuralFeature.type>
+										<UML:Classifier xmi.idref="eaxmiid5"/>
+									</UML:StructuralFeature.type>
+									<UML:ModelElement.taggedValue>
+										<UML:TaggedValue tag="description" value="navnerom som unikt identifiserer datakilden til objektet, starter med to bokstavs kode jfr ISO 3166. Benytter understreking  (&quot;_&quot;) dersom data produsenten ikke er assosiert med bare et land.&#xA;&#xA;NOTE 1 : Verdien for nanverom vil eies av den dataprodusent som har ansvar for de unike identifikatorene og vil registreres i &quot;INSPIRE external  Object Identifier Namespaces Register&quot;&#xA;&#xA;Eksempel: NO for Norge."/>
+										<UML:TaggedValue tag="type" value="CharacterString"/>
+										<UML:TaggedValue tag="derived" value="0"/>
+										<UML:TaggedValue tag="containment" value="Not Specified"/>
+										<UML:TaggedValue tag="length" value="0"/>
+										<UML:TaggedValue tag="ordered" value="0"/>
+										<UML:TaggedValue tag="precision" value="0"/>
+										<UML:TaggedValue tag="scale" value="0"/>
+										<UML:TaggedValue tag="static" value="0"/>
+										<UML:TaggedValue tag="collection" value="false"/>
+										<UML:TaggedValue tag="position" value="1"/>
+										<UML:TaggedValue tag="lowerBound" value="1"/>
+										<UML:TaggedValue tag="upperBound" value="1"/>
+										<UML:TaggedValue tag="duplicates" value="0"/>
+										<UML:TaggedValue tag="ea_guid" value="{C92FF7A6-0ABB-402a-98D2-A020FA9E807A}"/>
+										<UML:TaggedValue tag="ea_localid" value="75541"/>
+										<UML:TaggedValue tag="styleex" value="IsLiteral=0;volatile=0;union=0;"/>
+										<UML:TaggedValue tag="style" value="namespace"/>
+										<UML:TaggedValue tag="SOSI_datatype" value="T" xmi.id="EAID_FC0AE3CC_68C5_48a4_AD50_BDD40BBC6969"/>
+										<UML:TaggedValue tag="SOSI_lengde" value="100" xmi.id="EAID_A0CE54D0_0571_4282_9C8F_77D7B65C82C8"/>
+										<UML:TaggedValue tag="SOSI_navn" value="NAVNEROM" xmi.id="EAID_3440762A_37E6_4db4_BA56_61F3C3F0FA96"/>
+									</UML:ModelElement.taggedValue>
+								</UML:Attribute>
+								<UML:Attribute name="versjonId" changeable="none" visibility="public" ownerScope="instance" targetScope="instance">
+									<UML:Attribute.initialValue>
+										<UML:Expression/>
+									</UML:Attribute.initialValue>
+									<UML:StructuralFeature.type>
+										<UML:Classifier xmi.idref="eaxmiid5"/>
+									</UML:StructuralFeature.type>
+									<UML:ModelElement.taggedValue>
+										<UML:TaggedValue tag="description" value="identifikasjon av en spesiell versjon av et geografisk objekt (instans), maksimum lengde på 25 karakterers. Dersom spesifikasjonen av et geografisk objekt med en identifikasjon inkludererer livsløpssyklusinformasjon, benyttes denne versjonId for å skille mellom ulike versjoner av samme objekt. versjonId er en unik  identifikasjon av versjonen. &#xA;&#xA;NOTE Maksimum lengde er valgt for å tillate tidsregistrering i henhold til  ISO 8601, slik som  &quot;2007-02-12T12:12:12+05:30&quot; som versjonId."/>
+										<UML:TaggedValue tag="type" value="CharacterString"/>
+										<UML:TaggedValue tag="derived" value="0"/>
+										<UML:TaggedValue tag="containment" value="Not Specified"/>
+										<UML:TaggedValue tag="length" value="0"/>
+										<UML:TaggedValue tag="ordered" value="0"/>
+										<UML:TaggedValue tag="precision" value="0"/>
+										<UML:TaggedValue tag="scale" value="0"/>
+										<UML:TaggedValue tag="static" value="0"/>
+										<UML:TaggedValue tag="collection" value="false"/>
+										<UML:TaggedValue tag="position" value="2"/>
+										<UML:TaggedValue tag="lowerBound" value="1"/>
+										<UML:TaggedValue tag="upperBound" value="1"/>
+										<UML:TaggedValue tag="duplicates" value="0"/>
+										<UML:TaggedValue tag="ea_guid" value="{AE939ABD-D658-4c73-A02A-88EE966EF9BF}"/>
+										<UML:TaggedValue tag="ea_localid" value="75542"/>
+										<UML:TaggedValue tag="styleex" value="IsLiteral=0;volatile=0;union=0;"/>
+										<UML:TaggedValue tag="style" value="versionId"/>
+										<UML:TaggedValue tag="SOSI_lengde" value="100" xmi.id="EAID_F84B4F2B_0C90_4559_A8BA_7E4ACC64242D"/>
+										<UML:TaggedValue tag="SOSI_navn" value="VERSJONID" xmi.id="EAID_9A6022BB_6543_4a2d_A747_C51FC5B8BF82"/>
+										<UML:TaggedValue tag="SOSI_datatype" value="T" xmi.id="EAID_06E1D3AC_1EA1_4947_BE0B_E533B7147F6D"/>
+									</UML:ModelElement.taggedValue>
+								</UML:Attribute>
+							</UML:Classifier.feature>
+							<UML:ModelElement.constraint>
+								<UML:Constraint name="Tillatte karakterer for lokaId og navnerom">
+									<UML:ModelElement.taggedValue>
+										<UML:TaggedValue tag="description" value="/* for egenskapene lokalId og navnerom skal det bare brukes  følgende sett av karakterer benyttes:: {&quot;A&quot; …&quot;Z&quot;, &quot;a&quot;…&quot;z&quot;,&quot;0&quot;…&quot;9&quot;, &quot;_&quot;, &quot;.&quot;, &quot;-&quot;}, dvs bare bokstaver fra det latinske alfabetet samt tall, understreking, punktum og bindestrek er tillatt. */&#xA;inv: let allowedChar : Set {'A'..'Z', 'a'..'z', '0'..'9', '_', '.', '-'} in ( navnerom.element-&amp;gt;forAll( char | allowedChar-&amp;gt;exists( char ) and lokalId.element-&amp;gt;forAll( char | allowedChar-&amp;gt;exists( char ) )) "/>
+										<UML:TaggedValue tag="type" value="Invariant"/>
+										<UML:TaggedValue tag="weight" value="0,00"/>
+										<UML:TaggedValue tag="status" value="Approved"/>
+									</UML:ModelElement.taggedValue>
+								</UML:Constraint>
+							</UML:ModelElement.constraint>
+						</UML:Class>
+						<UML:Dependency client="EAID_CD604C2F_2067_4a84_8EC4_91222D0EC34F" supplier="EAID_953CE893_18AF_4923_B143_4BC4CCB7221B" xmi.id="EAID_D5DAC459_A384_4e0f_A394_C7AC885392EF" visibility="public">
+							<UML:ModelElement.taggedValue>
+								<UML:TaggedValue tag="style" value="3"/>
+								<UML:TaggedValue tag="ea_type" value="Realisation"/>
+								<UML:TaggedValue tag="direction" value="Source -&gt; Destination"/>
+								<UML:TaggedValue tag="linemode" value="3"/>
+								<UML:TaggedValue tag="linecolor" value="-1"/>
+								<UML:TaggedValue tag="linewidth" value="0"/>
+								<UML:TaggedValue tag="seqno" value="0"/>
+								<UML:TaggedValue tag="headStyle" value="0"/>
+								<UML:TaggedValue tag="lineStyle" value="0"/>
+								<UML:TaggedValue tag="ea_localid" value="7097"/>
+								<UML:TaggedValue tag="ea_sourceName" value="Identifikasjon"/>
+								<UML:TaggedValue tag="ea_targetName" value="Identifikasjon"/>
+								<UML:TaggedValue tag="ea_sourceType" value="Class"/>
+								<UML:TaggedValue tag="ea_targetType" value="Class"/>
+								<UML:TaggedValue tag="ea_sourceID" value="16978"/>
+								<UML:TaggedValue tag="ea_targetID" value="1771"/>
+								<UML:TaggedValue tag="src_visibility" value="Public"/>
+								<UML:TaggedValue tag="src_aggregation" value="0"/>
+								<UML:TaggedValue tag="src_isOrdered" value="false"/>
+								<UML:TaggedValue tag="src_targetScope" value="instance"/>
+								<UML:TaggedValue tag="src_changeable" value="none"/>
+								<UML:TaggedValue tag="src_isNavigable" value="false"/>
+								<UML:TaggedValue tag="src_containment" value="Unspecified"/>
+								<UML:TaggedValue tag="src_style" value="Union=0;Derived=0;AllowDuplicates=0;Owned=0;Navigable=Non-Navigable;"/>
+								<UML:TaggedValue tag="dst_visibility" value="Public"/>
+								<UML:TaggedValue tag="dst_aggregation" value="0"/>
+								<UML:TaggedValue tag="dst_isOrdered" value="false"/>
+								<UML:TaggedValue tag="dst_targetScope" value="instance"/>
+								<UML:TaggedValue tag="dst_changeable" value="none"/>
+								<UML:TaggedValue tag="dst_isNavigable" value="true"/>
+								<UML:TaggedValue tag="dst_containment" value="Unspecified"/>
+								<UML:TaggedValue tag="dst_style" value="Union=0;Derived=0;AllowDuplicates=0;Owned=0;Navigable=Navigable;"/>
+								<UML:TaggedValue tag="virtualInheritance" value="0"/>
+							</UML:ModelElement.taggedValue>
+						</UML:Dependency>
+						<UML:Dependency client="EAPK_9D1544EB_4D52_4069_8D8E_5DA000498300" supplier="EAPK_1DB15898_E0F9_4d15_A64A_07BBC8596D66" xmi.id="EAID_5F812BE6_36F1_4be8_AEF6_E05E5D6B6F31" visibility="public">
+							<UML:ModelElement.taggedValue>
+								<UML:TaggedValue tag="style" value="3"/>
+								<UML:TaggedValue tag="ea_type" value="Realisation"/>
+								<UML:TaggedValue tag="direction" value="Source -&gt; Destination"/>
+								<UML:TaggedValue tag="linemode" value="3"/>
+								<UML:TaggedValue tag="linecolor" value="-1"/>
+								<UML:TaggedValue tag="linewidth" value="0"/>
+								<UML:TaggedValue tag="seqno" value="0"/>
+								<UML:TaggedValue tag="headStyle" value="0"/>
+								<UML:TaggedValue tag="lineStyle" value="0"/>
+								<UML:TaggedValue tag="ea_localid" value="7096"/>
+								<UML:TaggedValue tag="ea_sourceName" value="Hornkoraller-20201201"/>
+								<UML:TaggedValue tag="ea_targetName" value="Generelle typer 4.5"/>
+								<UML:TaggedValue tag="ea_sourceType" value="Package"/>
+								<UML:TaggedValue tag="ea_targetType" value="Package"/>
+								<UML:TaggedValue tag="ea_sourceID" value="16970"/>
+								<UML:TaggedValue tag="ea_targetID" value="15523"/>
+								<UML:TaggedValue tag="src_visibility" value="Public"/>
+								<UML:TaggedValue tag="src_aggregation" value="0"/>
+								<UML:TaggedValue tag="src_isOrdered" value="false"/>
+								<UML:TaggedValue tag="src_targetScope" value="instance"/>
+								<UML:TaggedValue tag="src_changeable" value="none"/>
+								<UML:TaggedValue tag="src_isNavigable" value="false"/>
+								<UML:TaggedValue tag="src_containment" value="Unspecified"/>
+								<UML:TaggedValue tag="src_style" value="Union=0;Derived=0;AllowDuplicates=0;Owned=0;Navigable=Non-Navigable;"/>
+								<UML:TaggedValue tag="dst_visibility" value="Public"/>
+								<UML:TaggedValue tag="dst_aggregation" value="0"/>
+								<UML:TaggedValue tag="dst_isOrdered" value="false"/>
+								<UML:TaggedValue tag="dst_targetScope" value="instance"/>
+								<UML:TaggedValue tag="dst_changeable" value="none"/>
+								<UML:TaggedValue tag="dst_isNavigable" value="true"/>
+								<UML:TaggedValue tag="dst_containment" value="Unspecified"/>
+								<UML:TaggedValue tag="dst_style" value="Union=0;Derived=0;AllowDuplicates=0;Owned=0;Navigable=Navigable;"/>
+								<UML:TaggedValue tag="virtualInheritance" value="0"/>
+							</UML:ModelElement.taggedValue>
+						</UML:Dependency>
+					</UML:Namespace.ownedElement>
+				</UML:Package>
+				<UML:Stereotype xmi.id="EAID_F2BECADE_3767_4d90_B6D6_A4BE42E180D2" name="ApplicationSchema" isRoot="false" isLeaf="false" isAbstract="false">
+					<UML:Stereotype.baseClass>Package</UML:Stereotype.baseClass>
+				</UML:Stereotype>
+				<UML:DataType xmi.id="eaxmiid1" visibility="private" isRoot="false" isLeaf="false" isAbstract="false"/>
+				<UML:DataType xmi.id="eaxmiid0" name="DateTime" visibility="private" isRoot="false" isLeaf="false" isAbstract="false"/>
+				<UML:DataType xmi.id="eaxmiid3" name="Date" visibility="private" isRoot="false" isLeaf="false" isAbstract="false"/>
+				<UML:DataType xmi.id="eaxmiid4" name="Real" visibility="private" isRoot="false" isLeaf="false" isAbstract="false"/>
+				<UML:DataType xmi.id="eaxmiid2" name="Integer" visibility="private" isRoot="false" isLeaf="false" isAbstract="false"/>
+				<UML:DataType xmi.id="eaxmiid5" name="CharacterString" visibility="private" isRoot="false" isLeaf="false" isAbstract="false"/>
+			</UML:Namespace.ownedElement>
+		</UML:Model>
+		<UML:TaggedValue tag="SOSI_dokumentasjon" xmi.id="EAID_DAD2D01F_C56A_d2c5_8B1D_908E512C173C" value="https://objektkatalog.geonorge.no/Pakke/Index/EAPK_9D1544EB_4D52_4069_8D8E_5DA000498300#NOTES#Description: brukes i objektkatalog for å vise referanse til dokumentasjon (kan brukes for å legge inn url til fagområdedokument eller produktspesifikasjonsdokument)&#xA;" modelElement="MX_EAID_9D1544EB_4D52_4069_8D8E_5DA000498300"/>
+		<UML:TaggedValue tag="SOSI_kortnavn" xmi.id="EAID_DEC125F0_E05B_c4e0_B55E_38CF96688F19" value="Hornkoraller#NOTES#Description: Brukes til filnavn for def filer&#xA;" modelElement="MX_EAID_9D1544EB_4D52_4069_8D8E_5DA000498300"/>
+		<UML:TaggedValue tag="SOSI_langnavn" xmi.id="EAID_8B13C732_819D_1781_86B9_2937CA12D198" value="Hornkoraller" modelElement="MX_EAID_9D1544EB_4D52_4069_8D8E_5DA000498300"/>
+		<UML:TaggedValue tag="SOSI_modellstatus" xmi.id="EAID_CBAC033E_FB29_8cfb_803D_C96451DA37F5" value="gyldig" modelElement="MX_EAID_9D1544EB_4D52_4069_8D8E_5DA000498300"/>
+		<UML:TaggedValue tag="SOSI_presentasjonsnavn" xmi.id="EAID_A38A6565_C1DF_4c7f_A549_D3D97B8180FD" value="Hornkoraller" modelElement="MX_EAID_9D1544EB_4D52_4069_8D8E_5DA000498300"/>
+		<UML:TaggedValue tag="SOSI_produktgruppe" xmi.id="EAID_D50E40B9_3604_0e36_A87D_3D0E7F95B41F" value="havforsk" modelElement="MX_EAID_9D1544EB_4D52_4069_8D8E_5DA000498300"/>
+		<UML:TaggedValue tag="SOSI_spesifikasjonstype" xmi.id="EAID_A37A7EEB_7B16_ae7b_AE73_6AE509FCBBBE" value="produktspesifikasjon#NOTES#Values: produktspesifikasjon,fagområde&#xA;Default: produktspesifikasjon&#xA;Description: Brukes til å formatere Word tabeller i Syntaks rapport. Standard kolonne er ikke med når det er en produktspesifikasjon. Ved fagområde så blir SOSI_Objekt lagt til INKLUDER på alle objektdefenisjoner&#xA;" modelElement="MX_EAID_9D1544EB_4D52_4069_8D8E_5DA000498300"/>
+		<UML:TaggedValue tag="SOSI_versjon" xmi.id="EAID_83FDE7A4_80AF_ee80_B3D7_85CCA5135FDE" value="4.5#NOTES#Description: Brukes som filendelse i sosi def filer&#xA;" modelElement="MX_EAID_9D1544EB_4D52_4069_8D8E_5DA000498300"/>
+		<UML:TaggedValue tag="targetNamespace" xmi.id="EAID_393CD814_819F_cc81_A297_13B6059BF96E" value="http://skjema.geonorge.no/SOSI/produktspesifikasjon/Hornkoraller/20201201#NOTES#Default: http://skjema.geonorge.no/legg_inn_riktig_url&#xA;" modelElement="MX_EAID_9D1544EB_4D52_4069_8D8E_5DA000498300"/>
+		<UML:TaggedValue tag="version" xmi.id="EAID_6F40CEE6_1D91_d11d_901A_3384DDC0C233" value="20201201#NOTES#Default: 1.0&#xA;" modelElement="MX_EAID_9D1544EB_4D52_4069_8D8E_5DA000498300"/>
+		<UML:TaggedValue tag="xmlns" xmi.id="EAID_08B91BD2_C3BD_ffc3_B458_A10EDC73AB7E" value="app#NOTES#Default: app&#xA;Description: Namespace prefix (or) the abbreviated short form  &#xA;" modelElement="MX_EAID_9D1544EB_4D52_4069_8D8E_5DA000498300"/>
+		<UML:TaggedValue tag="xsdDocument" xmi.id="EAID_6E79370E_4719_5c47_89A5_3B2FD4915E19" value="hornkoraller.xsd#NOTES#Default: filnavn.xsd&#xA;Description: Valid file name or relative file name of the XSD f&#xA;" modelElement="MX_EAID_9D1544EB_4D52_4069_8D8E_5DA000498300"/>
+		<UML:TaggedValue tag="xsdEncodingRule" xmi.id="EAID_BCD3CBEE_5D59_745d_81B3_7C6EE6924865" value="iso19136_2007#NOTES#Values: sosi,iso19136_2007,iso19136_2007_ShapeChange_1.0_Extensions,iso19136_2007_INSPIRE_Extensions,iso19139_2007,gml33,citygml-ade,metadata-profile,gsip&#xA;Default: sosi&#xA;Description: XML Schema encoding rule to apply&#xA;" modelElement="MX_EAID_9D1544EB_4D52_4069_8D8E_5DA000498300"/>
+		<UML:TaggedValue tag="persistence" xmi.id="EAID_4D54ACC4_805C_4f04_B30C_00CF3C38E893" value="transient" modelElement="EAID_444C9D84_D968_4222_B1BD_270AC833E949"/>
+		<UML:TaggedValue tag="SOSI_navn" xmi.id="EAID_0D769646_FD7C_4d78_87A7_C343E0864D6E" value="KVALITET" modelElement="EAID_444C9D84_D968_4222_B1BD_270AC833E949"/>
+		<UML:TaggedValue tag="asDictionary" xmi.id="EAID_A7523D05_212B_4f36_B699_F614EF9247B5" value="true" modelElement="EAID_59B22938_5CBC_472e_A703_8FB58D52643A"/>
+		<UML:TaggedValue tag="codeList" xmi.id="EAID_44738A08_B117_4988_8659_B6597C9E2457" value="https://register.geonorge.no/sosi-kodelister/generelle-konsepter/5.1/m%C3%A5lemetode" modelElement="EAID_59B22938_5CBC_472e_A703_8FB58D52643A"/>
+		<UML:TaggedValue tag="persistence" xmi.id="EAID_23B3FBE4_F2AD_47b0_90EB_463193495CC2" value="transient" modelElement="EAID_59B22938_5CBC_472e_A703_8FB58D52643A"/>
+		<UML:TaggedValue tag="SOSI_datatype" xmi.id="EAID_56E65028_8B74_4ed6_A387_EABA764BA511" value="T" modelElement="EAID_59B22938_5CBC_472e_A703_8FB58D52643A"/>
+		<UML:TaggedValue tag="SOSI_lengde" xmi.id="EAID_E8DA2D5D_D942_4c2d_A729_C250A3355600" value="100" modelElement="EAID_59B22938_5CBC_472e_A703_8FB58D52643A"/>
+		<UML:TaggedValue tag="SOSI_navn" xmi.id="EAID_8649E7F0_4902_41b3_BC87_9D7738C8DF71" value="MÅLEMETODE" modelElement="EAID_59B22938_5CBC_472e_A703_8FB58D52643A"/>
+		<UML:TaggedValue tag="persistence" xmi.id="EAID_59317771_FC9C_47e7_A4D9_D9D574B2C205" value="transient" modelElement="EAID_88B23634_B49F_494b_8C4F_C8D7D6B023B9"/>
+		<UML:TaggedValue tag="asDictionary" xmi.id="EAID_0BE3FA2A_2E67_bb2e_9C04_E61FF3368496" value="false#NOTES#Values: true,false&#xA;Default: true&#xA;" modelElement="EAID_9463391E_7CB5_4d05_BBAA_CB3EC93E5916"/>
+		<UML:TaggedValue tag="codeList" xmi.id="EAID_AE9A3B57_6114_a261_B74F_C110EB81B42F" value="http://skjema.geonorge.no/legg_inn_riktig_url#NOTES#Default: http://skjema.geonorge.no/legg_inn_riktig_url&#xA;" modelElement="EAID_9463391E_7CB5_4d05_BBAA_CB3EC93E5916"/>
+		<UML:TaggedValue tag="defaultCodeSpace" xmi.id="EAID_D80E6ACC_7969_e579_8B84_1C07754EFE03" value="http://skjema.geonorge.no/legg_inn_riktig_url#NOTES#Default: http://skjema.geonorge.no/legg_inn_riktig_url&#xA;" modelElement="EAID_9463391E_7CB5_4d05_BBAA_CB3EC93E5916"/>
+		<UML:TaggedValue tag="SOSI_datatype" xmi.id="EAID_369B3079_EBF6_b9eb_8D0F_DB14DEA5252C" value="T#NOTES#Values: H,T&#xA;Default: T&#xA;" modelElement="EAID_9463391E_7CB5_4d05_BBAA_CB3EC93E5916"/>
+		<UML:TaggedValue tag="SOSI_lengde" xmi.id="EAID_784CDCCC_9509_9c95_9099_315919FFBE73" value="21" modelElement="EAID_9463391E_7CB5_4d05_BBAA_CB3EC93E5916"/>
+		<UML:TaggedValue tag="SOSI_navn" xmi.id="EAID_54BE1B90_A08D_58a0_B996_A5309980701E" modelElement="EAID_9463391E_7CB5_4d05_BBAA_CB3EC93E5916"/>
+		<UML:TaggedValue tag="byValuePropertyType" xmi.id="EAID_ED33D65F_8113_fe81_864E_F4AC818678E6" value="false#NOTES#Values: true,false&#xA;Default: false&#xA;" modelElement="EAID_C0F617BC_1D2B_4aa6_85FD_F2BD615EB44C"/>
+		<UML:TaggedValue tag="isCollection" xmi.id="EAID_26B33348_40BC_d740_85A1_036DBA143B05" value="false#NOTES#Values: true,false&#xA;Default: false&#xA;" modelElement="EAID_C0F617BC_1D2B_4aa6_85FD_F2BD615EB44C"/>
+		<UML:TaggedValue tag="noPropertyType" xmi.id="EAID_F9638764_35B8_af35_92AF_C696AFE15FC5" value="false#NOTES#Values: true,false&#xA;Default: false&#xA;" modelElement="EAID_C0F617BC_1D2B_4aa6_85FD_F2BD615EB44C"/>
+		<UML:TaggedValue tag="SOSI_navn" xmi.id="EAID_EC313136_8DF9_47fe_A151_8E0BFF2255CF" value="IDENT" modelElement="EAID_CD604C2F_2067_4a84_8EC4_91222D0EC34F"/>
+		<UML:Diagram name="Hoveddiagram-Hornkoraller" xmi.id="EAID_0B37AB29_2DA2_4136_9DD8_535E08E851DF" diagramType="ClassDiagram" owner="EAPK_9D1544EB_4D52_4069_8D8E_5DA000498300" toolName="Enterprise Architect 2.5">
+			<UML:ModelElement.taggedValue>
+				<UML:TaggedValue tag="version" value="1.0"/>
+				<UML:TaggedValue tag="author" value="baetor"/>
+				<UML:TaggedValue tag="created_date" value="2020-08-28 10:33:58"/>
+				<UML:TaggedValue tag="modified_date" value="2021-01-19 11:08:41"/>
+				<UML:TaggedValue tag="package" value="EAPK_9D1544EB_4D52_4069_8D8E_5DA000498300"/>
+				<UML:TaggedValue tag="type" value="Logical"/>
+				<UML:TaggedValue tag="swimlanes" value="locked=false;orientation=0;width=0;inbar=false;names=false;color=0;bold=false;fcol=0;tcol=15524833;ofCol=-1;ufCol=-1;hl=0;ufh=0;hh=0;cls=0;bw=0;hli=0;SwimlaneFont=lfh:-13,lfw:0,lfi:0,lfu:0,lfs:0,lfface:Calibri,lfe:0,lfo:0,lfchar:1,lfop:0,lfcp:0,lfq:0,lfpf=0,lfWidth=0;"/>
+				<UML:TaggedValue tag="matrixitems" value="locked=false;matrixactive=false;swimlanesactive=true;kanbanactive=false;width=1;clrLine=0;"/>
+				<UML:TaggedValue tag="tpos" value="2"/>
+				<UML:TaggedValue tag="ea_localid" value="1912"/>
+				<UML:TaggedValue tag="EAStyle" value="ShowPrivate=1;ShowProtected=1;ShowPublic=1;HideRelationships=0;Locked=0;Border=1;HighlightForeign=1;PackageContents=1;SequenceNotes=0;ScalePrintImage=0;PPgs.cx=0;PPgs.cy=0;DocSize.cx=827;DocSize.cy=1169;ShowDetails=0;Orientation=P;Zoom=100;ShowTags=0;OpParams=1;VisibleAttributeDetail=0;ShowOpRetType=1;ShowIcons=1;CollabNums=0;HideProps=0;ShowReqs=0;ShowCons=0;PaperSize=9;HideParents=0;UseAlias=0;HideAtts=0;HideOps=0;HideStereo=0;HideElemStereo=0;ShowTests=0;ShowMaint=0;ConnectorNotation=UML 2.1;ExplicitNavigability=0;ShowShape=1;AllDockable=0;AdvancedElementProps=1;AdvancedFeatureProps=1;AdvancedConnectorProps=1;m_bElementClassifier=1;SPT=1;ShowNotes=0;SuppressBrackets=0;SuppConnectorLabels=0;PrintPageHeadFoot=0;ShowAsList=0;"/>
+				<UML:TaggedValue tag="styleex" value="SaveTag=73B1230A;ExcludeRTF=0;DocAll=0;HideQuals=0;AttPkg=1;ShowTests=0;ShowMaint=0;SuppressFOC=1;MatrixActive=0;SwimlanesActive=1;KanbanActive=0;MatrixLineWidth=1;MatrixLineClr=0;MatrixLocked=0;TConnectorNotation=UML 2.1;TExplicitNavigability=0;AdvancedElementProps=1;AdvancedFeatureProps=1;AdvancedConnectorProps=1;m_bElementClassifier=1;SPT=1;MDGDgm=;STBLDgm=;ShowNotes=0;VisibleAttributeDetail=0;ShowOpRetType=1;SuppressBrackets=0;SuppConnectorLabels=0;PrintPageHeadFoot=0;ShowAsList=0;SuppressedCompartments=;Theme=:119;"/>
+			</UML:ModelElement.taggedValue>
+			<UML:Diagram.element>
+				<UML:DiagramElement geometry="Left=593;Top=199;Right=797;Bottom=310;" subject="EAID_9463391E_7CB5_4d05_BBAA_CB3EC93E5916" seqno="1" style="DUID=C45CDAD2;HideIcon=0;"/>
+				<UML:DiagramElement geometry="Left=309;Top=320;Right=521;Bottom=509;" subject="EAID_C0F617BC_1D2B_4aa6_85FD_F2BD615EB44C" seqno="2" style="DUID=65BAFBCB;HideIcon=0;"/>
+				<UML:DiagramElement geometry="Left=309;Top=81;Right=521;Bottom=182;" subject="EAID_88B23634_B49F_494b_8C4F_C8D7D6B023B9" seqno="3" style="DUID=C05DEF6D;NSL=0;BCol=-1;BFol=-1;LCol=-1;LWth=-1;fontsz=0;bold=0;black=0;italic=0;ul=0;charset=0;pitch=0;HideIcon=0;"/>
+				<UML:DiagramElement geometry="SX=0;SY=0;EX=0;EY=0;EDGE=1;$LLB=;LLT=;LMT=;LMB=;LRT=;LRB=;IRHS=;ILHS=;Path=;" subject="EAID_C15CCD81_9490_4a64_8F7F_8C9699EA8AC8" style="Mode=3;EOID=C05DEF6D;SOID=65BAFBCB;Color=-1;LWidth=0;Hidden=0;"/>
+			</UML:Diagram.element>
+		</UML:Diagram>
+		<UML:Diagram name="Realisering av datatyper" xmi.id="EAID_7159F52C_CEFD_4da1_98AD_A975D836B18E" diagramType="ClassDiagram" owner="EAPK_9D1544EB_4D52_4069_8D8E_5DA000498300" toolName="Enterprise Architect 2.5">
+			<UML:ModelElement.taggedValue>
+				<UML:TaggedValue tag="version" value="1.0"/>
+				<UML:TaggedValue tag="author" value="baetor"/>
+				<UML:TaggedValue tag="created_date" value="2020-12-08 09:50:57"/>
+				<UML:TaggedValue tag="modified_date" value="2021-01-18 10:44:26"/>
+				<UML:TaggedValue tag="package" value="EAPK_9D1544EB_4D52_4069_8D8E_5DA000498300"/>
+				<UML:TaggedValue tag="type" value="Logical"/>
+				<UML:TaggedValue tag="swimlanes" value="locked=false;orientation=0;width=0;inbar=false;names=false;color=-1;bold=false;fcol=0;tcol=-1;ofCol=-1;ufCol=-1;hl=0;ufh=0;hh=0;cls=0;bw=0;hli=0;SwimlaneFont=lfh:-13,lfw:0,lfi:0,lfu:0,lfs:0,lfface:Calibri,lfe:0,lfo:0,lfchar:1,lfop:0,lfcp:0,lfq:0,lfpf=0,lfWidth=0;"/>
+				<UML:TaggedValue tag="matrixitems" value="locked=false;matrixactive=false;swimlanesactive=true;kanbanactive=false;width=1;clrLine=0;"/>
+				<UML:TaggedValue tag="tpos" value="4"/>
+				<UML:TaggedValue tag="ea_localid" value="1913"/>
+				<UML:TaggedValue tag="EAStyle" value="ShowPrivate=1;ShowProtected=1;ShowPublic=1;HideRelationships=0;Locked=0;Border=1;HighlightForeign=1;PackageContents=1;SequenceNotes=0;ScalePrintImage=0;PPgs.cx=0;PPgs.cy=0;DocSize.cx=827;DocSize.cy=1169;ShowDetails=0;Orientation=P;Zoom=100;ShowTags=0;OpParams=1;VisibleAttributeDetail=0;ShowOpRetType=1;ShowIcons=1;CollabNums=0;HideProps=0;ShowReqs=0;ShowCons=0;PaperSize=9;HideParents=0;UseAlias=0;HideAtts=0;HideOps=0;HideStereo=0;HideElemStereo=0;ShowTests=0;ShowMaint=0;ConnectorNotation=UML 2.1;ExplicitNavigability=0;ShowShape=1;AllDockable=0;AdvancedElementProps=1;AdvancedFeatureProps=1;AdvancedConnectorProps=1;m_bElementClassifier=1;SPT=1;ShowNotes=0;SuppressBrackets=0;SuppConnectorLabels=0;PrintPageHeadFoot=0;ShowAsList=0;ShowFQN=1;"/>
+				<UML:TaggedValue tag="styleex" value="SaveTag=FF2678A8;ExcludeRTF=0;DocAll=0;HideQuals=0;AttPkg=1;ShowTests=0;ShowMaint=0;SuppressFOC=1;MatrixActive=0;SwimlanesActive=1;KanbanActive=0;MatrixLineWidth=1;MatrixLineClr=0;MatrixLocked=0;TConnectorNotation=UML 2.1;TExplicitNavigability=0;AdvancedElementProps=1;AdvancedFeatureProps=1;AdvancedConnectorProps=1;m_bElementClassifier=1;SPT=1;MDGDgm=;STBLDgm=;ShowNotes=0;VisibleAttributeDetail=0;ShowOpRetType=1;SuppressBrackets=0;SuppConnectorLabels=0;PrintPageHeadFoot=0;ShowAsList=0;ShowFQN=1;SuppressedCompartments=;Theme=:119;"/>
+			</UML:ModelElement.taggedValue>
+			<UML:Diagram.element>
+				<UML:DiagramElement geometry="Left=424;Top=240;Right=609;Bottom=325;" subject="EAID_953CE893_18AF_4923_B143_4BC4CCB7221B" seqno="1" style="DUID=6216BA51;NSL=0;BCol=-1;BFol=-1;LCol=-1;LWth=-1;fontsz=0;bold=0;black=0;italic=0;ul=0;charset=0;pitch=0;HideIcon=0;"/>
+				<UML:DiagramElement geometry="Left=110;Top=240;Right=321;Bottom=364;" subject="EAID_CA9DAA7A_1B3C_4c8c_B60F_2C1C0D22C923" seqno="2" style="DUID=1BA46C0E;NSL=0;BCol=-1;BFol=-1;LCol=-1;LWth=-1;fontsz=0;bold=0;black=0;italic=0;ul=0;charset=0;pitch=0;HideIcon=0;"/>
+				<UML:DiagramElement geometry="Left=124;Top=64;Right=309;Bottom=149;" subject="EAID_444C9D84_D968_4222_B1BD_270AC833E949" seqno="3" style="DUID=7CE4F180;NSL=0;BCol=-1;BFol=-1;LCol=-1;LWth=-1;fontsz=0;bold=0;black=0;italic=0;ul=0;charset=0;pitch=0;HideIcon=0;"/>
+				<UML:DiagramElement geometry="Left=424;Top=64;Right=609;Bottom=149;" subject="EAID_CD604C2F_2067_4a84_8EC4_91222D0EC34F" seqno="4" style="DUID=6CFEDAB0;NSL=0;BCol=-1;BFol=-1;LCol=-1;LWth=-1;fontsz=0;bold=0;black=0;italic=0;ul=0;charset=0;pitch=0;HideIcon=0;"/>
+				<UML:DiagramElement geometry="SX=0;SY=0;EX=0;EY=0;EDGE=3;$LLB=;LLT=;LMT=;LMB=;LRT=;LRB=;IRHS=;ILHS=;Path=;" subject="EAID_EBE24025_F161_4b1b_8E82_490DD4041C0A" style="Mode=3;EOID=1BA46C0E;SOID=7CE4F180;Color=-1;LWidth=0;Hidden=0;"/>
+				<UML:DiagramElement geometry="SX=0;SY=0;EX=0;EY=0;EDGE=3;$LLB=;LLT=;LMT=;LMB=;LRT=;LRB=;IRHS=;ILHS=;Path=;" subject="EAID_D5DAC459_A384_4e0f_A394_C7AC885392EF" style="Mode=3;EOID=6216BA51;SOID=6CFEDAB0;Color=-1;LWidth=0;Hidden=0;"/>
+			</UML:Diagram.element>
+		</UML:Diagram>
+		<UML:Diagram name="Realisering av kodelister" xmi.id="EAID_1CA01664_78A9_4ea9_83E9_E662DE034887" diagramType="ClassDiagram" owner="EAPK_9D1544EB_4D52_4069_8D8E_5DA000498300" toolName="Enterprise Architect 2.5">
+			<UML:ModelElement.taggedValue>
+				<UML:TaggedValue tag="version" value="1.0"/>
+				<UML:TaggedValue tag="author" value="baetor"/>
+				<UML:TaggedValue tag="created_date" value="2020-12-08 09:51:47"/>
+				<UML:TaggedValue tag="modified_date" value="2021-01-18 10:47:19"/>
+				<UML:TaggedValue tag="package" value="EAPK_9D1544EB_4D52_4069_8D8E_5DA000498300"/>
+				<UML:TaggedValue tag="type" value="Logical"/>
+				<UML:TaggedValue tag="swimlanes" value="locked=false;orientation=0;width=0;inbar=false;names=false;color=-1;bold=false;fcol=0;tcol=-1;ofCol=-1;ufCol=-1;hl=0;ufh=0;hh=0;cls=0;bw=0;hli=0;SwimlaneFont=lfh:-13,lfw:0,lfi:0,lfu:0,lfs:0,lfface:Calibri,lfe:0,lfo:0,lfchar:1,lfop:0,lfcp:0,lfq:0,lfpf=0,lfWidth=0;"/>
+				<UML:TaggedValue tag="matrixitems" value="locked=false;matrixactive=false;swimlanesactive=true;kanbanactive=false;width=1;clrLine=0;"/>
+				<UML:TaggedValue tag="tpos" value="5"/>
+				<UML:TaggedValue tag="ea_localid" value="1914"/>
+				<UML:TaggedValue tag="EAStyle" value="ShowPrivate=1;ShowProtected=1;ShowPublic=1;HideRelationships=0;Locked=0;Border=1;HighlightForeign=1;PackageContents=1;SequenceNotes=0;ScalePrintImage=0;PPgs.cx=0;PPgs.cy=0;DocSize.cx=827;DocSize.cy=1169;ShowDetails=0;Orientation=P;Zoom=100;ShowTags=0;OpParams=1;VisibleAttributeDetail=0;ShowOpRetType=1;ShowIcons=1;CollabNums=0;HideProps=0;ShowReqs=0;ShowCons=0;PaperSize=9;HideParents=0;UseAlias=0;HideAtts=0;HideOps=0;HideStereo=0;HideElemStereo=0;ShowTests=0;ShowMaint=0;ConnectorNotation=UML 2.1;ExplicitNavigability=0;ShowShape=1;AllDockable=0;AdvancedElementProps=1;AdvancedFeatureProps=1;AdvancedConnectorProps=1;m_bElementClassifier=1;SPT=1;ShowNotes=0;SuppressBrackets=0;SuppConnectorLabels=0;PrintPageHeadFoot=0;ShowAsList=0;"/>
+				<UML:TaggedValue tag="styleex" value="SaveTag=C94854BF;ExcludeRTF=0;DocAll=0;HideQuals=0;AttPkg=1;ShowTests=0;ShowMaint=0;SuppressFOC=1;MatrixActive=0;SwimlanesActive=1;KanbanActive=0;MatrixLineWidth=1;MatrixLineClr=0;MatrixLocked=0;TConnectorNotation=UML 2.1;TExplicitNavigability=0;AdvancedElementProps=1;AdvancedFeatureProps=1;AdvancedConnectorProps=1;m_bElementClassifier=1;SPT=1;MDGDgm=;STBLDgm=;ShowNotes=0;VisibleAttributeDetail=0;ShowOpRetType=1;SuppressBrackets=0;SuppConnectorLabels=0;PrintPageHeadFoot=0;ShowAsList=0;SuppressedCompartments=;Theme=:119;"/>
+			</UML:ModelElement.taggedValue>
+			<UML:Diagram.element>
+				<UML:DiagramElement geometry="Left=96;Top=219;Right=290;Bottom=280;" subject="EAID_6E918CEE_7D5B_4815_98FD_847C5EE49CAB" seqno="1" style="DUID=A38F8E3E;"/>
+				<UML:DiagramElement geometry="Left=388;Top=219;Right=633;Bottom=280;" subject="EAID_9489BB12_7A02_42e1_9D57_115A46F2BCF7" seqno="2" style="DUID=D12A8339;ImageID=0;"/>
+				<UML:DiagramElement geometry="Left=409;Top=59;Right=613;Bottom=170;" subject="EAID_59B22938_5CBC_472e_A703_8FB58D52643A" seqno="3" style="DUID=49896AC7;NSL=0;BCol=-1;BFol=-1;LCol=-1;LWth=-1;fontsz=0;bold=0;black=0;italic=0;ul=0;charset=0;pitch=0;HideIcon=0;"/>
+				<UML:DiagramElement geometry="Left=91;Top=59;Right=295;Bottom=170;" subject="EAID_9463391E_7CB5_4d05_BBAA_CB3EC93E5916" seqno="4" style="DUID=2611F2CA;NSL=0;BCol=-1;BFol=-1;LCol=-1;LWth=-1;fontsz=0;bold=0;black=0;italic=0;ul=0;charset=0;pitch=0;HideIcon=0;"/>
+			</UML:Diagram.element>
+		</UML:Diagram>
+		<UML:Diagram name="Pakkerealisering Hornkoraller-20201201" xmi.id="EAID_0DA91F81_B886_4395_B27E_146606B60A40" diagramType="PackageDiagram" owner="EAPK_9D1544EB_4D52_4069_8D8E_5DA000498300" toolName="Enterprise Architect 2.5">
+			<UML:ModelElement.taggedValue>
+				<UML:TaggedValue tag="version" value="1.0"/>
+				<UML:TaggedValue tag="author" value="baetor"/>
+				<UML:TaggedValue tag="created_date" value="2020-12-08 16:13:20"/>
+				<UML:TaggedValue tag="modified_date" value="2021-01-18 10:44:25"/>
+				<UML:TaggedValue tag="package" value="EAPK_9D1544EB_4D52_4069_8D8E_5DA000498300"/>
+				<UML:TaggedValue tag="type" value="Package"/>
+				<UML:TaggedValue tag="swimlanes" value="locked=false;orientation=0;width=0;inbar=false;names=false;color=0;bold=false;fcol=0;tcol=15524833;ofCol=-1;ufCol=-1;hl=0;ufh=0;hh=0;cls=0;bw=0;hli=0;SwimlaneFont=lfh:-13,lfw:0,lfi:0,lfu:0,lfs:0,lfface:Calibri,lfe:0,lfo:0,lfchar:1,lfop:0,lfcp:0,lfq:0,lfpf=0,lfWidth=0;"/>
+				<UML:TaggedValue tag="matrixitems" value="locked=false;matrixactive=false;swimlanesactive=true;kanbanactive=false;width=1;clrLine=0;"/>
+				<UML:TaggedValue tag="tpos" value="1"/>
+				<UML:TaggedValue tag="ea_localid" value="1915"/>
+				<UML:TaggedValue tag="EAStyle" value="ShowPrivate=1;ShowProtected=1;ShowPublic=1;HideRelationships=0;Locked=0;Border=1;HighlightForeign=1;PackageContents=1;SequenceNotes=0;ScalePrintImage=0;PPgs.cx=0;PPgs.cy=0;DocSize.cx=827;DocSize.cy=1169;ShowDetails=0;Orientation=P;Zoom=100;ShowTags=0;OpParams=1;VisibleAttributeDetail=0;ShowOpRetType=1;ShowIcons=1;CollabNums=0;HideProps=0;ShowReqs=0;ShowCons=0;PaperSize=9;HideParents=0;UseAlias=0;HideAtts=0;HideOps=0;HideStereo=0;HideElemStereo=0;ShowTests=0;ShowMaint=0;ConnectorNotation=UML 2.1;ExplicitNavigability=0;ShowShape=1;AllDockable=0;AdvancedElementProps=1;AdvancedFeatureProps=1;AdvancedConnectorProps=1;m_bElementClassifier=1;SPT=1;ShowNotes=0;SuppressBrackets=0;SuppConnectorLabels=0;PrintPageHeadFoot=0;ShowAsList=0;"/>
+				<UML:TaggedValue tag="styleex" value="SaveTag=06A730CB;ExcludeRTF=0;DocAll=0;HideQuals=0;AttPkg=1;ShowTests=0;ShowMaint=0;SuppressFOC=1;MatrixActive=0;SwimlanesActive=1;KanbanActive=0;MatrixLineWidth=1;MatrixLineClr=0;MatrixLocked=0;TConnectorNotation=UML 2.1;TExplicitNavigability=0;AdvancedElementProps=1;AdvancedFeatureProps=1;AdvancedConnectorProps=1;m_bElementClassifier=1;SPT=1;MDGDgm=;STBLDgm=;ShowNotes=0;VisibleAttributeDetail=0;ShowOpRetType=1;SuppressBrackets=0;SuppConnectorLabels=0;PrintPageHeadFoot=0;ShowAsList=0;SuppressedCompartments=;Theme=:119;"/>
+			</UML:ModelElement.taggedValue>
+			<UML:Diagram.element>
+				<UML:DiagramElement geometry="Left=652;Top=199;Right=857;Bottom=414;" subject="EAID_1DB15898_E0F9_4d15_A64A_07BBC8596D66" seqno="1" style=" DUID=B9899116;NSL=0;BCol=-1;BFol=-1;LCol=-1;LWth=-1;fontsz=0;bold=0;black=0;italic=0;ul=0;charset=0;pitch=0;AttPro=0;AttPri=0;AttPub=0;AttPkg=0;AttCustom=0;OpCustom=0;RzO=1;"/>
+				<UML:DiagramElement geometry="Left=191;Top=209;Right=420;Bottom=406;" subject="EAID_9D1544EB_4D52_4069_8D8E_5DA000498300" seqno="2" style=" DUID=C32924D5;NSL=0;BCol=-1;BFol=-1;LCol=-1;LWth=-1;fontsz=0;bold=0;black=0;italic=0;ul=0;charset=0;pitch=0;"/>
+				<UML:DiagramElement geometry="SX=0;SY=0;EX=0;EY=0;EDGE=2;$LLB=;LLT=;LMT=;LMB=;LRT=;LRB=;IRHS=;ILHS=;Path=;" subject="EAID_5F812BE6_36F1_4be8_AEF6_E05E5D6B6F31" style="Mode=3;EOID=B9899116;SOID=C32924D5;Color=-1;LWidth=0;Hidden=0;"/>
+			</UML:Diagram.element>
+		</UML:Diagram>
+		<UML:Diagram name="Realisering av SOSI-objektet" xmi.id="EAID_78B8613A_FD7F_4f3f_8965_1526351AB913" diagramType="ClassDiagram" owner="EAPK_9D1544EB_4D52_4069_8D8E_5DA000498300" toolName="Enterprise Architect 2.5">
+			<UML:ModelElement.taggedValue>
+				<UML:TaggedValue tag="version" value="1.0"/>
+				<UML:TaggedValue tag="author" value="baetor"/>
+				<UML:TaggedValue tag="created_date" value="2020-12-17 11:12:05"/>
+				<UML:TaggedValue tag="modified_date" value="2021-01-18 10:44:26"/>
+				<UML:TaggedValue tag="package" value="EAPK_9D1544EB_4D52_4069_8D8E_5DA000498300"/>
+				<UML:TaggedValue tag="type" value="Logical"/>
+				<UML:TaggedValue tag="swimlanes" value="locked=false;orientation=0;width=0;inbar=false;names=false;color=-1;bold=false;fcol=0;tcol=-1;ofCol=-1;ufCol=-1;hl=0;ufh=0;hh=0;cls=0;bw=0;hli=0;SwimlaneFont=lfh:-13,lfw:0,lfi:0,lfu:0,lfs:0,lfface:Calibri,lfe:0,lfo:0,lfchar:1,lfop:0,lfcp:0,lfq:0,lfpf=0,lfWidth=0;"/>
+				<UML:TaggedValue tag="matrixitems" value="locked=false;matrixactive=false;swimlanesactive=true;kanbanactive=false;width=1;clrLine=0;"/>
+				<UML:TaggedValue tag="tpos" value="3"/>
+				<UML:TaggedValue tag="ea_localid" value="1916"/>
+				<UML:TaggedValue tag="EAStyle" value="ShowPrivate=1;ShowProtected=1;ShowPublic=1;HideRelationships=0;Locked=0;Border=1;HighlightForeign=1;PackageContents=1;SequenceNotes=0;ScalePrintImage=0;PPgs.cx=0;PPgs.cy=0;DocSize.cx=827;DocSize.cy=1169;ShowDetails=0;Orientation=P;Zoom=100;ShowTags=0;OpParams=1;VisibleAttributeDetail=0;ShowOpRetType=1;ShowIcons=1;CollabNums=0;HideProps=0;ShowReqs=0;ShowCons=0;PaperSize=9;HideParents=0;UseAlias=0;HideAtts=0;HideOps=0;HideStereo=0;HideElemStereo=0;ShowTests=0;ShowMaint=0;ConnectorNotation=UML 2.1;ExplicitNavigability=0;ShowShape=1;AllDockable=0;AdvancedElementProps=1;AdvancedFeatureProps=1;AdvancedConnectorProps=1;m_bElementClassifier=1;SPT=1;ShowNotes=0;SuppressBrackets=0;SuppConnectorLabels=0;PrintPageHeadFoot=0;ShowAsList=0;ShowFQN=1;"/>
+				<UML:TaggedValue tag="styleex" value="SaveTag=A1AFAF50;ExcludeRTF=0;DocAll=0;HideQuals=0;AttPkg=1;ShowTests=0;ShowMaint=0;SuppressFOC=1;MatrixActive=0;SwimlanesActive=1;KanbanActive=0;MatrixLineWidth=1;MatrixLineClr=0;MatrixLocked=0;TConnectorNotation=UML 2.1;TExplicitNavigability=0;AdvancedElementProps=1;AdvancedFeatureProps=1;AdvancedConnectorProps=1;m_bElementClassifier=1;SPT=1;MDGDgm=;STBLDgm=;ShowNotes=0;VisibleAttributeDetail=0;ShowOpRetType=1;SuppressBrackets=0;SuppConnectorLabels=0;PrintPageHeadFoot=0;ShowAsList=0;ShowFQN=1;SuppressedCompartments=;Theme=:119;"/>
+			</UML:ModelElement.taggedValue>
+			<UML:Diagram.element>
+				<UML:DiagramElement geometry="Left=197;Top=112;Right=409;Bottom=470;" subject="EAID_8D211872_8B18_4abf_8420_F10423269429" seqno="1" style="DUID=3A507355;NSL=0;BCol=-1;BFol=-1;LCol=-1;LWth=-1;fontsz=0;bold=0;black=0;italic=0;ul=0;charset=0;pitch=0;HideIcon=0;"/>
+				<UML:DiagramElement geometry="Left=506;Top=235;Right=718;Bottom=346;" subject="EAID_88B23634_B49F_494b_8C4F_C8D7D6B023B9" seqno="2" style="DUID=45168A0C;NSL=0;BCol=-1;BFol=-1;LCol=-1;LWth=-1;fontsz=0;bold=0;black=0;italic=0;ul=0;charset=0;pitch=0;HideIcon=0;"/>
+				<UML:DiagramElement geometry="SCTR=1;SCME=1;SX=0;SY=0;EX=0;EY=0;EDGE=1;SCTR.LEFT=350;SCTR.TOP=-157;SCTR.RIGHT=392;SCTR.BOTTOM=-90;$LLB=;LLT=CX=16:CY=13:OX=0:OY=0:HDN=0:BLD=0:ITA=0:UND=0:CLR=-1:ALN=1:DIR=0:ROT=0;LMT=;LMB=;LRT=CX=52:CY=13:OX=0:OY=0:HDN=0:BLD=0:ITA=0:UND=0:CLR=-1:ALN=1:DIR=0:ROT=0;LRB=;IRHS=;ILHS=;Path=392:-112$392:-90$350:-90$350:-112$;" subject="EAID_F3816B73_02F8_461d_925E_010E09FE8EEE" style="Mode=3;EOID=3A507355;SOID=3A507355;Color=-1;LWidth=0;Hidden=0;"/>
+				<UML:DiagramElement geometry="SX=0;SY=0;EX=0;EY=0;EDGE=4;$LLB=;LLT=;LMT=;LMB=;LRT=;LRB=;IRHS=;ILHS=;Path=;" subject="EAID_80513433_46CD_4e3c_A155_7EB4D415F83F" style="Mode=3;EOID=3A507355;SOID=45168A0C;Color=-1;LWidth=0;Hidden=0;"/>
+			</UML:Diagram.element>
+		</UML:Diagram>
+		<UML:DiagramElement geometry="Left=643;Top=193;Right=888;Bottom=254;" subject="EAID_9489BB12_7A02_42e1_9D57_115A46F2BCF7" seqno="2" style="ImageID=0;DUID=613C9BCC;NSL=0;">
+			<UML:ModelElement.taggedValue>
+				<UML:TaggedValue tag="diagram_guid" value="EAID_D53C2100_70ED_42de_81D2_C478EFD4B3C6"/>
+			</UML:ModelElement.taggedValue>
+		</UML:DiagramElement>
+		<UML:DiagramElement geometry="Left=643;Top=193;Right=888;Bottom=254;" subject="EAID_9489BB12_7A02_42e1_9D57_115A46F2BCF7" seqno="2" style="ImageID=0;NSL=0;DUID=9E9C4AAE;">
+			<UML:ModelElement.taggedValue>
+				<UML:TaggedValue tag="diagram_guid" value="EAID_1C5977CE_8888_4ba8_9627_C2A6D05451C8"/>
+			</UML:ModelElement.taggedValue>
+		</UML:DiagramElement>
+	</XMI.content>
+	<XMI.difference/>
+	<XMI.extensions xmi.extender="Enterprise Architect 2.5">
+		<EAStub xmi.id="EAID_CA9DAA7A_1B3C_4c8c_B60F_2C1C0D22C923" name="Posisjonskvalitet" UMLType="Class"/>
+		<EAModel.paramSub/>
+		<EAStub xmi.id="EAID_8D211872_8B18_4abf_8420_F10423269429" name="SOSI_Objekt" UMLType="Class"/>
+		<EAStub xmi.id="EAID_953CE893_18AF_4923_B143_4BC4CCB7221B" name="Identifikasjon" UMLType="Class"/>
+		<EAStub xmi.id="EAPK_1DB15898_E0F9_4d15_A64A_07BBC8596D66" name="Generelle typer 4.5" UMLType="Package"/>
+		<EAStub xmi.id="EAID_453EB6B1_D543_4f3d_BC53_E79283F6736C" name="CharacterString" UMLType="Class"/>
+		<EAStub xmi.id="EAID_BE6CCEB8_342A_4a44_BD46_8E5CBFDA9A91" name="Punkt" UMLType="Class"/>
+	</XMI.extensions>
+</XMI>
