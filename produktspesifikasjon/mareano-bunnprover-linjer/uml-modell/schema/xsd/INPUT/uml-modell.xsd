@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="UTF-8"?><schema xmlns="http://www.w3.org/2001/XMLSchema" xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:sc="http://www.interactive-instruments.de/ShapeChange/AppInfo" xmlns:umlmodell="https://skjema.geonorge.no/SOSI/produktspesifikasjon/mareano-bunnprover-linjer/uml-modell/1.0" elementFormDefault="qualified" targetNamespace="https://skjema.geonorge.no/SOSI/produktspesifikasjon/mareano-bunnprover-linjer/uml-modell/1.0" version="1.0">
+  <import namespace="http://www.interactive-instruments.de/ShapeChange/AppInfo" schemaLocation="https://shapechange.net/resources/schema/ShapeChangeAppinfo.xsd"/>
+  <import namespace="http://www.opengis.net/gml/3.2" schemaLocation="http://schemas.opengis.net/gml/3.2.1/gml.xsd"/>
+  <!--XML Schema document created by ShapeChange - http://shapechange.net/-->
+  <element name="BunnprøverLinjer" substitutionGroup="umlmodell:GenerelleEgenskaperStasjoner" type="umlmodell:BunnprøverLinjerType">
+    <annotation>
+      <documentation>Mareanostasjon hvor det er tatt bunnprøver med tauede redskaper: Bomtrål, RP-slede og Video-rigg.
+-- Definition --
+Mareano station where bottom samples are collected using beamtrawl., RP-sledge and video.</documentation>
+    </annotation>
+  </element>
+  <complexType name="BunnprøverLinjerType">
+    <complexContent>
+      <extension base="umlmodell:GenerelleEgenskaperStasjonerType">
+        <sequence>
+          <element name="linje" type="gml:CurvePropertyType">
+            <annotation>
+              <documentation>egenskap som inneholder objektets geometri</documentation>
+            </annotation>
+          </element>
+          <element name="redskap" type="string">
+            <annotation>
+              <documentation>type redskap benyttet for prøvetakingen.
+-- Definition --
+Name of equipment used for the sampling.</documentation>
+              <appinfo>
+                <sc:taggedValue tag="SOSI_navn">REDSKAP</sc:taggedValue>
+              </appinfo>
+            </annotation>
+          </element>
+          <element name="toktNummer" type="integer">
+            <annotation>
+              <documentation>toktnummer ved Havforskningsinstituttet.
+-- Definition --
+Cruise number at IMR.</documentation>
+              <appinfo>
+                <sc:taggedValue tag="SOSI_navn">TOKTNUMMER</sc:taggedValue>
+              </appinfo>
+            </annotation>
+          </element>
+          <element name="referanseStasjon" type="integer">
+            <annotation>
+              <documentation>referansestasjon, unik innen MAREANO.
+-- Definition --
+Reference number during MAREANO prosject (superstation).</documentation>
+              <appinfo>
+                <sc:taggedValue tag="SOSI_navn">REFERANSESTASJON</sc:taggedValue>
+              </appinfo>
+            </annotation>
+          </element>
+          <element name="stasjonNummer" type="integer">
+            <annotation>
+              <appinfo>
+                <sc:taggedValue tag="SOSI_navn">STASJONNUMMER</sc:taggedValue>
+              </appinfo>
+            </annotation>
+          </element>
+          <element name="prøveNummer" type="integer">
+            <annotation>
+              <appinfo>
+                <sc:taggedValue tag="SOSI_navn">PRØVENUMMER</sc:taggedValue>
+              </appinfo>
+            </annotation>
+          </element>
+          <element name="redskapKode" type="integer">
+            <annotation>
+              <appinfo>
+                <sc:taggedValue tag="SOSI_navn">REDSKAPKODE</sc:taggedValue>
+              </appinfo>
+            </annotation>
+          </element>
+          <element name="dato" type="date">
+            <annotation>
+              <documentation>observasjonsdato.
+-- Definition --
+Date of observation.</documentation>
+              <appinfo>
+                <sc:taggedValue tag="SOSI_navn">DATO</sc:taggedValue>
+              </appinfo>
+            </annotation>
+          </element>
+          <element name="lengdegrad" type="double">
+            <annotation>
+              <documentation>lengdegrad som prøven ble tatt på.
+-- Definition --
+Longitude where the sample was taken.</documentation>
+              <appinfo>
+                <sc:taggedValue tag="SOSI_navn">LENGDEGRAD</sc:taggedValue>
+              </appinfo>
+            </annotation>
+          </element>
+          <element name="breddegrad" type="double">
+            <annotation>
+              <documentation>breddegrad som prøven ble tatt på.
+-- Definition --
+Latitude where the sample was taken.</documentation>
+              <appinfo>
+                <sc:taggedValue tag="SOSI_navn">BREDDEGRAD</sc:taggedValue>
+              </appinfo>
+            </annotation>
+          </element>
+          <element name="bunndyp" type="integer">
+            <annotation>
+              <documentation>bunndyp der prøven er tatt.
+-- Definition --
+Bottomdepth where the sample is taken.</documentation>
+              <appinfo>
+                <sc:taggedValue tag="SOSI_navn">BUNNDYP</sc:taggedValue>
+              </appinfo>
+            </annotation>
+          </element>
+        </sequence>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="BunnprøverLinjerPropertyType">
+    <sequence minOccurs="0">
+      <element ref="umlmodell:BunnprøverLinjer"/>
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup"/>
+    <attributeGroup ref="gml:OwnershipAttributeGroup"/>
+  </complexType>
+  <element abstract="true" name="GenerelleEgenskaperStasjoner" substitutionGroup="gml:AbstractFeature" type="umlmodell:GenerelleEgenskaperStasjonerType">
+    <annotation>
+      <documentation>abstrakt objekt som bærer en rekke egenskaper som er fagområde-uavhengige og kan benyttes for alle objekttyper
+Merknad: Spesielt i produktspesifikasjonsarbeid vil en velge egenskaper og av grensningslinjer fra denne klassen.</documentation>
+    </annotation>
+  </element>
+  <complexType abstract="true" name="GenerelleEgenskaperStasjonerType">
+    <complexContent>
+      <extension base="gml:AbstractFeatureType">
+        <sequence>
+          <element name="identifikasjon" type="umlmodell:IdentifikasjonPropertyType">
+            <annotation>
+              <documentation>unik identifikasjon av et objekt</documentation>
+            </annotation>
+          </element>
+          <element minOccurs="0" name="kvalitet" type="umlmodell:PosisjonskvalitetPropertyType">
+            <annotation>
+              <documentation>beskrivelse av kvaliteten på stedfestingen
+Merknad: Denne er identisk med ..KVALITET i tidligere versjoner av SOSI.</documentation>
+            </annotation>
+          </element>
+          <element minOccurs="0" name="datauttaksdato" type="date">
+            <annotation>
+              <documentation>dato for uttak fra en database
+Merknad:
+Skiller seg fra Kopidato ved at en ikke skiller på om det er uttak fra en originaldatabase eller en kopidatabase.</documentation>
+              <appinfo>
+                <sc:taggedValue tag="SOSI_navn">DATAUTTAKSDATO</sc:taggedValue>
+              </appinfo>
+            </annotation>
+          </element>
+          <element name="opphav" type="string">
+            <annotation>
+              <documentation>referanse til opphavsmaterialet, kildematerialet, organisasjons/publiseringskilde
+Merknad:
+Kan også beskrive navn på person og årsak til oppdatering</documentation>
+              <appinfo>
+                <sc:taggedValue tag="SOSI_navn">OPPHAV</sc:taggedValue>
+              </appinfo>
+            </annotation>
+          </element>
+        </sequence>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="GenerelleEgenskaperStasjonerPropertyType">
+    <sequence minOccurs="0">
+      <element ref="umlmodell:GenerelleEgenskaperStasjoner"/>
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup"/>
+    <attributeGroup ref="gml:OwnershipAttributeGroup"/>
+  </complexType>
+  <element name="Identifikasjon" substitutionGroup="gml:AbstractObject" type="umlmodell:IdentifikasjonType"/>
+  <complexType name="IdentifikasjonType">
+    <sequence>
+      <element name="lokalId" type="string">
+        <annotation>
+          <documentation>lokal identifikator, tildelt av dataleverendør/dataforvalter. Den lokale identifikatoren er unik innenfor navnerommet, ingen andre objekter har samme identifikator.
+NOTE: Det er data leverendørens ansvar å sørge for at denne lokale identifikatoren er unik innenfor navnerommet.</documentation>
+          <appinfo>
+            <sc:taggedValue tag="SOSI_navn">LOKALID</sc:taggedValue>
+          </appinfo>
+        </annotation>
+      </element>
+      <element name="navnerom" type="string">
+        <annotation>
+          <documentation>navnerom som unikt identifiserer datakilden til objektet, starter med to bokstavs kode jfr ISO 3166. Benytter understreking  ("_") dersom data produsenten ikke er assosiert med bare et land.
+NOTE 1 : Verdien for nanverom vil eies av den dataprodusent som har ansvar for de unike identifikatorene og vil registreres i "INSPIRE external  Object Identifier Namespaces Register"
+Eksempel: NO for Norge.</documentation>
+          <appinfo>
+            <sc:taggedValue tag="SOSI_navn">NAVNEROM</sc:taggedValue>
+          </appinfo>
+        </annotation>
+      </element>
+      <element name="versjonId" type="string">
+        <annotation>
+          <documentation>identifikasjon av en spesiell versjon av et geografisk objekt (instans), maksimum lengde på 25 karakterers. Dersom spesifikasjonen av et geografisk objekt med en identifikasjon inkludererer livsløpssyklusinformasjon, benyttes denne versjonId for å skille mellom ulike versjoner av samme objekt. versjonId er en unik  identifikasjon av versjonen.
+NOTE Maksimum lengde er valgt for å tillate tidsregistrering i henhold til  ISO 8601, slik som  "2007-02-12T12:12:12+05:30" som versjonId.</documentation>
+          <appinfo>
+            <sc:taggedValue tag="SOSI_navn">VERSJONID</sc:taggedValue>
+          </appinfo>
+        </annotation>
+      </element>
+    </sequence>
+  </complexType>
+  <complexType name="IdentifikasjonPropertyType">
+    <sequence>
+      <element ref="umlmodell:Identifikasjon"/>
+    </sequence>
+  </complexType>
+  <element name="Posisjonskvalitet" substitutionGroup="gml:AbstractObject" type="umlmodell:PosisjonskvalitetType"/>
+  <complexType name="PosisjonskvalitetType">
+    <sequence>
+      <element name="målemetode" type="gml:CodeType">
+        <annotation>
+          <documentation>metode for måling i grunnriss (x,y), og høyde (z) når metoden er den samme som ved måling i grunnriss</documentation>
+          <appinfo>
+            <sc:targetCodeListURI>https://register.geonorge.no/sosi-kodelister/generelle-konsepter/5.1/m%C3%A5lemetode</sc:targetCodeListURI>
+          </appinfo>
+        </annotation>
+      </element>
+    </sequence>
+  </complexType>
+  <complexType name="PosisjonskvalitetPropertyType">
+    <sequence>
+      <element ref="umlmodell:Posisjonskvalitet"/>
+    </sequence>
+  </complexType>
+</schema>
