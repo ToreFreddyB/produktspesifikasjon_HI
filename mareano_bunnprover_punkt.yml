@@ -1,0 +1,10 @@
+metadataId: ccff1ba4-898b-4b47-a4a8-ba5466922d20
+output_directory: produktspesifikasjon
+product_slug: mareano_bunnprover_punkt
+updated: '2026-10-16'
+outputs: geopackage
+scopes:
+- name: UML modell
+  url: https://sosi.geonorge.no/svn/SOSI/SOSI%20Del%203/Havforskningsinstituttet/MareanoBunnpr%c3%b8verPunkt-20210601.xml
+  generator: xmi
+  description: ''
