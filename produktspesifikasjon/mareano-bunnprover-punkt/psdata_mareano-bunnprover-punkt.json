@@ -1,0 +1,379 @@
+{
+  "overview": "Denne produktspesifikasjonen er autogenerert fra metadata i Geonorge og datamodell fra SOSI modellregister og/eller OGC API Features. Noe ekstra informasjon kan ha blitt lagt til gjennom manuell prosess. Produktspesifikasjonen er i henhold til standarden: 'Geografisk informasjon - Dataproduktspesifikasjoner' (ISO19131:2022)",
+  "title": "Mareano bunnprøver punkt",
+  "format": "text/html",
+  "date": {
+    "creation": "2021-05-12",
+    "revision": "2026-05-24"
+  },
+  "language": "nor",
+  "contact": {
+    "individualName": "Kjell Bakkeplass",
+    "organizationName": "Havforskningsinstituttet",
+    "logo": "https://register.geonorge.no/data/organizations/971349077_hi_liten.png",
+    "electronicMailAddress": "kjell.bakkeplass@hi.no",
+    "role": "owner"
+  },
+  "identificationSection": {
+    "title": "Mareano bunnprøver punkt",
+    "abstract": "Datasettet viser georefererte bunnprøvepunkt der MAREANO har samlet inn ett bunnprøver fra ulike ikke-tauede redskap (f.eks. vanVeen Grab, Multicorer, Boxcorer og CTD).",
+    "purpose": {
+      "summary": "MAREANO samler inn prøver fra bunnen med forskjellige ikke-tauede redskaper for å kartlegge av geologi og bunnfauna på bestemte posisjoner."
+    },
+    "topicCategory": [
+      "Kyst og sjø"
+    ],
+    "spatialRepresentationType": "Vektor",
+    "spatialResolution": {
+      "equivalentScale": "500000"
+    },
+    "uniqueId": "https://data.geonorge.no/sosi/natur/mareano_bunnprover_punkt",
+    "keyword": [
+      "ikke-tauede redskaper",
+      "vanVeen Grab",
+      "Multicorer",
+      "Boxcorer",
+      "CTD",
+      "Mareano",
+      "Norge digitalt",
+      "fellesDatakatalog",
+      "Kyst og fiskeri",
+      "Natur",
+      "BunnprøverPunkt",
+      "redskap",
+      "toktNummer",
+      "referanseStasjon",
+      "stasjonNummer",
+      "prøveNummer",
+      "redskapKode",
+      "bunndyp",
+      "Norge"
+    ],
+    "restriction": {
+      "resourceConstraints": {
+        "useLimitations": "Ingen begrensninger på bruk er oppgitt."
+      },
+      "legalConstraints": {
+        "accessConstraints": "Åpne data",
+        "useConstraints": "Lisens",
+        "license": "Creative Commons BY-NC 4.0 (CC BY-NC 4.0)",
+        "licenseUrl": "https://creativecommons.org/licenses/by-nc/4.0/"
+      },
+      "securityConstraints": {
+        "classification": "Ugradert"
+      }
+    },
+    "contact": [
+      {
+        "individualName": "Kjell Bakkeplass",
+        "organizationName": "Havforskningsinstituttet",
+        "electronicMailAddress": "kjell.bakkeplass@hi.no",
+        "role": "owner"
+      },
+      {
+        "individualName": "Kjell Bakkeplass",
+        "organizationName": "Havforskningsinstituttet",
+        "electronicMailAddress": "kjell.bakkeplass@hi.no",
+        "role": "pointOfContact"
+      },
+      {
+        "individualName": "Kjell Bakkeplass",
+        "organizationName": "Havforskningsinstituttet",
+        "electronicMailAddress": "kjell.bakkeplass@hi.no",
+        "role": "publisher"
+      }
+    ],
+    "maintenance": "Årlig",
+    "extent": {
+      "geographicElement": {
+        "westBoundLongitude": "1.0",
+        "eastBoundLongitude": "37.0",
+        "southBoundLatitude": "58.5",
+        "northBoundLatitude": "81.75"
+      },
+      "geographicDescription": [
+        "Norske havområder."
+      ],
+      "temporalElement": {
+        "timePeriod": {
+          "beginPosition": "2021-05-12",
+          "endPosition": "2026-05-24"
+        }
+      }
+    },
+    "date": {
+      "creation": "2021-05-12",
+      "publication": "2021-05-12",
+      "revision": "2026-05-24"
+    },
+    "language": "nor"
+  },
+  "scopeSection": [
+    {
+      "specificationScope": {
+        "scopeIdentification": "Hele datasettet",
+        "level": "dataset",
+        "levelDescription": "Gjelder hele datasettet. Hvis omfang ikke er oppgitt under en overskrift, gjelder teksten for hele datasettet og alle leveranser"
+      }
+    },
+    {
+      "specificationScope": {
+        "scopeIdentification": "UML modell",
+        "level": "dataset"
+      }
+    }
+  ],
+  "referenceSystemSection": {
+    "spatialReferenceSystem": [
+      {
+        "code": "EPSG:25833",
+        "name": "EUREF89 UTM sone 33, 2d"
+      },
+      {
+        "code": "EPSG:3035",
+        "name": "EUREF89 / ETRS89-LAEA Europe"
+      },
+      {
+        "code": "EPSG:4258",
+        "name": "EUREF 89 Geografisk (ETRS 89) 2d"
+      },
+      {
+        "code": "EPSG:25833",
+        "name": "EUREF89 UTM sone 33, 2d"
+      }
+    ]
+  },
+  "dataQualitySection": {
+    "scope": {
+      "level": "dataset"
+    },
+    "report": [
+      {
+        "nameOfMeasure": "SOSI produktspesifikasjon: Mareano bunnprøver punkt",
+        "descriptiveResult": "Dataene er ikke vurdert iht produktspesifikasjonen"
+      },
+      {
+        "nameOfMeasure": "Sosi applikasjonsskjema",
+        "descriptiveResult": "SOSI-filer er ikke vurdert i henhold til applikasjonsskjema"
+      },
+      {
+        "nameOfMeasure": "Sosi applikasjonsskjema",
+        "descriptiveResult": "GML-filer er ikke vurdert i henhold til applikasjonsskjema"
+      },
+      {
+        "nameOfMeasure": "Prosentvis oppfyllelse av FAIR-prinsipper",
+        "measureDescription": "Angir fullstendighet i forhold til krav fra FAIR-prinsippene (The FAIR Guiding Principles for scientific data management and stewardship)",
+        "result": "92"
+      }
+    ]
+  },
+  "maintenanceSection": {
+    "maintenanceAndUpdateFrequency": "Årlig",
+    "maintenanceAndUpdateStatement": "Fullført"
+  },
+  "dataCaptureAndProductionSection": {
+    "DataAcquisitionAndProcessing": {
+      "dataCaptureStatement": "Datasettet viser georefererte punkter der det er tatt fysiske prøver i de områder som MAREANO har kartlagt. Datasettet er ikke heldekkende. Dekningsgrad avhenger av hvilken kartleggingsinnsats som er lagt ned innenfor de forskjellige områdene. Datasettet egner seg til bruk i målestokk 500 000 - 10 000 000."
+    }
+  },
+  "portrayal": {
+    "name": "Tegneregler",
+    "linkage": "https://register.geonorge.no/register/versjoner/tegneregler/havforskningsinstituttet/mareano-bunnprøver-punkt"
+  },
+  "deliverySection": [
+    {
+      "delivery": {
+        "deliveryMedium": {
+          "unitsOfDelivery": "landsfiler",
+          "deliveryMediumName": "Geonorge nedlastning",
+          "deliveryService": {
+            "serviceEndpoint": "https://nedlasting.geonorge.no/api/capabilities/ccff1ba4-898b-4b47-a4a8-ba5466922d20",
+            "serviceProperty": {
+              "type": "Geonorge nedlastning",
+              "value": "GEONORGE:DOWNLOAD"
+            }
+          }
+        },
+        "deliveryFormat": [
+          {
+            "formatName": "FGDB"
+          },
+          {
+            "formatName": "GML"
+          },
+          {
+            "formatName": "PostGIS"
+          },
+          {
+            "formatName": "SOSI"
+          }
+        ]
+      }
+    },
+    {
+      "delivery": {
+        "deliveryMedium": {
+          "unitsOfDelivery": "landsfiler",
+          "deliveryMediumName": "Atom Feed",
+          "deliveryService": {
+            "serviceEndpoint": "http://nedlasting.geonorge.no/geonorge/ATOM-feeds/MareanoBunnproverPunkt_AtomFeedFGDB.xml",
+            "serviceProperty": {
+              "type": "Atom Feed",
+              "value": "W3C:AtomFeed"
+            }
+          }
+        },
+        "deliveryFormat": [
+          {
+            "formatName": "FGDB"
+          }
+        ]
+      }
+    },
+    {
+      "delivery": {
+        "deliveryMedium": {
+          "unitsOfDelivery": "landsfiler",
+          "deliveryMediumName": "Atom Feed",
+          "deliveryService": {
+            "serviceEndpoint": "http://nedlasting.geonorge.no/geonorge/ATOM-feeds/MareanoBunnproverPunkt_AtomFeedGML.xml",
+            "serviceProperty": {
+              "type": "Atom Feed",
+              "value": "W3C:AtomFeed"
+            }
+          }
+        },
+        "deliveryFormat": [
+          {
+            "formatName": "GML"
+          }
+        ]
+      }
+    },
+    {
+      "delivery": {
+        "deliveryMedium": {
+          "unitsOfDelivery": "landsfiler",
+          "deliveryMediumName": "Atom Feed",
+          "deliveryService": {
+            "serviceEndpoint": "http://nedlasting.geonorge.no/geonorge/ATOM-feeds/MareanoBunnproverPunkt_AtomFeedPOSTGIS.xml",
+            "serviceProperty": {
+              "type": "Atom Feed",
+              "value": "W3C:AtomFeed"
+            }
+          }
+        },
+        "deliveryFormat": [
+          {
+            "formatName": "PostGIS"
+          }
+        ]
+      }
+    },
+    {
+      "delivery": {
+        "deliveryMedium": {
+          "unitsOfDelivery": "landsfiler",
+          "deliveryMediumName": "Atom Feed",
+          "deliveryService": {
+            "serviceEndpoint": "http://nedlasting.geonorge.no/geonorge/ATOM-feeds/MareanoBunnproverPunkt_AtomFeedSOSI.xml",
+            "serviceProperty": {
+              "type": "Atom Feed",
+              "value": "W3C:AtomFeed"
+            }
+          }
+        },
+        "deliveryFormat": [
+          {
+            "formatName": "SOSI"
+          }
+        ]
+      }
+    },
+    {
+      "delivery": {
+        "deliveryMedium": {
+          "deliveryMediumName": "Mareano bunnprøver punkt WMS",
+          "deliveryService": {
+            "serviceEndpoint": "https://kart.hi.no/mareano/mareano_stasjoner/bunnprover_punktstasjoner/wms?service=WMS&request=GetCapabilities",
+            "serviceProperty": {
+              "type": "Mareano bunnprøver punkt WMS",
+              "value": "WMS-tjeneste"
+            }
+          }
+        },
+        "deliveryFormat": [
+          {
+            "formatName": "PNG"
+          }
+        ],
+        "deliveryScope": "Tjeneste"
+      }
+    },
+    {
+      "delivery": {
+        "deliveryMedium": {
+          "deliveryMediumName": "GeoPackage: uml-modell",
+          "deliveryService": {
+            "serviceEndpoint": "https://raw.githubusercontent.com/ToreFreddyB/produktspesifikasjon_HI/main/produktspesifikasjon/mareano-bunnprover-punkt/uml-modell/uml-modell.gpkg",
+            "serviceProperty": {
+              "type": "Fil",
+              "value": "Nedlasting"
+            }
+          }
+        },
+        "deliveryFormat": [
+          {
+            "formatName": "GPKG"
+          }
+        ]
+      }
+    }
+  ],
+  "metadataSection": {
+    "metadataStandard": "ISO19115",
+    "metadataStandardVersion": "2003",
+    "metadataDate": "2026-10-16",
+    "language": "nor",
+    "contact": {
+      "organizationName": "Havforskningsinstituttet",
+      "individualName": "Kjell Bakkeplass",
+      "logo": "https://register.geonorge.no/data/organizations/971349077_hi_liten.png",
+      "electronicMailAddress": "kjell.bakkeplass@hi.no",
+      "role": "pointOfContact"
+    },
+    "metadataIdentifier": {
+      "authority": "Geonorge",
+      "code": "ccff1ba4-898b-4b47-a4a8-ba5466922d20",
+      "codeSpace": "https://kartkatalog.geonorge.no/metadata/",
+      "metadataLinkage": "https://kartkatalog.geonorge.no/metadata/ccff1ba4-898b-4b47-a4a8-ba5466922d20"
+    }
+  },
+  "additionalReferences": [
+    {
+      "title": "Produktark",
+      "href": "https://register.geonorge.no/register/versjoner/produktark/havforskningsinstituttet/mareano-bunnprøver-punkt"
+    },
+    {
+      "title": "Produktside",
+      "href": "https://www.mareano.no"
+    }
+  ],
+  "chapterAutofill": {
+    "om_spesifikasjonen": 9,
+    "om_produktet": 92,
+    "formaal": 20,
+    "bruksomraade": 0,
+    "omfang": 25,
+    "datainnhold_og_struktur": 0,
+    "referansesystem": 24,
+    "datakvalitet": 55,
+    "datafangst_og_produksjon": 47,
+    "vedlikehold": 2,
+    "presentasjon": 2,
+    "leveranse": 61,
+    "metadata": 14,
+    "tilleggsinformasjon": 4,
+    "datamodell": 505
+  }
+}
