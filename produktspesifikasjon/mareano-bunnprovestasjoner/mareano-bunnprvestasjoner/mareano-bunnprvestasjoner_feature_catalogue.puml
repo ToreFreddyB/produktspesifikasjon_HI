@@ -1,0 +1,74 @@
+@startuml
+' For wide diagrams, render with: plantuml -DPLANTUML_LIMIT_SIZE=16384 ...
+' The 'scale max' directive below caps the rendered output to prevent the
+' default PlantUML 4096px size limit from cropping the diagram.
+scale max 4000*4000
+
+title Mareano bunnprøvestasjoner - Mareano_bunnprøvestasjoner - Objekttyper
+
+skinparam backgroundColor #F5F5F5
+skinparam shadowing false
+skinparam RoundCorner 6
+skinparam ArrowColor #6C8198
+skinparam wrapWidth 200
+skinparam class {
+  BackgroundColor #FBF2E8
+  BorderColor #9C8578
+  FontColor #2D201A
+  HeaderBackgroundColor #EFE1D6
+  HeaderFontColor #2D201A
+  AttributeIconSize 0
+}
+skinparam note {
+  BackgroundColor #FFFFFF
+  BorderColor #6C8198
+  FontColor #2D201A
+}
+skinparam stereotypeCBackgroundColor #EAD9CE
+skinparam stereotypeCBorderColor #9C8578
+skinparam stereotypeCFontColor #2D201A
+
+package "Objekttyper" {
+
+  abstract class GenerelleEgenskaperStasjoner <<featureType>> {
+    + datauttaksdato [0..1] : Date
+    + identifikasjon [1] : Identifikasjon
+    + kvalitet [0..1] : Posisjonskvalitet
+    + opphav [1] : CharacterString
+  }
+
+  class "Bunnprøvestasjon" as Bunnpr_vestasjon <<featureType>> {
+    + bomtrålAntall [1] : Integer
+    + boxcorerAntall [1] : Integer
+    + breddegrad [1] : Real
+    + bunndyp [1] : Integer
+    + bunnprøverAntall [1] : Integer
+    + bunnprøveÅr [1] : Integer
+    + ctdAntall [1] : Integer
+    + grabbAntall [1] : Integer
+    + kommentar [0..1] : CharacterString
+    + lengdegrad [1] : Real
+    + lokasjon [1] : CharacterString
+    + multicorerAntall [1] : Integer
+    + posisjon [1] : Punkt
+    + referanseStasjon [1] : Integer
+    + sledeAntall [1] : Integer
+    + stasjonsType [1] : CharacterString
+    + stasjonsTypeKode [1] : Integer
+    + toktNummer [1] : Integer
+  }
+
+  class Identifikasjon <<dataType>> {
+    + lokalId [1] : CharacterString
+    + navnerom [1] : CharacterString
+    + versjonId [1] : CharacterString
+  }
+
+  class Posisjonskvalitet <<dataType>> {
+    + målemetode [1] : Målemetode
+  }
+}
+
+  GenerelleEgenskaperStasjoner <|-- Bunnpr_vestasjon
+
+@enduml
