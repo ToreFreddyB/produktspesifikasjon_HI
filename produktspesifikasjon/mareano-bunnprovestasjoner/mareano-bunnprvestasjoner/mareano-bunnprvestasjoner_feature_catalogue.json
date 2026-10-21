@@ -4,15 +4,6 @@
     "description": "abstrakt objekt som bærer en rekke egenskaper som er fagområde-uavhengige og kan benyttes for alle objekttyper\nMerknad: Spesielt i produktspesifikasjonsarbeid vil en velge egenskaper og av grensningslinjer fra denne klassen.",
     "attributes": [
       {
-        "name": "datauttaksdato",
-        "type": "DateTime",
-        "description": "dato for uttak fra en database\nMerknad:\nSkiller seg fra Kopidato ved at en ikke skiller på om det er uttak fra en originaldatabase eller en kopidatabase.",
-        "cardinality": "0..1",
-        "taggedValues": {
-          "SOSI_navn": "DATAUTTAKSDATO"
-        }
-      },
-      {
         "name": "identifikasjon",
         "type": "Identifikasjon",
         "description": "unik identifikasjon av et objekt",
@@ -62,10 +53,19 @@
               "kind": "codelist",
               "definition": "metode som ligger til grunn for registrering av posisjon\n\n\n-- Definition - -\nmethod on which registration of position is based",
               "asDictionary": "true",
-              "codeList": "https://register.geonorge.no/sosi-kodelister/malemetode.xml"
+              "codeList": "https://register.geonorge.no/sosi-kodelister/generelle-konsepter/5.1/m%C3%A5lemetode"
             }
           }
         ]
+      },
+      {
+        "name": "datauttaksdato",
+        "type": "DateTime",
+        "description": "dato for uttak fra en database\nMerknad:\nSkiller seg fra Kopidato ved at en ikke skiller på om det er uttak fra en originaldatabase eller en kopidatabase.",
+        "cardinality": "0..1",
+        "taggedValues": {
+          "SOSI_navn": "DATAUTTAKSDATO"
+        }
       },
       {
         "name": "opphav",
@@ -89,6 +89,42 @@
     "description": "Mareanostasjon hvor det er tatt bunnprøver.\n-- Definition --\nMareano station where bottom samples are collected.",
     "attributes": [
       {
+        "name": "posisjon",
+        "type": "Punkt",
+        "description": "sted som objektet eksisterer på.\n-- Definition --\nLocation where the object exists.",
+        "cardinality": "1",
+        "taggedValues": {
+          "SOSI_navn": "NØ"
+        }
+      },
+      {
+        "name": "referanseStasjon",
+        "type": "Integer",
+        "description": "referansestasjon, unik innen MAREANO.\n-- Definition --\nReference number during MAREANO prosject (superstation).",
+        "cardinality": "1",
+        "taggedValues": {
+          "SOSI_navn": "REFERANSESTASJON"
+        }
+      },
+      {
+        "name": "toktNummer",
+        "type": "Integer",
+        "description": "toktnummer ved Havforskningsinstituttet.\n-- Definition --\nCruise number at IMR.",
+        "cardinality": "1",
+        "taggedValues": {
+          "SOSI_navn": "TOKTNUMMER"
+        }
+      },
+      {
+        "name": "ctdAntall",
+        "type": "Integer",
+        "description": "antall ctd-målinger som er utført.\n-- Definition --\nNumber of ctd measurements.",
+        "cardinality": "1",
+        "taggedValues": {
+          "SOSI_navn": "CTDANTALL"
+        }
+      },
+      {
         "name": "bomtrålAntall",
         "type": "Integer",
         "description": "antall prøver som er samlet inn med bomtrål.\n-- Definition --\nNumber of samples collected by the use of beamtrawl.",
@@ -104,6 +140,60 @@
         "cardinality": "1",
         "taggedValues": {
           "SOSI_navn": "BOXCORERANTALL"
+        }
+      },
+      {
+        "name": "grabbAntall",
+        "type": "Integer",
+        "description": "antall prøver som er samlet inn med grab.\n-- Definition --\nNumber of samples collected by the use of grab.",
+        "cardinality": "1",
+        "taggedValues": {
+          "SOSI_navn": "GRABBANTALL"
+        }
+      },
+      {
+        "name": "multicorerAntall",
+        "type": "Integer",
+        "description": "antall prøver som er samlet inn med multicorer (tar 6 prøver i gangen, regnes som 1 prøvetagning).\n-- Definition --\nNumber of samples collected by the use of multicorer (six samples are taken in one operation and counts as one sample).",
+        "cardinality": "1",
+        "taggedValues": {
+          "SOSI_navn": "MULTICORERANTALL"
+        }
+      },
+      {
+        "name": "sledeAntall",
+        "type": "Integer",
+        "description": "antall prøver som er samlet inn med slede.\n-- Definition --\nNumber of samples collected by the use of sledge.",
+        "cardinality": "1",
+        "taggedValues": {
+          "SOSI_navn": "SLEDEANTALL"
+        }
+      },
+      {
+        "name": "bunnprøverAntall",
+        "type": "Integer",
+        "description": "antall bunnprøver samlet inn totalt.\n-- Definition --\nNumber of bottom measurements collected in total.",
+        "cardinality": "1",
+        "taggedValues": {
+          "SOSI_navn": "BUNNPRØVERANTALL"
+        }
+      },
+      {
+        "name": "lokasjon",
+        "type": "CharacterString",
+        "description": "lokasjon der prøven er tatt.\n-- Definition --\nLocation where the sample is taken.",
+        "cardinality": "1",
+        "taggedValues": {
+          "SOSI_navn": "LOKASJON"
+        }
+      },
+      {
+        "name": "lengdegrad",
+        "type": "Real",
+        "description": "lengdegrad som prøven ble tatt på.\n-- Definition --\nLongitude where the sample was taken.",
+        "cardinality": "1",
+        "taggedValues": {
+          "SOSI_navn": "LENGDEGRAD"
         }
       },
       {
@@ -125,105 +215,6 @@
         }
       },
       {
-        "name": "bunnprøverAntall",
-        "type": "Integer",
-        "description": "antall bunnprøver samlet inn totalt.\n-- Definition --\nNumber of bottom measurements collected in total.",
-        "cardinality": "1",
-        "taggedValues": {
-          "SOSI_navn": "BUNNPRØVERANTALL"
-        }
-      },
-      {
-        "name": "bunnprøveÅr",
-        "type": "Integer",
-        "description": "prøvetakingsÅr.\n-- Definition --\nYear of sample.",
-        "cardinality": "1",
-        "taggedValues": {
-          "SOSI_navn": "BUNNPRØVEÅR"
-        }
-      },
-      {
-        "name": "ctdAntall",
-        "type": "Integer",
-        "description": "antall ctd-målinger som er utført.\n-- Definition --\nNumber of ctd measurements.",
-        "cardinality": "1",
-        "taggedValues": {
-          "SOSI_navn": "CTDANTALL"
-        }
-      },
-      {
-        "name": "grabbAntall",
-        "type": "Integer",
-        "description": "antall prøver som er samlet inn med grab.\n-- Definition --\nNumber of samples collected by the use of grab.",
-        "cardinality": "1",
-        "taggedValues": {
-          "SOSI_navn": "GRABBANTALL"
-        }
-      },
-      {
-        "name": "kommentar",
-        "type": "CharacterString",
-        "description": "kommentar om prøvetakingen.\n-- Definition --\nfurther information about the samples.",
-        "cardinality": "0..1",
-        "taggedValues": {
-          "SOSI_navn": "KOMMENTAR"
-        }
-      },
-      {
-        "name": "lengdegrad",
-        "type": "Real",
-        "description": "lengdegrad som prøven ble tatt på.\n-- Definition --\nLongitude where the sample was taken.",
-        "cardinality": "1",
-        "taggedValues": {
-          "SOSI_navn": "LENGDEGRAD"
-        }
-      },
-      {
-        "name": "lokasjon",
-        "type": "CharacterString",
-        "description": "lokasjon der prøven er tatt.\n-- Definition --\nLocation where the sample is taken.",
-        "cardinality": "1",
-        "taggedValues": {
-          "SOSI_navn": "LOKASJON"
-        }
-      },
-      {
-        "name": "multicorerAntall",
-        "type": "Integer",
-        "description": "antall prøver som er samlet inn med multicorer (tar 6 prøver i gangen, regnes som 1 prøvetagning).\n-- Definition --\nNumber of samples collected by the use of multicorer (six samples are taken in one operation and counts as one sample).",
-        "cardinality": "1",
-        "taggedValues": {
-          "SOSI_navn": "MULTICORERANTALL"
-        }
-      },
-      {
-        "name": "posisjon",
-        "type": "Punkt",
-        "description": "sted som objektet eksisterer på.\n-- Definition --\nLocation where the object exists.",
-        "cardinality": "1",
-        "taggedValues": {
-          "SOSI_navn": "NØ"
-        }
-      },
-      {
-        "name": "referanseStasjon",
-        "type": "Integer",
-        "description": "referansestasjon, unik innen MAREANO.\n-- Definition --\nReference number during MAREANO prosject (superstation).",
-        "cardinality": "1",
-        "taggedValues": {
-          "SOSI_navn": "REFERANSESTASJON"
-        }
-      },
-      {
-        "name": "sledeAntall",
-        "type": "Integer",
-        "description": "antall prøver som er samlet inn med slede.\n-- Definition --\nNumber of samples collected by the use of sledge.",
-        "cardinality": "1",
-        "taggedValues": {
-          "SOSI_navn": "SLEDEANTALL"
-        }
-      },
-      {
         "name": "stasjonsType",
         "type": "CharacterString",
         "description": "type stasjon: Videostasjon, Videostasjon + Bunnprøver eller Annet.\n-- Definition --\ntype of station: Videostasjon (videostation), Videostasjon + Bunnprøver (videostation and bottom sample) or Annet (other).",
@@ -242,12 +233,21 @@
         }
       },
       {
-        "name": "toktNummer",
+        "name": "bunnprøveÅr",
         "type": "Integer",
-        "description": "toktnummer ved Havforskningsinstituttet.\n-- Definition --\nCruise number at IMR.",
+        "description": "prøvetakingsÅr.\n-- Definition --\nYear of sample.",
         "cardinality": "1",
         "taggedValues": {
-          "SOSI_navn": "TOKTNUMMER"
+          "SOSI_navn": "BUNNPRØVEÅR"
+        }
+      },
+      {
+        "name": "kommentar",
+        "type": "CharacterString",
+        "description": "kommentar om prøvetakingen.\n-- Definition --\nfurther information about the samples.",
+        "cardinality": "0..1",
+        "taggedValues": {
+          "SOSI_navn": "KOMMENTAR"
         }
       }
     ],
