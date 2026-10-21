@@ -1,0 +1,10 @@
+metadataId: 1f9e17d4-bf56-4bf4-a2a8-7d17a0873761
+output_directory: produktspesifikasjon
+product_slug: mareano_bunnprovestasjoner
+updated: '2026-10-21'
+outputs: geopackage
+scopes:
+- name: Mareano_bunnprøvestasjoner
+  url: https://sosi.geonorge.no/svn/SOSI/SOSI%20Del%203/Havforskningsinstituttet/MareanoBunnpr%c3%b8vestasjonerPr%c3%85r-20210501.xml
+  generator: xmi
+  description: ''
