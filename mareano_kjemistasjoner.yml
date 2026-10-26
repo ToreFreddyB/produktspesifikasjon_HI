@@ -1,0 +1,10 @@
+metadataId: 7bc25711-fc24-4a99-9e12-abbfb5de56cc
+output_directory: produktspesifikasjon
+product_slug: mareano_kjemistasjoner
+updated: '2026-10-26'
+outputs: geopackage
+scopes:
+- name: mareano_kjemistasjoner_uml
+  url: https://sosi.geonorge.no/svn/SOSI/SOSI%20Del%203/Havforskningsinstituttet/MareanoKjemistasjoner-20220201.xml
+  generator: xmi
+  description: ''
