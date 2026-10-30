@@ -1,0 +1,10 @@
+metadataId: c0dd755e-bcbf-4ada-bd4b-386dfbc37c92
+output_directory: produktspesifikasjon
+product_slug: mareano_referansestasjoner
+updated: '2026-10-30'
+outputs: geopackage
+scopes:
+- name: mareano_referansestasjoner_uml
+  url: https://sosi.geonorge.no/svn/SOSI/SOSI%20Del%203/Havforskningsinstituttet/MareanoReferansestasjoner-20210601.xml
+  generator: xmi
+  description: ''
