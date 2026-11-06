@@ -1,0 +1,10 @@
+metadataId: 8bb5b637-51a8-4f0d-905a-378493ae2354
+output_directory: produktspesifikasjon
+product_slug: mareano_videostasjoner
+updated: '2026-11-06'
+outputs: geopackage
+scopes:
+- name: Mareano_videostasjoner_uml
+  url: https://sosi.geonorge.no/svn/SOSI/SOSI%20Del%203/Havforskningsinstituttet/MareanoVideostasjonerPr%c3%85r-20210501.xml
+  generator: xmi
+  description: Datamodell (SOSI UML (XMI))
