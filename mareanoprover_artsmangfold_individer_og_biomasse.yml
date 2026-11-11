@@ -1,0 +1,10 @@
+metadataId: 58710d15-bad5-40e1-bcce-29c4b67cc787
+output_directory: produktspesifikasjon
+product_slug: mareanoprover_artsmangfold_individer_og_biomasse
+updated: '2026-11-11'
+outputs: geopackage
+scopes:
+- name: mareanoprøver_artsdata
+  url: https://sosi.geonorge.no/svn/SOSI/SOSI%20Del%203/Havforskningsinstituttet/MareanoPr%c3%b8ver-Artsmangfold-Individer-Biomangfold-20201201.xml
+  generator: xmi
+  description: Datamodell (SOSI UML (XMI))
