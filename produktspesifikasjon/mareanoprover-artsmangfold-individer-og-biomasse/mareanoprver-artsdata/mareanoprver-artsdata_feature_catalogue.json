@@ -1,0 +1,359 @@
+[
+  {
+    "name": "GrabbPrøver",
+    "description": "Prøver som er samlet inn med grab.\nSamples collected by the use of grab.",
+    "attributes": [
+      {
+        "name": "posisjon",
+        "type": "Punkt",
+        "description": "sted som objektet eksisterer på.\nLocation where the object exists.",
+        "cardinality": "1",
+        "taggedValues": {
+          "SOSI_navn": "NØ"
+        }
+      },
+      {
+        "name": "redskap",
+        "type": "CharacterString",
+        "description": "type redskap benyttet for prøvetakingen.\nName of equipment used for the sampling.",
+        "cardinality": "1",
+        "taggedValues": {
+          "SOSI_navn": "REDSKAP"
+        }
+      },
+      {
+        "name": "arterEnhet",
+        "type": "CharacterString",
+        "description": "enhet for antall arter.\nUnit used for number of species.",
+        "cardinality": "1",
+        "taggedValues": {
+          "SOSI_navn": "ARTERENHET"
+        }
+      },
+      {
+        "name": "biomasseEnhet",
+        "type": "CharacterString",
+        "description": "enhet benyttet for biomasse for det aktuelle redskapet.\nUnit used for weigth for this equipment.",
+        "cardinality": "1",
+        "taggedValues": {
+          "SOSI_navn": "BIOMASSEENHET"
+        }
+      },
+      {
+        "name": "individerEnhet",
+        "type": "CharacterString",
+        "description": "enhet benyttet for individer for det aktuelle redskapet.\nUnit used for number of individuals for this equipment.",
+        "cardinality": "1",
+        "taggedValues": {
+          "SOSI_navn": "INDIVIDERENHET"
+        }
+      }
+    ],
+    "abstract": false,
+    "relationships": {
+      "inheritance": [
+        "FellesEgenskaperPrøver"
+      ],
+      "associations": []
+    },
+    "package": "MareanoPrøver-Artsmangfold-Individer-Biomasse-20201201"
+  },
+  {
+    "name": "FellesEgenskaperPrøver",
+    "description": "abstrakt objekt som bærer en rekke egenskaper som er felles for de tre objekttypene som realiseres i datasettet.",
+    "attributes": [
+      {
+        "name": "referanseStasjon",
+        "type": "Integer",
+        "description": "referansestasjon, unik innen MAREANO.\nReference number during MAREANO prosject (superstation).",
+        "cardinality": "1",
+        "taggedValues": {
+          "SOSI_navn": "REFERANSESTASJON"
+        }
+      },
+      {
+        "name": "toktNummer",
+        "type": "Integer",
+        "description": "toktnummer ved Havforskningsinstituttet.\nCruise number at IMR.",
+        "cardinality": "1",
+        "taggedValues": {
+          "SOSI_navn": "TOKTNUMMER"
+        }
+      },
+      {
+        "name": "arter",
+        "type": "Integer",
+        "description": "antall forskjellige arter funnet i prøven.\nNos different species in the sample.",
+        "cardinality": "1",
+        "taggedValues": {
+          "SOSI_navn": "ARTER"
+        }
+      },
+      {
+        "name": "individer",
+        "type": "Real",
+        "description": "individer funnet i prøven.\nIndividuals in the sample.",
+        "cardinality": "1",
+        "taggedValues": {
+          "SOSI_navn": "INDIVIDER"
+        }
+      },
+      {
+        "name": "biomasseVekt",
+        "type": "Real",
+        "description": "biomasse av arter funnet i prøven.\nWeight of individuals in sample.",
+        "cardinality": "1",
+        "taggedValues": {
+          "SOSI_navn": "BIOMASSEVEKT"
+        }
+      },
+      {
+        "name": "lengdegrad",
+        "type": "Real",
+        "description": "lengdegrad som prøven ble tatt på.\nLongitude where the sample was taken.",
+        "cardinality": "1",
+        "taggedValues": {
+          "SOSI_navn": "LENGDEGRAD"
+        }
+      },
+      {
+        "name": "breddegrad",
+        "type": "Real",
+        "description": "breddegrad som prøven ble tatt på.\nLatitude where the sample was taken.",
+        "cardinality": "1",
+        "taggedValues": {
+          "SOSI_navn": "BREDDEGRAD"
+        }
+      },
+      {
+        "name": "bunndyp",
+        "type": "Real",
+        "description": "bunndyp der prøven er tatt.\nBottomdepth where the sample is taken.",
+        "cardinality": "1",
+        "taggedValues": {
+          "SOSI_navn": "BUNNDYP"
+        }
+      }
+    ],
+    "abstract": true,
+    "relationships": {
+      "inheritance": [
+        "GenerelleEgenskaperPrøver"
+      ],
+      "associations": []
+    },
+    "package": "MareanoPrøver-Artsmangfold-Individer-Biomasse-20201201"
+  },
+  {
+    "name": "BomtrålPrøver",
+    "description": "Prøver som er samlet inn med bomtrål.\nSamples collected by the use of beamtrawl.",
+    "attributes": [
+      {
+        "name": "posisjon",
+        "type": "Punkt",
+        "description": "sted som objektet eksisterer på.\nLocation where the object exists.",
+        "cardinality": "1",
+        "taggedValues": {
+          "SOSI_navn": "NØ"
+        }
+      },
+      {
+        "name": "redskap",
+        "type": "CharacterString",
+        "description": "type redskap benyttet for prøvetakingen.\nName of equipment used for the sampling.",
+        "cardinality": "1",
+        "taggedValues": {
+          "SOSI_navn": "REDSKAP"
+        }
+      },
+      {
+        "name": "arterEnhet",
+        "type": "CharacterString",
+        "description": "enhet for antall arter.\nUnit used for number of species.",
+        "cardinality": "1",
+        "taggedValues": {
+          "SOSI_navn": "ARTERENHET"
+        }
+      },
+      {
+        "name": "biomasseEnhet",
+        "type": "CharacterString",
+        "description": "enhet benyttet for biomasse for det aktuelle redskapet.\nUnit used for weigth for this equipment.",
+        "cardinality": "1",
+        "taggedValues": {
+          "SOSI_navn": "BIOMASSEENHET"
+        }
+      },
+      {
+        "name": "individerEnhet",
+        "type": "CharacterString",
+        "description": "enhet benyttet for individer for det aktuelle redskapet.\nUnit used for number of individuals for this equipment.",
+        "cardinality": "1",
+        "taggedValues": {
+          "SOSI_navn": "INDIVIDERENHET"
+        }
+      }
+    ],
+    "abstract": false,
+    "relationships": {
+      "inheritance": [
+        "FellesEgenskaperPrøver"
+      ],
+      "associations": []
+    },
+    "package": "MareanoPrøver-Artsmangfold-Individer-Biomasse-20201201"
+  },
+  {
+    "name": "SledePrøver",
+    "description": "Prøver som er samlet inn med slede.\nSamples collected by the use of sledge.",
+    "attributes": [
+      {
+        "name": "posisjon",
+        "type": "Punkt",
+        "description": "sted som objektet eksisterer på.\nLocation where the object exists.",
+        "cardinality": "1",
+        "taggedValues": {
+          "SOSI_navn": "NØ"
+        }
+      },
+      {
+        "name": "redskap",
+        "type": "CharacterString",
+        "description": "type redskap benyttet for prøvetakingen.\nName of equipment used for the sampling.",
+        "cardinality": "1",
+        "taggedValues": {
+          "SOSI_navn": "REDSKAP"
+        }
+      },
+      {
+        "name": "arterEnhet",
+        "type": "CharacterString",
+        "description": "enhet for antall arter.\nUnit used for number of species.",
+        "cardinality": "1",
+        "taggedValues": {
+          "SOSI_navn": "ARTERENHET"
+        }
+      },
+      {
+        "name": "biomasseEnhet",
+        "type": "CharacterString",
+        "description": "enhet benyttet for biomasse for det aktuelle redskapet.\nUnit used for weigth for this equipment.",
+        "cardinality": "1",
+        "taggedValues": {
+          "SOSI_navn": "BIOMASSEENHET"
+        }
+      },
+      {
+        "name": "individerEnhet",
+        "type": "CharacterString",
+        "description": "enhet benyttet for individer for det aktuelle redskapet.\nUnit used for number of individuals for this equipment.",
+        "cardinality": "1",
+        "taggedValues": {
+          "SOSI_navn": "INDIVIDERENHET"
+        }
+      }
+    ],
+    "abstract": false,
+    "relationships": {
+      "inheritance": [
+        "FellesEgenskaperPrøver"
+      ],
+      "associations": []
+    },
+    "package": "MareanoPrøver-Artsmangfold-Individer-Biomasse-20201201"
+  },
+  {
+    "name": "GenerelleEgenskaperPrøver",
+    "description": "abstrakt objekt som bærer en rekke egenskaper som er fagområde-uavhengige og kan benyttes for alle objekttyper\nMerknad: Spesielt i produktspesifikasjonsarbeid vil en velge egenskaper og av grensningslinjer fra denne klassen.",
+    "attributes": [
+      {
+        "name": "identifikasjon",
+        "type": "Identifikasjon",
+        "description": "unik identifikasjon av et objekt",
+        "cardinality": "1",
+        "attributes": [
+          {
+            "name": "lokalId",
+            "type": "CharacterString",
+            "description": "lokal identifikator, tildelt av dataleverendør/dataforvalter. Den lokale identifikatoren er unik innenfor navnerommet, ingen andre objekter har samme identifikator.\nNOTE: Det er data leverendørens ansvar å sørge for at denne lokale identifikatoren er unik innenfor navnerommet.",
+            "cardinality": "1",
+            "taggedValues": {
+              "SOSI_navn": "LOKALID"
+            }
+          },
+          {
+            "name": "navnerom",
+            "type": "CharacterString",
+            "description": "navnerom som unikt identifiserer datakilden til objektet, starter med to bokstavs kode jfr ISO 3166. Benytter understreking  (\"_\") dersom data produsenten ikke er assosiert med bare et land.\nNOTE 1 : Verdien for nanverom vil eies av den dataprodusent som har ansvar for de unike identifikatorene og vil registreres i \"INSPIRE external  Object Identifier Namespaces Register\"\nEksempel: NO for Norge.",
+            "cardinality": "1",
+            "taggedValues": {
+              "SOSI_navn": "NAVNEROM"
+            }
+          },
+          {
+            "name": "versjonId",
+            "type": "CharacterString",
+            "description": "identifikasjon av en spesiell versjon av et geografisk objekt (instans), maksimum lengde på 25 karakterers. Dersom spesifikasjonen av et geografisk objekt med en identifikasjon inkludererer livsløpssyklusinformasjon, benyttes denne versjonId for å skille mellom ulike versjoner av samme objekt. versjonId er en unik  identifikasjon av versjonen.\nNOTE Maksimum lengde er valgt for å tillate tidsregistrering i henhold til  ISO 8601, slik som  \"2007-02-12T12:12:12+05:30\" som versjonId.",
+            "cardinality": "1",
+            "taggedValues": {
+              "SOSI_navn": "VERSJONID"
+            }
+          }
+        ]
+      },
+      {
+        "name": "kvalitet",
+        "type": "Posisjonskvalitet",
+        "description": "beskrivelse av kvaliteten på stedfestingen\nMerknad: Denne er identisk med ..KVALITET i tidligere versjoner av SOSI.",
+        "cardinality": "0..1",
+        "attributes": [
+          {
+            "name": "målemetode",
+            "type": "Målemetode",
+            "description": "metode for måling i grunnriss (x,y), og høyde (z) når metoden er den samme som ved måling i grunnriss",
+            "cardinality": "1",
+            "valueDomain": {
+              "kind": "codelist",
+              "definition": "metode som ligger til grunn for registrering av posisjon\n\n\n-- Definition - -\nmethod on which registration of position is based",
+              "asDictionary": "true",
+              "codeList": "https://register.geonorge.no/sosi-kodelister/generelle-konsepter/5.1/m%C3%A5lemetode"
+            }
+          }
+        ]
+      },
+      {
+        "name": "datauttaksdato",
+        "type": "DateTime",
+        "description": "dato for uttak fra en database\nMerknad:\nSkiller seg fra Kopidato ved at en ikke skiller på om det er uttak fra en originaldatabase eller en kopidatabase.",
+        "cardinality": "0..1",
+        "taggedValues": {
+          "SOSI_navn": "DATAUTTAKSDATO"
+        }
+      },
+      {
+        "name": "førsteDatafangstdato",
+        "type": "DateTime",
+        "description": "dato når data ble registrert/observert/målt første gang, som utgangspunkt for første digitalisering\n\nMerknad:\nførsteDatafangstdato brukes hvis det er av interesse å forvalte informasjon om når en ble klar over objektet. Dette kan for eksempel gjelde datoen for første flybilde som var utgangspunkt for registrering i en database.",
+        "cardinality": "1",
+        "taggedValues": {
+          "SOSI_navn": "FØRSTEDATAFANGSTDATO"
+        }
+      },
+      {
+        "name": "opphav",
+        "type": "CharacterString",
+        "description": "referanse til opphavsmaterialet, kildematerialet, organisasjons/publiseringskilde\nMerknad:\nKan også beskrive navn på person og årsak til oppdatering",
+        "cardinality": "1",
+        "taggedValues": {
+          "SOSI_navn": "OPPHAV"
+        }
+      }
+    ],
+    "abstract": true,
+    "relationships": {
+      "inheritance": [],
+      "associations": []
+    },
+    "package": "MareanoPrøver-Artsmangfold-Individer-Biomasse-20201201"
+  }
+]
