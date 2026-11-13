@@ -1,0 +1,10 @@
+metadataId: cadd7b67-892b-44cb-8d9c-9cdf92d6d92b
+output_directory: produktspesifikasjon
+product_slug: menneskelig_pavirkning_marint_soppel_per_videotransekt
+updated: '2026-11-13'
+outputs: geopackage
+scopes:
+- name: menneskelig_påvirkning_marint_søppel
+  url: https://sosi.geonorge.no/svn/SOSI/SOSI%20Del%203/Havforskningsinstituttet/MenneskeligP%c3%a5virkningMarintS%c3%b8ppelVideotransekt-20230901.xml
+  generator: xmi
+  description: ''
