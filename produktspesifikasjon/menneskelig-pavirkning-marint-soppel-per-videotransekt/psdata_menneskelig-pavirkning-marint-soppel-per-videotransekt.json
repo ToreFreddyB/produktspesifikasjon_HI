@@ -1,0 +1,350 @@
+{
+  "overview": "Denne produktspesifikasjonen er autogenerert fra metadata i Geonorge og datamodell fra SOSI modellregister og/eller OGC API Features. Noe ekstra informasjon kan ha blitt lagt til gjennom manuell prosess. Produktspesifikasjonen er i henhold til standarden: 'Geografisk informasjon - Dataproduktspesifikasjoner' (ISO19131:2022)",
+  "title": "Menneskelig påvirkning - Marint søppel per videotransekt",
+  "format": "text/html",
+  "date": {
+    "creation": "2021-12-22",
+    "revision": "2026-10-01"
+  },
+  "language": "nor",
+  "contact": {
+    "individualName": "Genoveva Gonzales-Mirelis",
+    "organizationName": "Havforskningsinstituttet",
+    "logo": "https://register.geonorge.no/data/organizations/971349077_hi_liten.png",
+    "electronicMailAddress": "genoveva.gonzalez-mirelis@hi.no",
+    "role": "owner"
+  },
+  "identificationSection": {
+    "title": "Menneskelig påvirkning - Marint søppel per videotransekt",
+    "abstract": "Datasettet er en del av prosjektet «Marine Grunnkart i Kystsonen», og viser antall observerte objekter (større enn 5 cm) på havbunnen som er kategorisert som søppel. Under søppel inngår alle elementer som er menneskeskapte, ikke inkludert fiskeredskap.  \nDatasettet er basert på videoanalyse og dekker enkelte kystområder der kartleggingsprosjektet Marine Grunnkart i Kystsonen har samlet inn videomateriale.",
+    "purpose": {
+      "summary": "Datasettet kan anvendes som et underlag i forbindelse med opprydning av havbunnen, og for å øke kunnskapen angående hvilke områder langs kystsonen som er sterkt forsøplet."
+    },
+    "topicCategory": [
+      "Biologisk mangfold"
+    ],
+    "spatialRepresentationType": "Vektor",
+    "supplementalInformation": "Innsamling av videomateriale er gjort av Norges geologiske undersøkelse (NGU) og Havforskningsinstituttet (HI). Videomateriale er tolket og digitalisering av HI. \nDatasettet er basert på tolkning av videomateriale av overflaten av havbunnen, samlet inn ved hjelp av ROV, drop-kamera og undervannsdrone, avhengig av dybde. Opptak av havbunnens overflate ble gjort langs 50 m lange transekter. Alle objekter identifisert som søppel (ikke inkludert fiskeredskap eller objekter plassert med vilje, f.eks. kabler) og større enn 5 cm ble registrert langs hvert transekt. Variabelen ‘søppeldekning’ er numerisk. Hvert punktsymbol er plottet på koordinatene for transektets midtpunkt, hvor symbolets størrelse korresponderer med antall søppelobjekter.",
+    "uniqueId": "https://data.geonorge.no/sosi/forurensning/menneskelig_pavirkning_marint_soppel",
+    "keyword": [
+      "Marine grunnkart i kystsonen",
+      "Natur i Norge",
+      "Marint søppel",
+      "Boss",
+      "Plast",
+      "Avfall",
+      "Norge digitalt",
+      "MarineGrunnkart",
+      "fellesDatakatalog",
+      "Kyst og fiskeri",
+      "Natur",
+      "Norge"
+    ],
+    "restriction": {
+      "resourceConstraints": {
+        "useLimitations": "Ingen begrensninger på bruk er oppgitt."
+      },
+      "legalConstraints": {
+        "accessConstraints": "Åpne data",
+        "useConstraints": "Lisens",
+        "license": "Creative Commons BY 4.0 (CC BY 4.0)",
+        "licenseUrl": "https://creativecommons.org/licenses/by/4.0/"
+      },
+      "securityConstraints": {
+        "classification": "Ugradert"
+      }
+    },
+    "contact": [
+      {
+        "individualName": "Genoveva Gonzales-Mirelis",
+        "organizationName": "Havforskningsinstituttet",
+        "electronicMailAddress": "genoveva.gonzalez-mirelis@hi.no",
+        "role": "owner"
+      },
+      {
+        "individualName": "Barbro Taraldset Haugland",
+        "organizationName": "Havforskningsinstituttet",
+        "electronicMailAddress": "barbroth@hi.no",
+        "role": "pointOfContact"
+      },
+      {
+        "individualName": "Marte Louise Strømme",
+        "organizationName": "Havforskningsinstituttet",
+        "electronicMailAddress": "marte.stromme@hi.no",
+        "role": "publisher"
+      }
+    ],
+    "maintenance": "Etter behov",
+    "extent": {
+      "geographicElement": {
+        "westBoundLongitude": "2.0",
+        "eastBoundLongitude": "30.0",
+        "southBoundLatitude": "58.0",
+        "northBoundLatitude": "72.0"
+      },
+      "geographicDescription": [
+        "Fjorder og kystnære havområder langs norskekysten."
+      ],
+      "temporalElement": {
+        "timePeriod": {
+          "beginPosition": "2021-12-22",
+          "endPosition": "2026-10-01"
+        }
+      }
+    },
+    "date": {
+      "creation": "2021-12-22",
+      "publication": "2021-12-22",
+      "revision": "2026-10-01"
+    },
+    "language": "nor"
+  },
+  "scopeSection": [
+    {
+      "specificationScope": {
+        "scopeIdentification": "Hele datasettet",
+        "level": "dataset",
+        "levelDescription": "Gjelder hele datasettet. Hvis omfang ikke er oppgitt under en overskrift, gjelder teksten for hele datasettet og alle leveranser"
+      }
+    },
+    {
+      "specificationScope": {
+        "scopeIdentification": "menneskelig_påvirkning_marint_søppel",
+        "level": "dataset"
+      }
+    }
+  ],
+  "referenceSystemSection": {
+    "spatialReferenceSystem": [
+      {
+        "code": "EPSG:25833",
+        "name": "EUREF89 UTM sone 33, 2d"
+      },
+      {
+        "code": "EPSG:3035",
+        "name": "EUREF89 / ETRS89-LAEA Europe"
+      },
+      {
+        "code": "EPSG:4258",
+        "name": "EUREF 89 Geografisk (ETRS 89) 2d"
+      },
+      {
+        "code": "EPSG:25833",
+        "name": "EUREF89 UTM sone 33, 2d"
+      }
+    ]
+  },
+  "dataQualitySection": {
+    "scope": {
+      "level": "dataset"
+    },
+    "report": [
+      {
+        "nameOfMeasure": "Prosentvis oppfyllelse av FAIR-prinsipper",
+        "measureDescription": "Angir fullstendighet i forhold til krav fra FAIR-prinsippene (The FAIR Guiding Principles for scientific data management and stewardship)",
+        "result": "82"
+      }
+    ]
+  },
+  "maintenanceSection": {
+    "maintenanceAndUpdateFrequency": "Etter behov",
+    "maintenanceAndUpdateStatement": "Kontinuerlig oppdatert"
+  },
+  "deliverySection": [
+    {
+      "delivery": {
+        "deliveryMedium": {
+          "unitsOfDelivery": "landsfiler",
+          "deliveryMediumName": "Geonorge nedlastning",
+          "deliveryService": {
+            "serviceEndpoint": "https://nedlasting.geonorge.no/api/capabilities/cadd7b67-892b-44cb-8d9c-9cdf92d6d92b",
+            "serviceProperty": {
+              "type": "Geonorge nedlastning",
+              "value": "GEONORGE:DOWNLOAD"
+            }
+          }
+        },
+        "deliveryFormat": [
+          {
+            "formatName": "FGDB"
+          },
+          {
+            "formatName": "GML"
+          },
+          {
+            "formatName": "PostGIS"
+          },
+          {
+            "formatName": "SOSI"
+          }
+        ]
+      }
+    },
+    {
+      "delivery": {
+        "deliveryMedium": {
+          "unitsOfDelivery": "landsfiler",
+          "deliveryMediumName": "Atom Feed",
+          "deliveryService": {
+            "serviceEndpoint": "http://nedlasting.geonorge.no/geonorge/ATOM-feeds/MarintSoppel_AtomFeedFGDB.xml",
+            "serviceProperty": {
+              "type": "Atom Feed",
+              "value": "W3C:AtomFeed"
+            }
+          }
+        },
+        "deliveryFormat": [
+          {
+            "formatName": "FGDB"
+          }
+        ]
+      }
+    },
+    {
+      "delivery": {
+        "deliveryMedium": {
+          "unitsOfDelivery": "landsfiler",
+          "deliveryMediumName": "Atom Feed",
+          "deliveryService": {
+            "serviceEndpoint": "http://nedlasting.geonorge.no/geonorge/ATOM-feeds/MarintSoppel_AtomFeedGML.xml",
+            "serviceProperty": {
+              "type": "Atom Feed",
+              "value": "W3C:AtomFeed"
+            }
+          }
+        },
+        "deliveryFormat": [
+          {
+            "formatName": "GML"
+          }
+        ]
+      }
+    },
+    {
+      "delivery": {
+        "deliveryMedium": {
+          "unitsOfDelivery": "landsfiler",
+          "deliveryMediumName": "Atom Feed",
+          "deliveryService": {
+            "serviceEndpoint": "http://nedlasting.geonorge.no/geonorge/ATOM-feeds/MarintSoppel_AtomFeedPostGIS.xml",
+            "serviceProperty": {
+              "type": "Atom Feed",
+              "value": "W3C:AtomFeed"
+            }
+          }
+        },
+        "deliveryFormat": [
+          {
+            "formatName": "PostGIS"
+          }
+        ]
+      }
+    },
+    {
+      "delivery": {
+        "deliveryMedium": {
+          "unitsOfDelivery": "landsfiler",
+          "deliveryMediumName": "Atom Feed",
+          "deliveryService": {
+            "serviceEndpoint": "http://nedlasting.geonorge.no/geonorge/ATOM-feeds/MarintSoppel_AtomFeedSOSI.xml",
+            "serviceProperty": {
+              "type": "Atom Feed",
+              "value": "W3C:AtomFeed"
+            }
+          }
+        },
+        "deliveryFormat": [
+          {
+            "formatName": "SOSI"
+          }
+        ]
+      }
+    },
+    {
+      "delivery": {
+        "deliveryMedium": {
+          "deliveryMediumName": "Menneskelig påvirkning - Marint søppel per videotransekt, WMS",
+          "deliveryService": {
+            "serviceEndpoint": "https://kart.hi.no/mareano/magik/menneske_soppel/ows?request=GetCapabilities&service=WMS",
+            "serviceProperty": {
+              "type": "Menneskelig påvirkning - Marint søppel per videotransekt, WMS",
+              "value": "Tjenestelag"
+            }
+          }
+        },
+        "deliveryFormat": [
+          {
+            "formatName": "ESRI Shape"
+          }
+        ],
+        "deliveryScope": "Tjeneste"
+      }
+    },
+    {
+      "delivery": {
+        "deliveryMedium": {
+          "deliveryMediumName": "GeoPackage: menneskelig-pavirkning-marint-sppel",
+          "deliveryService": {
+            "serviceEndpoint": "https://raw.githubusercontent.com/ToreFreddyB/produktspesifikasjon_HI/main/produktspesifikasjon/menneskelig-pavirkning-marint-soppel-per-videotransekt/menneskelig-pavirkning-marint-sppel/menneskelig-pavirkning-marint-sppel.gpkg",
+            "serviceProperty": {
+              "type": "Fil",
+              "value": "Nedlasting"
+            }
+          }
+        },
+        "deliveryFormat": [
+          {
+            "formatName": "GPKG"
+          }
+        ]
+      }
+    }
+  ],
+  "metadataSection": {
+    "metadataStandard": "ISO19115",
+    "metadataStandardVersion": "2003",
+    "metadataDate": "2026-11-13",
+    "language": "nor",
+    "contact": {
+      "organizationName": "Havforskningsinstituttet",
+      "individualName": "Barbro Taraldset Haugland",
+      "logo": "https://register.geonorge.no/data/organizations/971349077_hi_liten.png",
+      "electronicMailAddress": "barbroth@hi.no",
+      "role": "pointOfContact"
+    },
+    "metadataIdentifier": {
+      "authority": "Geonorge",
+      "code": "cadd7b67-892b-44cb-8d9c-9cdf92d6d92b",
+      "codeSpace": "https://kartkatalog.geonorge.no/metadata/",
+      "metadataLinkage": "https://kartkatalog.geonorge.no/metadata/cadd7b67-892b-44cb-8d9c-9cdf92d6d92b"
+    }
+  },
+  "additionalReferences": [
+    {
+      "title": "Produktark",
+      "href": "https://register.geonorge.no/register/versjoner/produktark/havforskningsinstituttet/marint-søppel-per-videotransekt"
+    },
+    {
+      "title": "Produktside",
+      "href": "https://www.kartverket.no/geodataarbeid/marine-grunnkart-i-kystsonen"
+    }
+  ],
+  "chapterAutofill": {
+    "om_spesifikasjonen": 9,
+    "om_produktet": 127,
+    "formaal": 26,
+    "bruksomraade": 0,
+    "omfang": 24,
+    "datainnhold_og_struktur": 0,
+    "referansesystem": 24,
+    "datakvalitet": 24,
+    "datafangst_og_produksjon": 0,
+    "vedlikehold": 4,
+    "presentasjon": 0,
+    "leveranse": 70,
+    "metadata": 15,
+    "tilleggsinformasjon": 103,
+    "datamodell": 563
+  },
+  "specificationContact": "Havforskningsinstituttet, [genoveva.gonzalez-mirelis@hi.no](mailto:genoveva.gonzalez-mirelis@hi.no)"
+}

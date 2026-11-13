@@ -1,0 +1,326 @@
+[
+  {
+    "name": "MarintSøppelVideotransekt",
+    "description": "Navnet på platformen som ble brukt til videofilming.",
+    "attributes": [
+      {
+        "name": "posisjon",
+        "type": "GM_Point",
+        "description": "sted som objektet eksisterer på.\nLocation where the object exists",
+        "cardinality": "1",
+        "taggedValues": {
+          "SOSI_navn": "NØ"
+        }
+      },
+      {
+        "name": "marineGrunnkartId",
+        "type": "CharacterString",
+        "description": "Unikt fortløpende id-nummer i Marine grunnkart.",
+        "cardinality": "1",
+        "taggedValues": {
+          "SOSI_navn": "MARINEGRUNNKARTID"
+        }
+      },
+      {
+        "name": "plattform",
+        "type": "CharacterString",
+        "description": "Fartøy som har innhentet data.",
+        "cardinality": "1",
+        "taggedValues": {
+          "SOSI_navn": "PLATTFORM"
+        }
+      },
+      {
+        "name": "region",
+        "type": "CharacterString",
+        "description": "Regionen som videotransektet er tatt i. Samsvarer med lokalitetene i Marine grunnkart.",
+        "cardinality": "1",
+        "taggedValues": {
+          "SOSI_navn": "REGION"
+        }
+      },
+      {
+        "name": "toktNummer",
+        "type": "Integer",
+        "description": "toktnummer ved Havforskningsinstituttet.\n-- Definition --\nCruise number at IMR.",
+        "cardinality": "1",
+        "taggedValues": {
+          "SOSI_navn": "TOKTNUMMER"
+        }
+      },
+      {
+        "name": "stasjonId",
+        "type": "CharacterString",
+        "description": "Unik Stasjons-ID for videotransektet (samsvar med navn på videofilm).",
+        "cardinality": "1",
+        "taggedValues": {
+          "SOSI_navn": "STASJONID"
+        }
+      },
+      {
+        "name": "lengdeTransekt",
+        "type": "Integer",
+        "description": "Lengde på transekt (f.eks 50 m).",
+        "cardinality": "1",
+        "taggedValues": {
+          "SOSI_navn": "LENGDETRANSEKT"
+        }
+      },
+      {
+        "name": "lengdegrad",
+        "type": "Real",
+        "description": "Lengdegrad (midt lengdegrad for transektet)",
+        "cardinality": "1",
+        "taggedValues": {
+          "SOSI_navn": "LENGDEGRAD"
+        }
+      },
+      {
+        "name": "breddegrad",
+        "type": "Real",
+        "description": "Breddegrad (midt breddegrad for transektet)",
+        "cardinality": "1",
+        "taggedValues": {
+          "SOSI_navn": "BREDDEGRAD"
+        }
+      },
+      {
+        "name": "presisjon",
+        "type": "CharacterString",
+        "description": "Presisjon (fra-til, f.eks. 10-100 m).",
+        "cardinality": "1",
+        "taggedValues": {
+          "SOSI_navn": "PRESISJON"
+        }
+      },
+      {
+        "name": "startdato",
+        "type": "Date",
+        "description": "Dato (angitt ved starten på transektet).",
+        "cardinality": "1",
+        "taggedValues": {
+          "SOSI_navn": "STARTDATO"
+        }
+      },
+      {
+        "name": "dyp1",
+        "type": "Real",
+        "description": "Dyp ved start på transekt",
+        "cardinality": "1",
+        "taggedValues": {
+          "SOSI_navn": "DYP1"
+        }
+      },
+      {
+        "name": "dyp2",
+        "type": "Real",
+        "description": "Dyp ved slutt på transekt.",
+        "cardinality": "1",
+        "taggedValues": {
+          "SOSI_navn": "DYP2"
+        }
+      },
+      {
+        "name": "dypType",
+        "type": "CharacterString",
+        "description": "Beskriver dyp1 og dyp2 med en av tre mulige egenskaper: Dyp på midten, Gjennomsnittlig dyp, eller Start-slutt dyp.",
+        "cardinality": "1",
+        "taggedValues": {
+          "SOSI_navn": "DYPTYPE"
+        }
+      },
+      {
+        "name": "søppelDekning",
+        "type": "CharacterString",
+        "description": "Beskriver om det er observert søppel på dette videotransektet. Kan ha verdiene: Masse søppel. Søppel tilstede. Ingen søppel.",
+        "cardinality": "1",
+        "taggedValues": {
+          "SOSI_navn": "SØPPELDEKNING"
+        }
+      },
+      {
+        "name": "søppelMengde",
+        "type": "Integer",
+        "description": "Verdi for totalt antall søppelobservasjoner på videotransektet (sum av de ulike kategoriene).",
+        "cardinality": "1",
+        "taggedValues": {
+          "SOSI_navn": "SØPPELMENGDE"
+        }
+      },
+      {
+        "name": "diverseAvfall",
+        "type": "Integer",
+        "description": "Antall observasjoner av uidentifiserbart avfall på videotransektet.\nHeltall.",
+        "cardinality": "1",
+        "taggedValues": {
+          "SOSI_navn": "DIVERSEAVFALL"
+        }
+      },
+      {
+        "name": "glassKeramikk",
+        "type": "Integer",
+        "description": "Antall observasjoner av glass, keramikk o.l. på videotransektet.\nHeltall.",
+        "cardinality": "1",
+        "taggedValues": {
+          "SOSI_navn": "GLASSKERAMIKK"
+        }
+      },
+      {
+        "name": "gummi",
+        "type": "Integer",
+        "description": "Antall observasjoner av gummi i videotransektet.\nHeltall.",
+        "cardinality": "1",
+        "taggedValues": {
+          "SOSI_navn": "GUMMI"
+        }
+      },
+      {
+        "name": "metall",
+        "type": "Integer",
+        "description": "Antall observasjoner av metall på videotransektet.\nHeltall.",
+        "cardinality": "1",
+        "taggedValues": {
+          "SOSI_navn": "METALL"
+        }
+      },
+      {
+        "name": "naturligeProdukter",
+        "type": "Integer",
+        "description": "Antall observasjoner av naturlige produkter (tøy, tre o.l.) videotransektet.\nHeltall.",
+        "cardinality": "1",
+        "taggedValues": {
+          "SOSI_navn": "NATURLIGEPRODUKTER"
+        }
+      },
+      {
+        "name": "plast",
+        "type": "Integer",
+        "description": "Antall observasjoner av plast på videotransektet.\nHeltall.",
+        "cardinality": "1",
+        "taggedValues": {
+          "SOSI_navn": "PLAST"
+        }
+      },
+      {
+        "name": "sanitærAvfall",
+        "type": "Integer",
+        "description": "Antall observasjoner av sanitært avfall på videotransektet.\nHeltall.",
+        "cardinality": "1",
+        "taggedValues": {
+          "SOSI_navn": "SANITÆRAVFALL"
+        }
+      },
+      {
+        "name": "marintSøppelKommentar",
+        "type": "CharacterString",
+        "description": "Beskriver mer detaljert de ulike søppelobservasjonene på videotransektet.",
+        "cardinality": "0..1",
+        "taggedValues": {
+          "SOSI_navn": "MARINTSØPPELKOMMENTAR"
+        }
+      }
+    ],
+    "abstract": false,
+    "relationships": {
+      "inheritance": [
+        "GenerelleEgenskaperMarintSøppelVideotransekt"
+      ],
+      "associations": []
+    },
+    "package": "MenneskeligPåvirkningMarintSøppelVideotransekt-20230901"
+  },
+  {
+    "name": "GenerelleEgenskaperMarintSøppelVideotransekt",
+    "description": "abstrakt objekt som bærer en rekke egenskaper som er fagområde-uavhengige og kan benyttes for alle objekttyper\nMerknad: Spesielt i produktspesifikasjonsarbeid vil en velge egenskaper og av grensningslinjer fra denne klassen.",
+    "attributes": [
+      {
+        "name": "identifikasjon",
+        "type": "Identifikasjon",
+        "description": "unik identifikasjon av et objekt",
+        "cardinality": "1",
+        "attributes": [
+          {
+            "name": "lokalId",
+            "type": "CharacterString",
+            "description": "lokal identifikator av et objekt\n\nMerknad: Det er dataleverendørens ansvar å sørge for at den lokale identifikatoren er unik innenfor navnerommet.",
+            "cardinality": "1",
+            "taggedValues": {
+              "SOSI_navn": "LOKALID"
+            }
+          },
+          {
+            "name": "navnerom",
+            "type": "CharacterString",
+            "description": "navnerom som unikt identifiserer datakilden til et objekt, anbefales å være en http-URI\n\nEksempel: http://data.geonorge.no/SentraltStedsnavnsregister/1.0\n\nMerknad : Verdien for nanverom vil eies av den dataprodusent som har ansvar for de unike identifikatorene og må være registrert i data.geonorge.no eller data.norge.no",
+            "cardinality": "1",
+            "taggedValues": {
+              "SOSI_navn": "NAVNEROM"
+            }
+          },
+          {
+            "name": "versjonId",
+            "type": "CharacterString",
+            "description": "identifikasjon av en spesiell versjon av et geografisk objekt (instans)",
+            "cardinality": "0..1",
+            "taggedValues": {
+              "SOSI_navn": "VERSJONID"
+            }
+          }
+        ]
+      },
+      {
+        "name": "kvalitet",
+        "type": "Posisjonskvalitet",
+        "description": "beskrivelse av kvaliteten på stedfestingen\nMerknad: Denne er identisk med ..KVALITET i tidligere versjoner av SOSI.",
+        "cardinality": "1",
+        "attributes": [
+          {
+            "name": "målemetode",
+            "type": "Målemetode",
+            "description": "metode for måling i grunnriss (x,y), og høyde (z) når metoden er den samme som ved måling i grunnriss",
+            "cardinality": "1",
+            "valueDomain": {
+              "kind": "codelist",
+              "definition": "metode som ligger til grunn for registrering av posisjon\n\n\n-- Definition - -\nmethod on which registration of position is based",
+              "asDictionary": "true",
+              "codeList": "http://skjema.geonorge.no/SOSI/generelleKonsepter/generelleTyper/5.1/Målemetode"
+            }
+          }
+        ]
+      },
+      {
+        "name": "datauttaksdato",
+        "type": "DateTime",
+        "description": "dato for uttak fra en database\nMerknad:\nSkiller seg fra Kopidato ved at en ikke skiller på om det er uttak fra en originaldatabase eller en kopidatabase.",
+        "cardinality": "1",
+        "taggedValues": {
+          "SOSI_navn": "DATAUTTAKSDATO"
+        }
+      },
+      {
+        "name": "informasjon",
+        "type": "CharacterString",
+        "description": "generell opplysning\n\nMerknad:\nmulighet til å legge inn utfyllende informasjon om objektet",
+        "cardinality": "0..1",
+        "taggedValues": {
+          "SOSI_navn": "INFORMASJON"
+        }
+      },
+      {
+        "name": "opphav",
+        "type": "CharacterString",
+        "description": "referanse til opphavsmaterialet, kildematerialet, organisasjons/publiseringskilde\nMerknad:\nKan også beskrive navn på person og årsak til oppdatering",
+        "cardinality": "1",
+        "taggedValues": {
+          "SOSI_navn": "OPPHAV"
+        }
+      }
+    ],
+    "abstract": true,
+    "relationships": {
+      "inheritance": [],
+      "associations": []
+    },
+    "package": "MenneskeligPåvirkningMarintSøppelVideotransekt-20230901"
+  }
+]
