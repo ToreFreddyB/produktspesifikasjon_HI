@@ -1,0 +1,81 @@
+@startuml
+' For wide diagrams, render with: plantuml -DPLANTUML_LIMIT_SIZE=16384 ...
+' The 'scale max' directive below caps the rendered output to prevent the
+' default PlantUML 4096px size limit from cropping the diagram.
+scale max 4000*4000
+
+title Menneskelig påvirkning - Marint søppel per videotransekt - menneskelig_påvirkning_marint_søppel - Objekttyper
+
+skinparam backgroundColor #F5F5F5
+skinparam shadowing false
+skinparam RoundCorner 6
+skinparam ArrowColor #6C8198
+skinparam wrapWidth 200
+skinparam class {
+  BackgroundColor #FBF2E8
+  BorderColor #9C8578
+  FontColor #2D201A
+  HeaderBackgroundColor #EFE1D6
+  HeaderFontColor #2D201A
+  AttributeIconSize 0
+}
+skinparam note {
+  BackgroundColor #FFFFFF
+  BorderColor #6C8198
+  FontColor #2D201A
+}
+skinparam stereotypeCBackgroundColor #EAD9CE
+skinparam stereotypeCBorderColor #9C8578
+skinparam stereotypeCFontColor #2D201A
+
+package "Objekttyper" {
+
+  class "MarintSøppelVideotransekt" as MarintS_ppelVideotransekt <<featureType>> {
+    + posisjon [1] : GM_Point
+    + marineGrunnkartId [1] : CharacterString
+    + plattform [1] : CharacterString
+    + region [1] : CharacterString
+    + toktNummer [1] : Integer
+    + stasjonId [1] : CharacterString
+    + lengdeTransekt [1] : Integer
+    + lengdegrad [1] : Real
+    + breddegrad [1] : Real
+    + presisjon [1] : CharacterString
+    + startdato [1] : Date
+    + dyp1 [1] : Real
+    + dyp2 [1] : Real
+    + dypType [1] : CharacterString
+    + søppelDekning [1] : CharacterString
+    + søppelMengde [1] : Integer
+    + diverseAvfall [1] : Integer
+    + glassKeramikk [1] : Integer
+    + gummi [1] : Integer
+    + metall [1] : Integer
+    + naturligeProdukter [1] : Integer
+    + plast [1] : Integer
+    + sanitærAvfall [1] : Integer
+    + marintSøppelKommentar [0..1] : CharacterString
+  }
+
+  abstract class "GenerelleEgenskaperMarintSøppelVideotransekt" as GenerelleEgenskaperMarintS_ppelVideotransekt <<featureType>> {
+    + identifikasjon [1] : Identifikasjon
+    + kvalitet [1] : Posisjonskvalitet
+    + datauttaksdato [1] : Date
+    + informasjon [0..1] : CharacterString
+    + opphav [1] : CharacterString
+  }
+
+  class Identifikasjon <<dataType>> {
+    + lokalId [1] : CharacterString
+    + navnerom [1] : CharacterString
+    + versjonId [0..1] : CharacterString
+  }
+
+  class Posisjonskvalitet <<dataType>> {
+    + målemetode [1] : Målemetode
+  }
+}
+
+  GenerelleEgenskaperMarintS_ppelVideotransekt <|-- MarintS_ppelVideotransekt
+
+@enduml
